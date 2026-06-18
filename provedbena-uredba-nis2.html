@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-DC7XEBLPLY');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regulacija 2024/2690: NIS2 Zahtjevi za MSP i Cloud Pružatelje</title>
+  <meta name="description" content="Implementacijska regulacija EU 2024/2690 primjenjuje se na MSP, cloud pružatelje i DNS-e. Saznajte 150+ kontrola i kako početi s usklađivanjem.">
+  <link rel="canonical" href="https://nis2-alati.hr/provedbena-uredba-nis2.html">
+  <meta property="og:title" content="Regulacija 2024/2690: NIS2 Zahtjevi za MSP i Cloud Pružatelje">
+  <meta property="og:description" content="Implementacijska regulacija EU 2024/2690 primjenjuje se na MSP, cloud pružatelje i DNS-e. Saznajte 150+ kontrola i kako početi s usklađivanjem.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-alati.hr/provedbena-uredba-nis2.html">
+  <meta property="og:locale" content="hr_HR">
+  <meta property="og:site_name" content="nis2-alati.hr">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Regulacija 2024/2690: NIS2 Zahtjevi za MSP i Cloud Pružatelje", "description": "Implementacijska regulacija EU 2024/2690 primjenjuje se na MSP, cloud pružatelje i DNS-e. Saznajte 150+ kontrola i kako početi s usklađivanjem.", "author": {"@type": "Organization", "name": "nis2-alati.hr"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Je li Regulacija 2024/2690 već obvezatna ili je samo prijedlog?", "acceptedAnswer": {"@type": "Answer", "text": "Regulacija je <strong>potpuno obvezatna od 7. siječnja 2025</strong>. Nije prijedlog. Ako ste MSP, cloud pružatelj ili DNS — trebate je implementirati odmah. Kazne za neusklađivanje kreću se od €5 do €10 milijuna ili 2% globalnog godišnjeg prihoda."}}, {"@type": "Question", "name": "Trebam li ISO 27001 certifikat ili je dovoljno samo izjava o usklađivanju?", "acceptedAnswer": {"@type": "Answer", "text": "Izjava je minimum, ali ISO 27001 je jača pozicija. Regulacija zahtijeva 150+ kontrola — većina njih je pokrivena ISO 27001, ali <strong>nisu sve</strong>. Best practice je ISO 27001 plus dodatne mjere specifične za 2024/2690 (npr. 72-satno izvještavanje o incidentima, detaljno logiranje). Koristite <a href='https://reglyze.com'>Reglyze</a> da pratite oboje odjednom."}}, {"@type": "Question", "name": "Što ako ne primijenim sve 150+ kontrola na vrijeme?", "acceptedAnswer": {"@type": "Answer", "text": "Regulatori će vas prvo upozoriti, zatim će provesti audit. Ako ne budete u compliance-u, grešit će vam značajne kazne, mogućnost suspenzije licence za pružanje usluga (obično 30-90 dana), te gubitak povjerenja klijenata. Neki klijenti mogu prekinuti ugovore ako niste usklađeni."}}, {"@type": "Question", "name": "Je li Regulacija 2024/2690 samo za velike MSP-e ili za sve?", "acceptedAnswer": {"@type": "Answer", "text": "Primjenjuje se na <strong>sve MSP-e bez obzira na veličinu</strong>. Nema pragova zaposlenika ili prihoda — ako ste MSP, trebate joj udovoljiti. Manji MSP-ovi mogu imati pojednostavljene kontole (npr. manja obuka), ali 13 obitelji kontrola su obvezne za sve."}}, {"@type": "Question", "name": "Mogu li koristiti Secfix ili ISMS.online umjesto Reglyze-a?", "acceptedAnswer": {"@type": "Answer", "text": "Secfix i ISMS.online su solidne alternative, ali <a href='https://reglyze.com'>Reglyze</a> ima najdetaljnije mapiranje za 2024/2690 i bolje je podržava multi-tenant arhitekture koju koriste MSP-ovi. Procijeni sve tri — odaberi onu koja najbolje odgovara vašem timu i budžetu."}}]}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">NIS2<span>Alati</span>.hr</a>
+      <ul class="nav__links"><li><a href="porownanie.html">Usporedba alata</a></li><li><a href="sektory-ksc.html">Sektori NIS2</a></li><li><a href="kalkulator.html">Kalkulator NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
+      <a href="kalkulator.html" class="nav__cta">Početak Procjene</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span>
+    NIS2 Regulacija
+  </div>
+</div>
+
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span class="eyebrow">NIS2 Implementacijska Regulacija</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);margin:.5rem 0 1rem;">Komisijska Implementacijska Regulacija (EU) 2024/2690: Kompletan Vodič za Hrvatske Pružatelje</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);">Ako ste MSP, cloud pružatelj ili DNS provider — ova regulacija vas obavezuje od 7. siječnja 2025. Saznajte koje su vam 150+ specifične kontrole obvezne i kako započeti s usklađivanjem.</p>
+    <a href="https://reglyze.com" class="btn btn--primary" style="margin-top:1.25rem;" target="_blank" rel="nofollow noopener">Zahtijevi Besplatnu Analizu →</a>
+  </div>
+</div>
+
+
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Što je Regulacija 2024/2690 i Tko Joj Podleže?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Komisijska Implementacijska Regulacija (EU) 2024/2690</strong> je detaljni skup zahtjeva koje je Europska komisija objavila kako bi se NIS2 direktiva primjenjivala na kritične digitalne subjekte. Ova regulacija nije opciona — ona je obvezatna od 7. siječnja 2025.</p><p>Regulacija se primjenjuje na:</p><ul><li><strong>DNS pružatelje</strong></li><li><strong>Registrare vremenski ograničenih domena (TLD)</strong></li><li><strong>Cloud pružatelje računalnih usluga</strong></li><li><strong>Pružatelje usluga podatkovnih centara</strong></li><li><strong>CDN pružatelje</strong></li><li><strong>Upravljane usluge pružatelje (MSP)</strong></li><li><strong>Upravljane sigurnosne usluge pružatelje (MSSP)</strong></li><li><strong>Operatore digitalnih tržnica</strong></li><li><strong>Operatore internetskih tražilica</strong></li><li><strong>Pružatelje društvenih mreža</strong></li><li><strong>Pružatelje povjerenih usluga</strong></li></ul><p>Ako vaša tvrtka spada u bilo koju od ovih kategorija, morate ispuniti <strong>150+ specifičnih kontrola</strong> — nije dovoljno samo prihvatiti 10 općih mjera iz članka 21.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Zašto su MSP-i Ključni: Vaša Odgovornost i Ovisnost Klijenata</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Upravljani uslužni pružatelji (MSP) su u posebnoj poziciji. Ne samo da ih regulacija obavezuje na compliance — već su <strong>i njihovi klijenti</strong> dio lanaca opskrbe koji se moraju oslanjati na njihove sigurnosne mjere.</p><p>To znači:</p><ul><li>Kao MSP, vi ste dio kritične infrastrukture — mali pogrešak može utjecati na stotine klijenata</li><li>Vaši klijenti će vas pitati za dokaze compliance — audite, certifikate, izvještaje o kontrolama</li><li>Ako ne zadovoljite zahtjeve, vaši klijenti ne mogu zadovoljiti svoje NIS2 obveze</li><li>Kazne za neusklađivanje dosežu do <strong>€10 milijuna ili 2% globalnog godišnjeg prihoda</strong></li></ul><p>Regulacija također zahtijeva da MSP-i primijene <strong>specifičnu segmentaciju, monitoring, logging, upravljanje konfiguracijama i redovite revizije</strong> — ovo nije automatizirано. Trebate <strong>tehnologiju</strong> kao što je <a href='https://reglyze.com'>Reglyze</a> kako bi upravljali svim 150+ kontrolama učinkovito.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">13 Obitelj Kontrola: Pregled Zahtjeva Regulacije 2024/2690</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Regulacija 2024/2690 organizira 150+ specifičnih kontrola u 13 obitelji:</p><ol><li><strong>Identificiranje i upravljanje imovinom</strong> — evidencija svih IT resursa i ovisnosti</li><li><strong>Upravljanje pristupom i povjerenstvima</strong> — kontrola tko može pristupiti čemu i kada</li><li><strong>Kriptografija</strong> — enkriptiranje osjetljivih podataka u mirovanju i u prijenosu</li><li><strong>Fizička i ambijentalna sigurnost</strong> — kontrola pristupa podatkovnim centrima</li><li><strong>Upravljanje mrežom</strong> — segmentacija, zaštita od DDoS-a, monitoring prometa</li><li><strong>Upravljanje uređajima i softverom</strong> — patching, inventar softvera, kontrola provjere</li><li><strong>Upravljanje incidentima</strong> — detektiranje, izvještavanje, oporavak od 72 sata</li><li><strong>Kontinuitet poslovanja i oporavak od katastrofe</strong> — backup-i, RTO/RPO, testiranje</li><li><strong>Nadzor sigurnosti</strong> — SIEM, monitoring logaritama, anomalije</li><li><strong>Upravljanje ranjivostima</strong> — testiranje penetracije, procjena ranjivosti</li><li><strong>Upravljanje rizikom treće strane</strong> — procjena i monitoring dobavljača</li><li><strong>Svjesnost i obuka</strong> — redovna obuka za zaposlenike o sigurnosti</li><li><strong>Inženjering sigurnosti</strong> — sigurni razvoj softvera i arhitektura</li></ol></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Ključne Razlike od Standardnog NIS2: Stroži Zahtjevi za Kritične Digitalne Subjekte</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Članak 21 NIS2 direktive zahtijeva samo 10 osnovnih mjera za većinu tvrtki. Međutim, <strong>Regulacija 2024/2690 je strožija</strong> za subjekte koje pokriva:</p><ul><li><strong>Stalno Monitoring</strong> — trebate 24/7 nadzor, a ne samo periodički pregledi</li><li><strong>Detaljno Logiranje</strong> — svi sustavi moraju pisati detaljne dnevnike s vremenskim oznakama</li><li><strong>Upravljanje Konfiguracijama</strong> — svaka promjena na sustavima mora biti dokumentirana i odobrena</li><li><strong>Redovite Revizije</strong> — najmanje godišnje eksterno testiranje penetracije i ocjena ranjivosti</li><li><strong>Segmentacija Mreže</strong> — kritični sustavi moraju biti odvojeni od ostatka infrastrukture</li><li><strong>Vremenski Okviri Reagiranja</strong> — incidenti moraju biti prijavljeni regulatorima u roku od 72 sata</li></ul><p>Razlika: standardni NIS2 je okvir; Regulacija 2024/2690 je <strong>preskriptivna lista od 150+ konkretnih, mjerljivih kontrola</strong>.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Kako Reglyze Pomaže MSP-ima: Upravljanje 150+ Kontrola</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><a href='https://reglyze.com'>Reglyze</a> je ISMS platforma izgrađena specifično za regulatorne zahtjeve kao što je 2024/2690. Za MSP-e, Reglyze nudi:</p><ul><li><strong>Mapiranje kontrola</strong> — Regulacija je već uređena u platformu; vidite sve 150+ kontrole s uputama za primjenu</li><li><strong>Automatizirano Evidentiranje</strong> — sustav prati sve akcije, što je kritično za dokaze compliance-a</li><li><strong>Upravljanje Rizikom Treće Strane</strong> — pratite sigurnost svojih dobavljača i klijenata</li><li><strong>Izvještavanje i Audit Trail</strong> — generirajte dokaze za regulatore i klijente</li><li><strong>Timska Suradnja</strong> — dodjelite zadatke timovima, pratite napredak</li></ul><p>Reglyze je dizajniran za MSP specifičnu arhitekturu — s tisućama klijenata trebate centralizirani sustav koji može skalirati. Alternativne opcije uključuju <strong>Secfix</strong> i <strong>ISMS.online</strong>, ali Reglyze ima najbolje pokrivanje za 2024/2690.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Korak po Korak: Kako Započeti s Usklađivanjem kao MSP</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>1. Procjena Jaza (Week 1-2)</strong><br>Prikupite sve dokumentacije: politike, proceduri, IT infrastruktura, pristupe, incidente. Usporedite sa svim 150+ kontrola iz Regulacije 2024/2690. Korištenjem <a href='https://reglyze.com'>Reglyze-a</a> ubrzajte ovaj proces — platforma vam omogući automatsku procjenu.</p><p><strong>2. Mapiranje Kontrola (Week 2-4)</strong><br>Za svaku od 13 obitelji kontrola, identificirajte koje ste već primjenjujete, a koje trebate implementirati. Prioritizirajte kritične oblasti: upravljanje pristupom, monitoring, upravljanje incidentima.</p><p><strong>3. Implementacija (Week 5+)</strong><br>Počnite od visokog rizika. Primjerice: ako nemate SIEM, je li Splunk ili Elastic vam dostupan? Ako nemate redovite procjene ranjivosti, odaberite alat (nessus, Qualys). Dokumentirajte sve.</p><p><strong>4. Testiranje (Month 3-4)</strong><br>Testirajte penetraciju, audirujte logove, provjerite incidente. Trebate dokaze da kontrole funkcioniraju.</p><p><strong>5. Certifikacija ili Izjava</strong><br>Objavite izjavu o usklađivanju za svoje klijente.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Što Vaši Klijenti Mogu Zahtijevati Od Vas: Odgovornosti Lanaca Opskrbe</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Regulacija 2024/2690 sadrži <strong>Članak 26</strong> koji se fokusira na upravljanje rizikom treće strane. Kao MSP, vaši klijenti (koji su možda i sami subjekti NIS2-a) mogu zahtijevati:</p><ul><li><strong>Dokaze Compliance-a</strong> — izvješće o kontrolama ili certifikat (ISO 27001, SOC 2)</li><li><strong>Ugovorne Klauzule o Sigurnosti</strong> — vi ste obvezni primjenjivati određene mjere navedene u ugovoru</li><li><strong>Pristupa Auditi</strong> — klijenti mogu zahtijevati da vas audiraju ili da komisariate treću stranu</li><li><strong>Obavijesti o Incidentima</strong> — ako dođe do incidenta, trebate obavijestiti klijente u roku od 72 sata</li><li><strong>Podatke o Infrastrukturi</strong> — gdje su podaci pohrani? Koji su kooperanti uključeni?</li></ul><p>Ako niste usklađeni, klijenti će vas zamijeniti drugima. To je realna poslovna prijetnja — regulacija to čini obvezom, a ne opcijom.</p></div>
+        </div>
+      </section>
+
+      <section style="background:var(--gray-50);padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Checklist Inicijalnih Koraka za MSP Compliance</h2>
+          <ul style="list-style:none;padding:0;margin:0;background:#fff;border-radius:8px;padding:1rem;"><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Preuzmi popis svih 150+ kontrola iz Regulacije 2024/2690 i mapiraj na vašu infrastrukturu</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Provjerite postoje li ugovori s clients-ima koji već zahtijevaju NIS2 compliance</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Identificirajte kritične sustave koji trebaju segmentaciju i monitoring</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Postavi 24/7 SIEM ili centralni monitoring (Splunk, ELK, Sentinel)</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Implementiraj redovite procjene ranjivosti (najmanje godišnje)</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Dokumentiraj sve pristupe, promjene konfiguracije i incidente</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Obavijesti sve clients-e što očekuješ od njih kao dio lanaca opskrbe</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Razmotrij korištenje Reglyze-a ili drugih ISMS platformi za upravljanje dokazima</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Planiraj redovite testiranja penetracije (najmanje godišnje)</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Pripremi izjavu o usklađivanju za clients-e</li></ul>
+        </div>
+      </section>
+
+<section style="padding:2.5rem 0;background:#fff;">
+  <div class="container--narrow">
+    <h2 style="font-size:1.2rem;margin-bottom:1.25rem;">Često Postavljana Pitanja o Regulaciji 2024/2690</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Je li Regulacija 2024/2690 već obvezatna ili je samo prijedlog?</button>
+          <div class="faq-answer"><p>Regulacija je <strong>potpuno obvezatna od 7. siječnja 2025</strong>. Nije prijedlog. Ako ste MSP, cloud pružatelj ili DNS — trebate je implementirati odmah. Kazne za neusklađivanje kreću se od €5 do €10 milijuna ili 2% globalnog godišnjeg prihoda.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Trebam li ISO 27001 certifikat ili je dovoljno samo izjava o usklađivanju?</button>
+          <div class="faq-answer"><p>Izjava je minimum, ali ISO 27001 je jača pozicija. Regulacija zahtijeva 150+ kontrola — većina njih je pokrivena ISO 27001, ali <strong>nisu sve</strong>. Best practice je ISO 27001 plus dodatne mjere specifične za 2024/2690 (npr. 72-satno izvještavanje o incidentima, detaljno logiranje). Koristite <a href='https://reglyze.com'>Reglyze</a> da pratite oboje odjednom.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Što ako ne primijenim sve 150+ kontrola na vrijeme?</button>
+          <div class="faq-answer"><p>Regulatori će vas prvo upozoriti, zatim će provesti audit. Ako ne budete u compliance-u, grešit će vam značajne kazne, mogućnost suspenzije licence za pružanje usluga (obično 30-90 dana), te gubitak povjerenja klijenata. Neki klijenti mogu prekinuti ugovore ako niste usklađeni.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Je li Regulacija 2024/2690 samo za velike MSP-e ili za sve?</button>
+          <div class="faq-answer"><p>Primjenjuje se na <strong>sve MSP-e bez obzira na veličinu</strong>. Nema pragova zaposlenika ili prihoda — ako ste MSP, trebate joj udovoljiti. Manji MSP-ovi mogu imati pojednostavljene kontole (npr. manja obuka), ali 13 obitelji kontrola su obvezne za sve.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Mogu li koristiti Secfix ili ISMS.online umjesto Reglyze-a?</button>
+          <div class="faq-answer"><p>Secfix i ISMS.online su solidne alternative, ali <a href='https://reglyze.com'>Reglyze</a> ima najdetaljnije mapiranje za 2024/2690 i bolje je podržava multi-tenant arhitekture koju koriste MSP-ovi. Procijeni sve tri — odaberi onu koja najbolje odgovara vašem timu i budžetu.</p></div>
+        </div></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Počnite Vaš Put k Compliance-u Danas</h2>
+    <p>Ako ste MSP, cloud pružatelj ili operator kritične digitalne infrastrukture, vrijeme za akciju je <strong>sada</strong>. Regulacija 2024/2690 je već obvezatna. Besplatna procjena pokazat će vam gdje ste i što trebate učiniti sljedeće.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--lg">Zahtijevam Besplatnu Procjenu</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">NIS2<span>Alati</span>.hr</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="porownanie.html">Usporedba alata</a>
+        <a href="kalkulator.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <p class="footer__disclaimer">
+      Ujawnienie afiliacyjne: niektóre linki na tej stronie mogą być linkami afiliacyjnymi.
+      Treść ma charakter informacyjny i nie stanowi porady prawnej.
+    </p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-DC7XEBLPLY');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 Članak 21(2)(f) – Penetracijsko testiranje: Zahtjevi i Implementacija</title>
+  <meta name="description" content="Kako ispuniti zahtjeve NIS2-a za penetracijsko testiranje. Godišnje testove, izbor pružatelja, troškovi i dokumentacija za reviziju.">
+  <link rel="canonical" href="https://nis2-alati.hr/penetracijsko-testiranje.html">
+  <meta property="og:title" content="NIS2 Članak 21(2)(f) – Penetracijsko testiranje: Zahtjevi i Implementacija">
+  <meta property="og:description" content="Kako ispuniti zahtjeve NIS2-a za penetracijsko testiranje. Godišnje testove, izbor pružatelja, troškovi i dokumentacija za reviziju.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-alati.hr/penetracijsko-testiranje.html">
+  <meta property="og:locale" content="hr_HR">
+  <meta property="og:site_name" content="nis2-alati.hr">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NIS2 Članak 21(2)(f) – Penetracijsko testiranje: Zahtjevi i Implementacija", "description": "Kako ispuniti zahtjeve NIS2-a za penetracijsko testiranje. Godišnje testove, izbor pružatelja, troškovi i dokumentacija za reviziju.", "author": {"@type": "Organization", "name": "nis2-alati.hr"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Je li penetracijsko testiranje doista obavezno prema NIS2-u?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Članak 21(2)(f) NIS2-a zahtijeva \"politike i postupke za ocjenu učinkovitosti mjera upravljanja rizikom\". To se u praksi provodi godišnjim penetracijskim testiranjem. Nadzorna tijela (HAKOM, financijske autortety) sada provjeravaju da li imate dokumentirane izvještaje o testiranju. Nemaju dovoljno sredstava da vas svi proveravaju, ali ako su vas selektirali za auditu, nedostatak testiranja je kritična konstatacija."}}, {"@type": "Question", "name": "Koliko često trebam testirati – godišnje, tromjesečno, kontinuirano?", "acceptedAnswer": {"@type": "Answer", "text": "Minimum je godišnje. Međutim, ako imate kontinuirane promjene (nove aplikacije, stalni development), dobra praksa je testiranje nakon svake važne promjene ili minimalno tromjesečne. Neki pružatelji (kao Cobalt.io) nude \"continuous bug bounty\" za kontinuirani praćaj. Zakon kaže godišnje, ali vaš rizik profil može zahtijevati više."}}, {"@type": "Question", "name": "Može li moj interni IT tim sam provesti penetracijsko testiranje?", "acceptedAnswer": {"@type": "Answer", "text": "Tehnički može, ali ne zadovoljava NIS2 zahtjev. Zakon zahtijeva <strong>neovisnu ocjenu</strong> – vanjski pružatelj bez konflikta interesa. Ako interni IT tim pronađe greške, to je dobar početak, ali za compliance trebate vanjski izvještaj potpisati od treće strane. Zakonski je to dokazno vrijednije za audite."}}, {"@type": "Question", "name": "Što ako tijekom testiranja tester pronađe kritičnu vulnerabilnost koja u praksi omogućava pristup bazama podataka?", "acceptedAnswer": {"@type": "Answer", "text": "Pružatelj će vas obavijestiti (obično je dogovoreno kako – kroz portal, e-mail, telefonom u slučaju kritičnog). Ne smije je iskoristiti dalje bez vašeg pisanog dogovora (to je \"authorized\" vs. \"unauthorized\" testing). Vi trebate odmah učiniti korake da zatvorite pristup, pa tek onda testirati remedijaciju. To je razlog zašto trebate jasnu dogovor opsega prije testiranja."}}, {"@type": "Question", "name": "Koliko košta penetracijsko testiranje i jesu li sve kompanije u jednoj cijenovnoj kategoriji?", "acceptedAnswer": {"@type": "Answer", "text": "Za SME s 1–2 web aplikacije ili vanjskim perimetrom, čekaj €3.000–€8.000. Za kompleksnije okoline (interna mreža, multiple servera, API, mobilna aplikacija), €10.000–€15.000. Veće enterprise koriste €20.000+. Cobalt.io i slični PtaaS pružatelji su obično jeftiniji od tradicionalnih konzultanata jer koriste distributed testerâ. Cijena ovisi o opsegu – jasno definiraj što testiramo kako bi znao točnu procjenu."}}]}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">NIS2<span>Alati</span>.hr</a>
+      <ul class="nav__links"><li><a href="porownanie.html">Usporedba alata</a></li><li><a href="sektory-ksc.html">Sektori NIS2</a></li><li><a href="kalkulator.html">Kalkulator NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
+      <a href="kalkulator.html" class="nav__cta">Rezerviraj penetracijsko testiranje</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span>
+    NIS2 Članak 21(2)(f) – Testiranje sigurnosti
+  </div>
+</div>
+
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span class="eyebrow">NIS2 Zahtjevi za Testiranje</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);margin:.5rem 0 1rem;">Penetracijsko testiranje prema NIS2 Članku 21(2)(f)</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);">NIS2 direktiva obvezuje godine godišnje penetracijsko testiranje kritičnih sustava. Saznajte što je zakonski obavezno, kako se priprema i gdje pronaći certificirane pružatelje.</p>
+    <a href="https://cobalt.io" class="btn btn--primary" style="margin-top:1.25rem;" target="_blank" rel="nofollow noopener">Zatraži ponudu za testiranje →</a>
+  </div>
+</div>
+
+
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Što NIS2 točno zahtijeva – Članak 21(2)(f)</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>NIS2 Članak 21(2)(f)</strong> propisuje da operatori kritične infrastrukture i pružatelji digitalnih usluga (ODDSU) moraju imati <em>"politike i postupke za ocjenu učinkovitosti mjera upravljanja rizikom od kibernetskih prijetnji"</em>. Ovo nije preporuka – to je <strong>zakonski obavezna aktivnost</strong>.</p><p>U praksi to znači:</p><ul><li><strong>Godišnje penetracijsko testiranje</strong> kritičnih sustava i aplikacija</li><li>Testiranje od strane <strong>neovisnih stručnjaka</strong> (nisu samo vaši IT djelatnici)</li><li><strong>Dokumentirani izvještaji</strong> dostupni za reviziju od nadzornih tijela</li><li><strong>Remedijacija</strong> pronađenih ranjivosti i ponovljeno testiranje</li></ul><p>Većina malih i srednjih poduzeća u Hrvatskoj ovu obvezu još nije formalno implementirala. Ako ste operator ODDSU-a ili korisnik kritične infrastrukture, zakonski ste dužni započeti bez odgode.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Što uključuje penetracijsko testiranje – Faze i opseg</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Penetracijsko testiranje nije samo poklapanje gumbova. Struktruirani proces obuhvaća:</p><ul><li><strong>Reconnaissance</strong> – mapiranje javno dostupnih informacija o vašoj organizaciji</li><li><strong>Scanning</strong> – identifikacija aktivnih servisa, otvorenih portova i verzija softvera</li><li><strong>Enumeration</strong> – detaljno ispitivanje korisničkih računa, dijeljenih resursa i vulnerabilities</li><li><strong>Exploitation</strong> – pokušaj izvršavanja zajedničkih napada (SQL injection, phishing, privilege escalation)</li><li><strong>Post-exploitation</strong> – testiranje lateralnog kretanja i pristupa osjetljivim podacima</li><li><strong>Izvještaj</strong> – detaljne preporuke, CVSS ocjene i koraci za remedijaciju</li></ul><p><strong>Trajanje:</strong> 5–20 poslovnih dana ovisno o veličini sustava. <strong>Dostava:</strong> Tehnički izvještaj, sažetak za upravu, plan remedijacije, preporuke za politike.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Penetracijsko testiranje vs. Skeniranje ranjivosti – Koja je razlika?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Ova dva pojma se često pomiješaju, ali nisu jednaka:</p><ul><li><strong>Skeniranje ranjivosti</strong> – automatizirani alati (Nessus, OpenVAS) traže poznate nedostatke. Brzo, jeftino (€500–1.500), ali ne simulira stvarnog napada.</li><li><strong>Penetracijsko testiranje</strong> – čovjek provjerava može li zapravo <em>iskoristiti</em> te nedostatke. Uključuje socijalni inženjering, logičke greške, lančane napade. Skupo (€3.000–15.000+), ali daje realnu procjenu rizika.</li></ul><p>NIS2 zahtijeva <strong>penetracijsko testiranje</strong>, ne samo skeniranje. Razlog: skenirač izvještava što <em>može</em> biti ranjivo; tester pokazuje što <em>je zaista</em> ranjivo i kako to iskoristiti. Za audite i revizije NIS2-a, trebate potonje.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Kako odabrati pružatelja penetracijskog testiranja</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Ključni kriteriji:</p><ul><li><strong>Sertifikacije:</strong> Traži OSCP, CEH, GPEN ili ekvivalentne kvalifikacije testerâ</li><li><strong>Iskustvo u vašoj branši:</strong> Ako ste financijska institucija ili zdravstvo, trebate tester s iskustvom u tom sektoru</li><li><strong>NIS2 razumijevanje:</strong> Pružatelj mora znati što audit očekuje dokumentirati</li><li><strong>Opseg jasno definiran:</strong> In-scope: web aplikacije? Vanjski perimet? Interna mreža? Socijalni inženjering?</li><li><strong>Pravna zaštita:</strong> Ugovor mora pokrivati NDA, osiguranje, odgovornost</li></ul><p>Preporučeni pružatelji za Hrvatsku i Europu: <a href='https://cobalt.io'>Cobalt.io</a> (brzina, crowdsourced testerâ), <a href='https://www.hackerone.com'>HackerOne</a>, <a href='https://www.synack.com'>Synack</a>, <a href='https://www.pentestpeople.com'>Pentest People</a>. Cobalt.io nudi fiksne cijene i 2–4 tjedne izvršenja.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Kako funkcionira penetracijsko testiranje kao usluga – Cobalt.io primjer</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>PtaaS (Penetration Testing as a Service)</strong> model je revolucionirao pristup penetracijskom testiranju:</p><ul><li><strong>Cobalt.io koristi crowdsourced testerâ</strong> – umjesto jednog testerâ, koordinira timove certificiranih stručnjaka. Rezultat: viša kvaliteta, brži rok.</li><li><strong>Fiksne cijene:</strong> Znate točnu cijenu prije početka (na razlici od satnica koje mogu skočiti)</li><li><strong>Brž timeline:</strong> Testiranje često počne unutar 2 tjedna; prvi rezultati u 4 tjedna</li><li><strong>Kontinuirana komunikacija:</strong> Portalni sustav prati pronađene vulnerabilities u realnom vremenu</li><li><strong>Remediation re-test:</strong> Nakon što popravite greške, možete zahtijevati re-test iste vulnerabilities</li></ul><p>Cijena za SME: €3.000–€8.000 za standardnu web aplikaciju; €10.000–€15.000 za kompliciranije okoline (mrežna infrastruktura, API, mobilna aplikacija).</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Što učiniti s rezultatima penetracijskog testiranja – Remedijacija i dokumentacija</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Dobivanje izvještaja nije dovoljno. NIS2 zahtijeva <strong>dokaz akcije</strong>:</p><ul><li><strong>Prioritizacija:</strong> Sortiraj pronađene vulnerabilities po CVSS ocjeni (kritični, visoki, srednji, niski). Prvo popravi kritične.</li><li><strong>Vlastiti plan remedijacije:</strong> Za svaku vulnerabilnost, definiraj odgovoran tim, rok i tehnički pristup popravci</li><li><strong>Re-testiranje:</strong> Nakon popravke, zatraži od pružatelja da ponovno testira. Dokumentiraj kompletne rezultate (prije → nakon).</li><li><strong>Revizijsku dokumentaciju:</strong> Čuvaj sve izvještaje, e-mailove komunikacije, dokaze o remedijaciji. Nadzorna tijela će traiti potpuni audit trail.</li><li><strong>Politike:</strong> Ažuriraj politike upravljanja rizicima na osnovi pronađenih vulnerabilities</li></ul><p>Preporuka: Svake godine novi test (zakon zahtijeva), plus ad-hoc testiranje nakon velika promjene infrastrukture.</p></div>
+        </div>
+      </section>
+
+
+<section style="padding:2.5rem 0;background:#fff;">
+  <div class="container--narrow">
+    <h2 style="font-size:1.2rem;margin-bottom:1.25rem;">Česta pitanja – NIS2 penetracijsko testiranje</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Je li penetracijsko testiranje doista obavezno prema NIS2-u?</button>
+          <div class="faq-answer"><p>Da. Članak 21(2)(f) NIS2-a zahtijeva "politike i postupke za ocjenu učinkovitosti mjera upravljanja rizikom". To se u praksi provodi godišnjim penetracijskim testiranjem. Nadzorna tijela (HAKOM, financijske autortety) sada provjeravaju da li imate dokumentirane izvještaje o testiranju. Nemaju dovoljno sredstava da vas svi proveravaju, ali ako su vas selektirali za auditu, nedostatak testiranja je kritična konstatacija.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Koliko često trebam testirati – godišnje, tromjesečno, kontinuirano?</button>
+          <div class="faq-answer"><p>Minimum je godišnje. Međutim, ako imate kontinuirane promjene (nove aplikacije, stalni development), dobra praksa je testiranje nakon svake važne promjene ili minimalno tromjesečne. Neki pružatelji (kao Cobalt.io) nude "continuous bug bounty" za kontinuirani praćaj. Zakon kaže godišnje, ali vaš rizik profil može zahtijevati više.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Može li moj interni IT tim sam provesti penetracijsko testiranje?</button>
+          <div class="faq-answer"><p>Tehnički može, ali ne zadovoljava NIS2 zahtjev. Zakon zahtijeva <strong>neovisnu ocjenu</strong> – vanjski pružatelj bez konflikta interesa. Ako interni IT tim pronađe greške, to je dobar početak, ali za compliance trebate vanjski izvještaj potpisati od treće strane. Zakonski je to dokazno vrijednije za audite.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Što ako tijekom testiranja tester pronađe kritičnu vulnerabilnost koja u praksi omogućava pristup bazama podataka?</button>
+          <div class="faq-answer"><p>Pružatelj će vas obavijestiti (obično je dogovoreno kako – kroz portal, e-mail, telefonom u slučaju kritičnog). Ne smije je iskoristiti dalje bez vašeg pisanog dogovora (to je "authorized" vs. "unauthorized" testing). Vi trebate odmah učiniti korake da zatvorite pristup, pa tek onda testirati remedijaciju. To je razlog zašto trebate jasnu dogovor opsega prije testiranja.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Koliko košta penetracijsko testiranje i jesu li sve kompanije u jednoj cijenovnoj kategoriji?</button>
+          <div class="faq-answer"><p>Za SME s 1–2 web aplikacije ili vanjskim perimetrom, čekaj €3.000–€8.000. Za kompleksnije okoline (interna mreža, multiple servera, API, mobilna aplikacija), €10.000–€15.000. Veće enterprise koriste €20.000+. Cobalt.io i slični PtaaS pružatelji su obično jeftiniji od tradicionalnih konzultanata jer koriste distributed testerâ. Cijena ovisi o opsegu – jasno definiraj što testiramo kako bi znao točnu procjenu.</p></div>
+        </div></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Započni sa NIS2 penetracijskim testiranjem – Zakaži konsultaciju</h2>
+    <p>Većina hrvatskih poduzećâ još nije formalno provela penetracijsko testiranje u skladu sa zakonom. Kapaciteti se brže popunjavaju – čekaju se povećane provjere od strane HAKOMA i nadzornih tijela. Zakaži testiranje još danas ili konsultiraj se s našim timom kako strukturirati program.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--lg">Zatraži ponudu za penetracijsko testiranje</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">NIS2<span>Alati</span>.hr</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="porownanie.html">Usporedba alata</a>
+        <a href="kalkulator.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <p class="footer__disclaimer">
+      Ujawnienie afiliacyjne: niektóre linki na tej stronie mogą być linkami afiliacyjnymi.
+      Treść ma charakter informacyjny i nie stanowi porady prawnej.
+    </p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
