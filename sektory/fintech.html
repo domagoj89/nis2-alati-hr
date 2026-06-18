@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DC7XEBLPLY');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2/ZKS za fintech i plaćanja u Hrvatskoj — zahtjevi 2026.</title>
+  <meta name="description" content="Obveze NIS2 za fintech, procesor plaćanja i neobanke u HR. Upravljanje ICT rizicima, testiranje API-ja, izvještavanje o incidentima. Rok: 2026.">
+  <link rel="canonical" href="https://nis2-alati.hr/sektory/fintech.html">
+  <meta property="og:title" content="NIS2/ZKS za fintech i plaćanja u Hrvatskoj — zahtjevi 2026.">
+  <meta property="og:description" content="Obveze NIS2 za fintech, procesor plaćanja i neobanke u HR. Upravljanje ICT rizicima, testiranje API-ja, izvještavanje o incidentima. Rok: 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-alati.hr/sektory/fintech.html">
+  <meta property="og:locale" content="hr_HR">
+  <meta property="og:site_name" content="NIS2-Alati.hr">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2/ZKS za fintech i plaćanja u Hrvatskoj — zahtjevi 2026.">
+  <meta name="twitter:description" content="Obveze NIS2 za fintech, procesor plaćanja i neobanke u HR. Upravljanje ICT rizicima, testiranje API-ja, izvještavanje o incidentima. Rok: 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Početna stranica",
+      "item": "https://nis2-alati.hr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektori",
+      "item": "https://nis2-alati.hr/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2/ZKS za fintech, procesor plaćanja i neobanke u Hrvatskoj — obveze važne entitete 2026.",
+      "item": "https://nis2-alati.hr/sektory/fintech.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Koja je razlika između NIS2 izvještavanja i PSD2 incident notifikacija koje već pružamo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PSD2 zahtjeva obavijest korisnicima u roku od 72 sata ako je curenja podataka;  NIS2 zahtjeva obavijest SOA-e u roku od 24 sata ako je ICT incident učinio plaćanja nedostupnima duže od 30 minuta. Oba izvještaja su obavezna i trebate dokumentirane procedure za oba scenarija."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moramo li obaviti sigurnosno testiranje API-ja ako koristimo samo AWS ili cloud rješenja trećih strana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, čak i ako koriste cloud infrastrukturu. Vi ostajete odgovorni za sigurnost vlastite aplikacije i API-ja na njoj. Testiranje mora biti redovito (najmanje dvije puta godišnje) ili nakon važnih ažuriranja. Obaveza je vaša, bez obzira na Cloud provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koja su novčana kazna ako ne usklađimo NIS2 obveze do kraja 2026.?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zakon o kibernetskoj sigurnosti predviđa novčane kazne do 50.000 eura za fizičke osobe i do 10% godišnjeg prometa ili 10 milijuna eura (ovisno što je veće) za pravne osobe kao važne entitete. Rok usklađenosti je 31. prosinca 2026."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Alati</span>.hr</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Usporedba alata</a></li>
+        <li><a href="../kalkulator.html">Kalkulator NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Provjeri podliježeš li →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Početna stranica</a><span>›</span>
+    <a href="index.html">Sektori</a><span>›</span>
+    NIS2/ZKS za fintech, procesor plaćanja i neobanke u Hrvatskoj — obveze važne entitete 2026.
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZKS za fintech, procesor plaćanja i neobanke u Hrvatskoj — obveze važne entitete 2026.</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Vodič za fintech tvrtke, procesor plaćanja, neobanke i platforme digitalnog kreditiranja u Hrvatskoj koji su klasificirani kao važne entitete prema Prilogu II ZKS-a. Saznajte konkretne obveze upravljanja ICT rizicima, testiranja sigurnosti i izvještavanja o incidentima specifične za sektor financijskih usluga.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Fintech tvrtke, procesor plaćanja, neobanke i platforme digitalnog kreditiranja registrirane u Hrvatskoj spadaju pod Prilog II ZKS-a ako pružaju usluge plaćanja, digitalne novčane usluge ili kreditiranje sa značajnim utjecajem na financijsku stabilnost i sigurnost građana. Obuhvaćene su i tvrtke sa manje od 500 zaposlenih ako upravljaju kritičnom infrastrukturom plaćanja ili obrađuju velike količine financijskih podataka.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ključne obveze NIS2 za ovaj sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje ICT rizicima proporcionalno veličini i kritičnosti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaka fintech tvrtka mora uspostaviti politiku upravljanja ICT rizicima koja uključuje identifikaciju rizika specifičnih za plaćanja i obrada podataka, procjenu mogućih gubitaka i primjenu mjera ublažavanja. Za neobanke: dokumentirajte sve sustave važne za neprekidnost plaćanja i definirajte prihvatljive vremenske periode oporavka (RTO) i točke oporavka (RPO).</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnosno testiranje API-ja i mobilnih aplikacija nakon svakog ažuriranja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Obavezno je provođenje penetracijskih testova i sigurnosnih revizija koda svih API-ja koji se koriste za plaćanja, autentifikaciju ili transfer sredstava najmanje dva puta godišnje ili nakon značajnih izmjena. Dokumentirajte sve pronađene ranjivosti, vremenske rokove popravke i potvrdu otklanjanja.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita podataka korisnika usklađena s NIS2 i PSD2/GDPR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Primjena šifriranja (najmanje AES-256 za podatke u mirovanju), primjena TLS 1.2+ za podatke u prijenosu i implementacija kontrole pristupa na osnovi najmanje potrebe. Fintech tvrtke moraju dokumentirati sve slučajeve obrade osjetljivih podataka (IBAN, kartični brojevi) i održavati evidenciju pristupa barem 90 dana.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zahtjevi sigurnosti za dobavljače i pružatelje cloud usluga</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve ugovore s cloud provajderima, procesorima plaćanja i trećim stranama koji imaju pristup računalnoj infrastrukturi ili podatcima moraju sadržavati eksplicitne klauzule o: revizijama sigurnosti, obavijestima o incidentima unutar 24 sata, geografskim lokacijama skladištenja podataka i pravima na reviziju.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima koji utječu na obradu plaćanja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako je prekid plaćanja ili curenje podataka povezano s ICT-om učinio uslugu nedostupnom duže od 30 minuta, procesor plaćanja ili neobank mora obavijestiti SOA (Sigurnosno-obavještajnu agenciju) u roku od 24 sata s detaljima o uzroku, broju pogođenih korisnika i poduzetim mjerama.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Tipični nedostaci usklađenosti u ovom sektoru</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>API sigurnost se ne ocjenjuje formalno nakon svakog ažuriranja — uspostavi proces redovitog penetracijskih testiranja za sve promjene u kodu ili konfiguraciji.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema dokumentiranih zahtjeva sigurnosti za cloud provajdere i dobavljače — dodajte u sve nove ugovore klauzule o revizijama, obaviješćivanju o incidentima i geografskoj lokaciji podataka.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Plan odgovora na incidente pokriva samo GDPR i PSD2 — proširite ga na NIS2 pragove izvještavanja (30 minuta za prekid plaćanja, 24 sata do SOA-e).
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema evidencije obauke zaposlenika o prepoznavanju phishinga i socijalnog inženjeringa — sprovedi godišnju obuku za sve koji imaju pristup sustavu plaćanja ili korisničkim podacima.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Preporučeni alati za ovaj sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../alati/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Često postavljana pitanja</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između NIS2 izvještavanja i PSD2 incident notifikacija koje već pružamo?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">PSD2 zahtjeva obavijest korisnicima u roku od 72 sata ako je curenja podataka;  NIS2 zahtjeva obavijest SOA-e u roku od 24 sata ako je ICT incident učinio plaćanja nedostupnima duže od 30 minuta. Oba izvještaja su obavezna i trebate dokumentirane procedure za oba scenarija.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Moramo li obaviti sigurnosno testiranje API-ja ako koristimo samo AWS ili cloud rješenja trećih strana?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, čak i ako koriste cloud infrastrukturu. Vi ostajete odgovorni za sigurnost vlastite aplikacije i API-ja na njoj. Testiranje mora biti redovito (najmanje dvije puta godišnje) ili nakon važnih ažuriranja. Obaveza je vaša, bez obzira na Cloud provider.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja su novčana kazna ako ne usklađimo NIS2 obveze do kraja 2026.?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon o kibernetskoj sigurnosti predviđa novčane kazne do 50.000 eura za fizičke osobe i do 10% godišnjeg prometa ili 10 milijuna eura (ovisno što je veće) za pravne osobe kao važne entitete. Rok usklađenosti je 31. prosinca 2026.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Provjerite zahtjeve za vašu organizaciju</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      SOA/NIS2 · Hrvatska · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Pokrenuti kalkulator →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Alati.hr · SOA/NIS2 · SOA
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Početna stranica</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Usporedba alata</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
