@@ -18,7 +18,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NIS2 Članak 21(2)(f) – Penetracijsko testiranje: Zahtjevi i Implementacija", "description": "Kako ispuniti zahtjeve NIS2-a za penetracijsko testiranje. Godišnje testove, izbor pružatelja, troškovi i dokumentacija za reviziju.", "author": {"@type": "Organization", "name": "nis2-alati.hr"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Je li penetracijsko testiranje doista obavezno prema NIS2-u?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Članak 21(2)(f) NIS2-a zahtijeva \"politike i postupke za ocjenu učinkovitosti mjera upravljanja rizikom\". To se u praksi provodi godišnjim penetracijskim testiranjem. Nadzorna tijela (HAKOM, financijske autortety) sada provjeravaju da li imate dokumentirane izvještaje o testiranju. Nemaju dovoljno sredstava da vas svi proveravaju, ali ako su vas selektirali za auditu, nedostatak testiranja je kritična konstatacija."}}, {"@type": "Question", "name": "Koliko često trebam testirati – godišnje, tromjesečno, kontinuirano?", "acceptedAnswer": {"@type": "Answer", "text": "Minimum je godišnje. Međutim, ako imate kontinuirane promjene (nove aplikacije, stalni development), dobra praksa je testiranje nakon svake važne promjene ili minimalno tromjesečne. Neki pružatelji (kao Cobalt.io) nude \"continuous bug bounty\" za kontinuirani praćaj. Zakon kaže godišnje, ali vaš rizik profil može zahtijevati više."}}, {"@type": "Question", "name": "Može li moj interni IT tim sam provesti penetracijsko testiranje?", "acceptedAnswer": {"@type": "Answer", "text": "Tehnički može, ali ne zadovoljava NIS2 zahtjev. Zakon zahtijeva <strong>neovisnu ocjenu</strong> – vanjski pružatelj bez konflikta interesa. Ako interni IT tim pronađe greške, to je dobar početak, ali za compliance trebate vanjski izvještaj potpisati od treće strane. Zakonski je to dokazno vrijednije za audite."}}, {"@type": "Question", "name": "Što ako tijekom testiranja tester pronađe kritičnu vulnerabilnost koja u praksi omogućava pristup bazama podataka?", "acceptedAnswer": {"@type": "Answer", "text": "Pružatelj će vas obavijestiti (obično je dogovoreno kako – kroz portal, e-mail, telefonom u slučaju kritičnog). Ne smije je iskoristiti dalje bez vašeg pisanog dogovora (to je \"authorized\" vs. \"unauthorized\" testing). Vi trebate odmah učiniti korake da zatvorite pristup, pa tek onda testirati remedijaciju. To je razlog zašto trebate jasnu dogovor opsega prije testiranja."}}, {"@type": "Question", "name": "Koliko košta penetracijsko testiranje i jesu li sve kompanije u jednoj cijenovnoj kategoriji?", "acceptedAnswer": {"@type": "Answer", "text": "Za SME s 1–2 web aplikacije ili vanjskim perimetrom, čekaj €3.000–€8.000. Za kompleksnije okoline (interna mreža, multiple servera, API, mobilna aplikacija), €10.000–€15.000. Veće enterprise koriste €20.000+. Cobalt.io i slični PtaaS pružatelji su obično jeftiniji od tradicionalnih konzultanata jer koriste distributed testerâ. Cijena ovisi o opsegu – jasno definiraj što testiramo kako bi znao točnu procjenu."}}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-alati.hr/penetracijsko-testiranje.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Je li penetracijsko testiranje doista obavezno prema NIS2-u?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da. Članak 21(2)(f) NIS2-a zahtijeva \"politike i postupke za ocjenu učinkovitosti mjera upravljanja rizikom\". To se u praksi provodi godišnjim penetracijskim testiranjem. Nadzorna tijela (HAKOM, financijske autortety) sada provjeravaju da li imate dokumentirane izvještaje o testiranju. Nemaju dovoljno sredstava da vas svi proveravaju, ali ako su vas selektirali za auditu, nedostatak testiranja je kritična konstatacija."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko često trebam testirati – godišnje, tromjesečno, kontinuirano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum je godišnje. Međutim, ako imate kontinuirane promjene (nove aplikacije, stalni development), dobra praksa je testiranje nakon svake važne promjene ili minimalno tromjesečne. Neki pružatelji (kao Cobalt.io) nude \"continuous bug bounty\" za kontinuirani praćaj. Zakon kaže godišnje, ali vaš rizik profil može zahtijevati više."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Može li moj interni IT tim sam provesti penetracijsko testiranje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tehnički može, ali ne zadovoljava NIS2 zahtjev. Zakon zahtijeva neovisnu ocjenu – vanjski pružatelj bez konflikta interesa. Ako interni IT tim pronađe greške, to je dobar početak, ali za compliance trebate vanjski izvještaj potpisati od treće strane. Zakonski je to dokazno vrijednije za audite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Što ako tijekom testiranja tester pronađe kritičnu vulnerabilnost koja u praksi omogućava pristup bazama podataka?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pružatelj će vas obavijestiti (obično je dogovoreno kako – kroz portal, e-mail, telefonom u slučaju kritičnog). Ne smije je iskoristiti dalje bez vašeg pisanog dogovora (to je \"authorized\" vs. \"unauthorized\" testing). Vi trebate odmah učiniti korake da zatvorite pristup, pa tek onda testirati remedijaciju. To je razlog zašto trebate jasnu dogovor opsega prije testiranja."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko košta penetracijsko testiranje i jesu li sve kompanije u jednoj cijenovnoj kategoriji?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za SME s 1–2 web aplikacije ili vanjskim perimetrom, čekaj €3.000–€8.000. Za kompleksnije okoline (interna mreža, multiple servera, API, mobilna aplikacija), €10.000–€15.000. Veće enterprise koriste €20.000+. Cobalt.io i slični PtaaS pružatelji su obično jeftiniji od tradicionalnih konzultanata jer koriste distributed testerâ. Cijena ovisi o opsegu – jasno definiraj što testiramo kako bi znao točnu procjenu."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -26,7 +74,7 @@
   <div class="container">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">NIS2<span>Alati</span>.hr</a>
-      <ul class="nav__links"><li><a href="porownanie.html">Usporedba alata</a></li><li><a href="sektory-ksc.html">Sektori NIS2</a></li><li><a href="kalkulator.html">Kalkulator NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
+      <ul class="nav__links"><li><a href="usporedba.html">Usporedba alata</a></li><li><a href="sektori-nis2.html">Sektori NIS2</a></li><li><a href="kalkulator.html">Kalkulator NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
       <a href="kalkulator.html" class="nav__cta">Rezerviraj penetracijsko testiranje</a>
     </div>
   </div>
@@ -128,7 +176,7 @@
       <div class="footer__logo">NIS2<span>Alati</span>.hr</div>
       <div class="footer__links">
         <a href="index.html">Home</a>
-        <a href="porownanie.html">Usporedba alata</a>
+        <a href="usporedba.html">Usporedba alata</a>
         <a href="kalkulator.html">Quiz</a>
         <a href="faq.html">FAQ</a>
       </div>

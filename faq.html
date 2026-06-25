@@ -28,37 +28,174 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Što je NIS2 i po čemu se razlikuje od hrvatskog zakona?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 je direktiva Europske unije o sigurnosti mrežnih i informacijskih sustava iz 2022. godine. Hrvatska je NIS2 direktivu prenijela u nacionalno pravo Zakonom o kibernetičkoj sigurnosti operatora ključnih usluga i davatelja digitalnih usluga. Zakon je stupio na snagu 1. siječnja 2024. godine."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kada istječe rok za samoprocjenu prema NIS2 u Hrvatskoj?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Rok za samoprocjenu i prijavu nadležnom tijelu je 1. listopada 2026. godine. Tvrtke moraju do tog datuma procijeniti podliježu li propisima i registrirati se u odgovarajući registar."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Koje kazne prijete za nepoštivanje NIS2 u Hrvatskoj?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Za ključne subjekte: do 10 000 000 EUR ili 2% ukupnog godišnjeg globalnog prometa (koji je iznos viši). Za važne subjekte: do 7 000 000 EUR ili 1,4% ukupnog godišnjeg globalnog prometa. Rukovoditelji subjekata mogu snositi osobnu financijsku odgovornost."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-alati.hr/faq.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Što je NIS2 i po čemu se razlikuje od hrvatskog zakona o kibernetičkoj sigurnosti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 je direktiva Europskog parlamenta i Vijeća EU 2022/2555 o sigurnosti mrežnih i informacijskih sustava — druga razina europskih zahtjeva za kibernetičku sigurnost, usvojena u prosincu 2022. Direktiva se sama po sebi ne primjenjuje izravno na tvrtke — morala je biti prenesena u nacionalno pravo.\n\nZakon o kibernetičkoj sigurnosti je hrvatski zakon koji implementira NIS2 u hrvatskom pravnom poretku. Njime se uređuju obveze operatora ključnih usluga i važnih subjekata u Republici Hrvatskoj. To je zakon koji obvezuje hrvatske tvrtke — ne izravno direktiva.\n\nPraktična razlika: nacionalni zakon može sadržavati strože odredbe od minimuma NIS2 (hrvatsko pravo može nametati dodatne obveze). Za tumačenje nacionalnih propisa konzultirajte SOA-u ili MVEP."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Kada je stupio na snagu zakon o kibernetičkoj sigurnosti u Hrvatskoj?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hrvatski zakon kojim se prenosi NIS2 direktiva stupio je na snagu 1. siječnja 2024. godine. Rok za samoprocjenu subjekata je 1. listopada 2026. Puni tehnički zahtjevi stupaju na snagu 1. siječnja 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko tvrtki u Hrvatskoj podliježe NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Procjene govore o otprilike 2 000 hrvatskih subjekata koji moraju ispuniti zahtjeve NIS2 — što je otprilike 5 puta više nego što je obuhvaćao stari zakon (prije NIS2). Porast je rezultat proširenja definicije \"kritičnih sektora\" i snižavanja praga veličine tvrtki obuhvaćenih regulacijom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koja je razlika između ključnog i važnog subjekta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ključni subjekti (Essential Entities): velike tvrtke (250+ zaposlenika ili promet >50 mil. EUR) iz sektora Priloga I (energetika, promet, bankarstvo, zdravstvo, voda, digitalna infrastruktura, javna uprava, svemirski sektor). Podliježu aktivnim nadzorom — nadzorno tijelo provodi revizije na vlastitu inicijativu. Kazne: do 10 mil. EUR ili 2% prometa.\n\nVažni subjekti (Important Entities): srednje tvrtke iz Priloga I ili tvrtke bilo koje veličine iz Priloga II (poštanske usluge, proizvodnja, kemikalije, hrana, digitalne usluge). Podliježu reaktivnom nadzoru — revizija samo nakon incidenta ili pritužbe. Kazne: do 7 mil. EUR ili 1,4% prometa.\n\nTehnički zahtjevi su slični za obje kategorije — razlikuje se intenzitet nadzora i visina kazni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jesu li mikro i male tvrtke izuzete od NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, načelno. Mikropoduzeća (manje od 10 zaposlenika i godišnji promet ispod 2 mil. EUR) te mala poduzeća (manje od 50 zaposlenika i promet ispod 10 mil. EUR) isključena su iz područja primjene NIS2.\n\nVažne iznimke: male tvrtke mogu podlijegati NIS2 ako su: jedini pružatelj kritične usluge u Hrvatskoj; pružatelji usluga povjerenja (kvalificirani elektronički potpisi); registri naziva domena; pružatelji DNS usluga; ili ih nadzorno tijelo proglasi ključnima zbog utjecaja na sigurnost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kada istječe rok za samoprocjenu prema NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rok za samoprocjenu istječe 1. listopada 2026. Do tog datuma svaki subjekt obuhvaćen NIS2 mora:\n\nProcijeniti ispunjava li kriterije ključnog ili važnog subjekta\n\nRegistrirati se u odgovarajući registar koji vodi nadležno sektorsko tijelo\n\nImenovati osobu odgovornu za kibernetičku sigurnost\n\nIzostanak registracije do 1. listopada 2026. može rezultirati administrativnom kaznom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do kada moraju biti u potpunosti provedeni tehnički zahtjevi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Potpuna tehnička usklađenost (provedene mjere upravljanja rizicima, procedure, ISMS) zahtijeva se do 1. siječnja 2027. Vanjska revizija kibernetičke sigurnosti za ključne subjekte zahtijeva se do 1. siječnja 2028."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Što znači \"imenovanje odgovorne osobe\"? Moram li zaposliti CISO-a?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zakon zahtijeva imenovanje osobe ili tima odgovornog za upravljanje kibernetičkom sigurnošću. Ne mora nužno biti CISO s punim radnim vremenom — to može biti:\n\nInterni IT djelatnik s proširenim ovlastima\n\nVanjski konzultant ili tvrtka pružatelj upravljanih sigurnosnih usluga (MSSP)\n\nDirektor ili predsjednik uprave u slučaju malih važnih subjekata\n\nKljučno je formalno imenovanje te uloge u dokumentaciji i njezino stvarno obavljanje."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koji je rok za prijavu sigurnosnih incidenata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 zahtijeva trostupanjsku prijavu kibernetičkih incidenata:\n\n24 sata od otkrivanja: rano upozorenje nadležnom tijelu (SOA ili sektorsko nadzorno tijelo)\n\n72 sata od otkrivanja: potpuna prijava incidenta s procjenom njegova utjecaja\n\n1 mjesec od otkrivanja: detaljno završno izvješće s analizom uzroka i poduzetim mjerama\n\nPrijava se odnosi samo na ozbiljne incidente koji imaju znatan utjecaj na kontinuitet usluga — ne na svaki sigurnosni alert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koje konkretne tehničke mjere moram provesti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Članak 21. NIS2 direktive zahtijeva najmanje:\n\nPolitike analize rizika i sigurnosti informacijskih sustava\n\nProcedure za postupanje s sigurnosnim incidentima (otkrivanje, prijava, reagiranje)\n\nUpravljanje kontinuitetom poslovanja (sigurnosne kopije, oporavak od katastrofe, krizno upravljanje)\n\nSigurnost opskrbnog lanca (procjena dobavljača i partnera)\n\nSigurnost nabave, razvoja i održavanja mreža i sustava\n\nPolitike i procedure za procjenu učinkovitosti mjera upravljanja rizicima\n\nOsnovna praksa kibernetičke higijene i osposobljavanja\n\nPolitike i procedure vezane uz kriptografiju i enkripciju\n\nSigurnost ljudskih resursa, kontrola pristupa, upravljanje imovinom\n\nPrimjena višefaktorske autentifikacije (MFA) ili SSO-a\n\nISMS alati pokrivaju sve te zahtjeve — usporedi alate →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Oslobađa li certifikat ISO 27001 od obveza prema NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne oslobađa u potpunosti, ali znatno olakšava ispunjavanje zahtjeva. ISO 27001 i NIS2 imaju preklapajuće područje primjene — procjenjuje se da tvrtka s certifikatom ISO 27001 ispunjava oko 80–85% tehničkih zahtjeva NIS2.\n\nPreostalih 15–20% su elementi specifični za NIS2: procedure prijave incidenata javnim tijelima, procjena sigurnosti opskrbnog lanca prema kriterijima NIS2, registracija u registar subjekata. Posjedovanje ISO 27001 može ublažiti kazne i pozitivno ga ocjenjuju nadzorna tijela."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moram li kupiti poseban softver za upravljanje usklađenošću?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne, ne postoji zakonska obveza kupnje određenog softvera. NIS2 zahtijeva ispunjavanje tehničkih i proceduralnih zahtjeva — ne propisuje kako tvrtka treba upravljati tim procesom.\n\nU praksi će velike tvrtke (ključni subjekti) trebati GRC alat za upravljanje dokumentacijom, dokazima i praćenjem — ručno upravljanje nije realno s 50+ kontrola. Mali važni subjekti mogu početi s besplatnim planom Reglyze ili Microsoft Purview. Usporedi mogućnosti →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Što je ISMS i zašto je važan za NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISMS (Information Security Management System) je sustav upravljanja informacijskom sigurnošću — skup politika, procedura, procesa i kontrola za upravljanje rizicima kibernetičke sigurnosti. Standard koji definira ISMS je ISO/IEC 27001.\n\nNIS2 ne zahtijeva certifikaciju prema ISO 27001, ali zahtijeva provedbu elemenata ISMS-a (sigurnosne politike, upravljanje rizicima, procedure za incidente). Alati poput Reglyze, Secfix ili ISMS.online automatiziraju izgradnju i održavanje ISMS-a posebno prilagođenog za NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko košta provedba usklađenosti s NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Troškovi provedbe znatno se razlikuju ovisno o pristupu i veličini tvrtke:\n\nMale tvrtke (važni subjekt, 50–100 zaposlenika): €2 000–15 000 jednokratno + €500–2 000/god. za alate i održavanje\n\nSrednje tvrtke (100–250 zaposlenika): €10 000–50 000 za provedbu + €3 000–8 000/god.\n\nVelike tvrtke (ključni subjekt): €50 000–250 000+ za provedbu + €15 000–50 000/god.\n\nTrošak revizije ISO 27001 (neobavezno, ali korisno) je dodatnih €8 000–25 000 ovisno o revizorskoj tvrtki."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Trebam li hrvatskog dobavljača NIS2 alata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne — NIS2 ne zahtijeva korištenje hrvatskih dobavljača softvera. Možete koristiti alate iz bilo koje zemlje EU-a ili izvan EU-a, pod uvjetom da se podaci obrađuju u skladu s GDPR-om.\n\nIpak, vrijedi obratiti pažnju na: lokaciju pohrane podataka (EU ili izvan EU-a), tehničku podršku na hrvatskom jeziku, poznavanje hrvatskih propisa od strane dobavljača. Za specifičnosti hrvatskog tržišta savjetujte se s MVEP-om ili SOA-om. Pogledaj usporedbu →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koji NIS2 alat odabrati za malu tvrtku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za male tvrtke (važni subjekt, 50–100 zaposlenika) preporučujemo krenuti od:\n\nReglyze (besplatni plan) — provedi samoprocjenu i procjenu nedostataka. Generiraj sigurnosne politike putem AI-a. Idealna polazna točka, bez troškova.\n\nMicrosoft Purview (ako imaš M365 E3+) — gotov predložak za NIS2 u alatu koji već plaćaš. Dopuni Reglyze praćenjem u Purviewu.\n\nNakon procjene nedostataka: odluči trebаš li plaćeni alat (ISMS.online od £375/mjes.) na temelju konkretnih manjkavosti.\n\nKoristi kalkulator NIS2 → da najprije provjeriš koji tip subjekta odgovara tvojoj tvrtki."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koji NIS2 alati imaju sjedište u EU-u i pohranjuju podatke u EU-u?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alati sa sjedištem i obradom podataka u EU-u:\n\nReglyze — sjedište u EU-u ✓\n\nComplyCloud — Danska ✓\n\nSecfix — Njemačka ✓ (podaci u EU-u)\n\nISMS Copilot — Njemačka ✓\n\nAlati iz SAD-a (Vanta, Drata, Sprinto) i UK-a (ISMS.online) mogu obrađivati podatke izvan EU-a — provjeri njihov DPA (Data Processing Agreement) i SCC-ove prije kupnje. Microsoft Purview obrađuje podatke u Azure regijama — može se konfigurirati EU Data Boundary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koje kazne prijete za nepoštivanje NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ključni subjekti:\n\nDo 10 000 000 EUR ili 2% ukupnog godišnjeg globalnog prometa (koji je iznos viši)\n\nZabrana obnašanja rukovodećih funkcija osobama odgovornim za povredu\n\nVažni subjekti:\n\nDo 7 000 000 EUR ili 1,4% ukupnog godišnjeg globalnog prometa (koji je iznos viši)\n\nNadzorna tijela mogu izricati kazne za: izostanak registracije, nedostatak ISMS-a, neprijavljivanje incidenata, neispunjavanje tehničkih zahtjeva. Prve kazne očekuju se nakon isteka prijelaznog razdoblja (nakon 1. siječnja 2027.)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tko provjerava ispunjava li tvrtka zahtjeve NIS2 u Hrvatskoj?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nadzor nad provedbom NIS2 u Hrvatskoj provode različita tijela ovisno o sektoru:\n\nSOA (Sigurnosno-obavještajna agencija) — opća koordinacija i nadzor\n\nMVEP (Ministarstvo vanjskih i europskih poslova) — koordinacija s EU institucijama\n\nHAKOM (Hrvatska regulatorna agencija za mrežne djelatnosti) — digitalna infrastruktura i telekomunikacije\n\nHANFA — bankarski i financijski sektor\n\nMinistarstvo zdravstva — sektor zdravstva\n\nHERA (Hrvatska energetska regulatorna agencija) — energetski sektor\n\nKljučni subjekti podliježu aktivnim revizijama na inicijativu tijela. Važni subjekti podliježu reaktivnom nadzoru (nakon incidenta ili pritužbe)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Može li rukovoditelj tvrtke biti osobno kažnjen zbog povrede NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da. NIS2 (čl. 20.) nameće rukovodstvu (direktor, uprava, nadzorni odbor) obvezu odobravanja i nadzora mjera upravljanja rizicima kibernetičke sigurnosti. U slučaju ozbiljnih incidenata koji su rezultat nemara, tijela mogu:\n\nIzdati javnu izjavu kojom se identificira odgovorna osoba\n\nZabraniti fizičkoj osobi obnašanje upravljačkih funkcija\n\nIzreći kazne rukovodstvu zbog nepoštivanja nadzornih odluka\n\nImate više pitanja?\n\nNiste pronašli odgovor? Provjerite naše detaljne recenzije alata ili koristite kalkulator NIS2.\n\nPokreni kalkulator NIS2 →\n\nViše od 2 400 hrvatskih tvrtki provjerilo je status NIS2 na ovoj stranici"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -67,8 +204,8 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">NIS2<span>Alati</span>.hr</a>
       <ul class="nav__links">
-        <li><a href="porownanie.html">Usporedba alata</a></li>
-        <li><a href="sektory-ksc.html">Sektori NIS2</a></li>
+        <li><a href="usporedba.html">Usporedba alata</a></li>
+        <li><a href="sektori-nis2.html">Sektori NIS2</a></li>
         <li><a href="kalkulator.html">Kalkulator NIS2</a></li>
         <li><a href="faq.html" style="color:var(--navy);font-weight:700;">FAQ</a></li>
       </ul>
@@ -241,7 +378,7 @@
           <li>Sigurnost ljudskih resursa, kontrola pristupa, upravljanje imovinom</li>
           <li>Primjena višefaktorske autentifikacije (MFA) ili SSO-a</li>
         </ol>
-        <p>ISMS alati pokrivaju sve te zahtjeve — <a href="porownanie.html">usporedi alate →</a></p>
+        <p>ISMS alati pokrivaju sve te zahtjeve — <a href="usporedba.html">usporedi alate →</a></p>
       </div>
     </div>
 
@@ -263,7 +400,7 @@
       </button>
       <div class="faq-answer">
         <p><strong>Ne, ne postoji zakonska obveza kupnje određenog softvera.</strong> NIS2 zahtijeva ispunjavanje tehničkih i proceduralnih zahtjeva — ne propisuje kako tvrtka treba upravljati tim procesom.</p>
-        <p>U praksi će velike tvrtke (ključni subjekti) trebati GRC alat za upravljanje dokumentacijom, dokazima i praćenjem — ručno upravljanje nije realno s 50+ kontrola. Mali važni subjekti mogu početi s besplatnim planom Reglyze ili Microsoft Purview. <a href="porownanie.html">Usporedi mogućnosti →</a></p>
+        <p>U praksi će velike tvrtke (ključni subjekti) trebati GRC alat za upravljanje dokumentacijom, dokazima i praćenjem — ručno upravljanje nije realno s 50+ kontrola. Mali važni subjekti mogu početi s besplatnim planom Reglyze ili Microsoft Purview. <a href="usporedba.html">Usporedi mogućnosti →</a></p>
       </div>
     </div>
 
@@ -306,7 +443,7 @@
       </button>
       <div class="faq-answer">
         <p><strong>Ne — NIS2 ne zahtijeva korištenje hrvatskih dobavljača softvera.</strong> Možete koristiti alate iz bilo koje zemlje EU-a ili izvan EU-a, pod uvjetom da se podaci obrađuju u skladu s GDPR-om.</p>
-        <p>Ipak, vrijedi obratiti pažnju na: lokaciju pohrane podataka (EU ili izvan EU-a), tehničku podršku na hrvatskom jeziku, poznavanje hrvatskih propisa od strane dobavljača. Za specifičnosti hrvatskog tržišta savjetujte se s MVEP-om ili SOA-om. <a href="porownanie.html">Pogledaj usporedbu →</a></p>
+        <p>Ipak, vrijedi obratiti pažnju na: lokaciju pohrane podataka (EU ili izvan EU-a), tehničku podršku na hrvatskom jeziku, poznavanje hrvatskih propisa od strane dobavljača. Za specifičnosti hrvatskog tržišta savjetujte se s MVEP-om ili SOA-om. <a href="usporedba.html">Pogledaj usporedbu →</a></p>
       </div>
     </div>
 
@@ -413,7 +550,7 @@
       <div class="footer__logo">NIS2<span>Alati</span>.hr</div>
       <div class="footer__links">
         <a href="index.html">Početna stranica</a>
-        <a href="porownanie.html">Usporedba</a>
+        <a href="usporedba.html">Usporedba</a>
         <a href="kalkulator.html">Kalkulator NIS2</a>
         <a href="faq.html">Često postavljana pitanja</a>
       </div>

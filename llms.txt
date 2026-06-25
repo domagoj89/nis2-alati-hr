@@ -1,0 +1,29 @@
+# NIS2-Alati.hr
+
+> The only Croatian-language, locally-regulated resource that cuts through generic EU NIS2 noise to deliver side-by-side comparisons of compliance tools specifically evaluated against ZoKS requirements, SOA enforcement priorities, and the operational realities of Croatian businesses — saving compliance teams weeks of vendor research before the 2026 deadline
+
+NIS2-Alati.hr covers Cybersecurity Compliance (NIS2 / ZoKS Regulatory Compliance Tools for Croatian SMEs & Enterprises) for HR, BA, SI, RS.
+
+## Key pages
+- [Home](https://nis2-alati.hr/): NIS2-Alati.hr — NIS2 / ZoKS Regulatory Compliance Tools for Croatian SMEs & Enterprises
+- [ISO 27001 i NIS2: Kako se certificiranje povezuje s pravilnikom](https://nis2-alati.hr/certifikacija-iso-27001.html)
+- [Cyber Osiguranje i NIS2: Pametna Zaštita za Hrvatske Tvrtke](https://nis2-alati.hr/cyber-osiguranje.html)
+- [FAQ NIS2 Hrvatska 2026](https://nis2-alati.hr/faq.html)
+- [Kalkulator kazni NIS2](https://nis2-alati.hr/kalkulator-kazni.html)
+- [Kalkulator NIS2 2026](https://nis2-alati.hr/kalkulator.html)
+- [Metodologija ocjenjivanja i politika afiliacije](https://nis2-alati.hr/metodologija.html)
+- [NIS2 Obavezna Osposobljenost Menadžmenta i Zaposlenika](https://nis2-alati.hr/obuka-nis2.html)
+- [NIS2 Članak 21(2)(f) – Penetracijsko testiranje: Zahtjevi i Implementacija](https://nis2-alati.hr/penetracijsko-testiranje.html)
+- [Regulacija 2024/2690: NIS2 Zahtjevi za MSP i Cloud Pružatelje](https://nis2-alati.hr/provedbena-uredba-nis2.html)
+- [Registracija kod ZSIS-a: Vodič za NIS2 Compliance](https://nis2-alati.hr/registracija-nis2.html)
+- [Sektori obuhvaćeni NIS2 u Hrvatskoj 2026 – potpuni popis Prilog I. i II.](https://nis2-alati.hr/sektori-nis2.html)
+- [NIS2 Članak 21(2)(d): Sigurnost lanca opskrbe za hrvatske tvrtke](https://nis2-alati.hr/sigurnost-lanca-opskrbe.html)
+- [10 najboljih alata NIS2/ZKS 2026](https://nis2-alati.hr/usporedba.html)
+
+## Collections
+- [alati/](https://nis2-alati.hr/alati/): 15 pages
+- [sektory/](https://nis2-alati.hr/sektory/): 31 pages
+
+## Notes
+- Independent, hr-language resource.
+- Content is free to cite with attribution + a link.
