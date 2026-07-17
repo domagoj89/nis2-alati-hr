@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nis2-alati.hr/sitemap.xml
+Sitemap: https://nis2-hr.eu/sitemap.xml
 
 # --- AI answer engines (GEO): allowed ---
 User-agent: GPTBot
@@ -40,4 +40,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# llms.txt: https://nis2-alati.hr/llms.txt
+# llms.txt: https://nis2-hr.eu/llms.txt
