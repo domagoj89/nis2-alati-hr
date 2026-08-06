@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2/ZKS za velike građevne i građevinske tvrtke u Hrvatskoj 2026</title>
-  <meta name="description" content="Obveze NIS2 za građevinski sektor u Hrvatskoj: zaštita BIM platformi, sigurnost dobavljača i IoT sustava. Rok 2026.">
+  <title>NIS2 zahtjevi za velike građevinske tvrtke u Hrvatskoj 2026</title>
+  <meta name="description" content="Obveze NIS2/ZoKS za velika građevinska poduzeća: zaštita BIM platformi, IoT sustava i sigurnost opskrbnog lanca. Rok usklađenosti 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/construction.html">
-  <meta property="og:title" content="NIS2/ZKS za velike građevne i građevinske tvrtke u Hrvatskoj 2026">
-  <meta property="og:description" content="Obveze NIS2 za građevinski sektor u Hrvatskoj: zaštita BIM platformi, sigurnost dobavljača i IoT sustava. Rok 2026.">
+  <meta property="og:title" content="NIS2 zahtjevi za velike građevinske tvrtke u Hrvatskoj 2026">
+  <meta property="og:description" content="Obveze NIS2/ZoKS za velika građevinska poduzeća: zaštita BIM platformi, IoT sustava i sigurnost opskrbnog lanca. Rok usklađenosti 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/construction.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2/ZKS za velike građevne i građevinske tvrtke u Hrvatskoj 2026">
-  <meta name="twitter:description" content="Obveze NIS2 za građevinski sektor u Hrvatskoj: zaštita BIM platformi, sigurnost dobavljača i IoT sustava. Rok 2026.">
+  <meta name="twitter:title" content="NIS2 zahtjevi za velike građevinske tvrtke u Hrvatskoj 2026">
+  <meta name="twitter:description" content="Obveze NIS2/ZoKS za velika građevinska poduzeća: zaštita BIM platformi, IoT sustava i sigurnost opskrbnog lanca. Rok usklađenosti 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2/ZKS za velike građevne tvrtke i inženjering firme u Hrvatskoj — obveze do 2026.",
+      "name": "NIS2 zahtjevi za velike građevinske i građevinsko-inženjerske tvrtke u Hrvatskoj",
       "item": "https://nis2-hr.eu/sektory/construction.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Trebam li enkripciju za sve podatke u BIM platformi, ili samo za one koji se tiču kritične infrastrukture?",
+      "name": "Koji točno sustavi u našoj tvrtki spadaju pod NIS2/ZoKS obvezu kao važno poduzeće?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enkripcija je obavezna za sve podatke koji se koriste u projektima kritične infrastrukture (energija, vode, promet, telekomunikacije) — to su najčešće većina podataka u vašim BIM platformama. Enkripcija mora biti primjena i pri prijenosu (TLS 1.2 ili viša) i pri mirovanju (AES-256 ili ekvivalenta). Ako niste sigurni koji su projekti uključeni, preporučujem da enkriptirate sve kao sigurnost."
+        "text": "Sustavi koji su obuhvaćeni su: BIM platforme (Revit, Navisworks, obrada projektne dokumentacije u cloud-u), sustavi upravljanja projektima (Microsoft Project, Asana, Primavera) koji sadrže podatke o kritičnoj infrastrukturi, svi IoT uređaji na gradilištima (senzori, video nadzor, industrijske kontrole), i sve baze podataka sa informacijama o dizajnu ili građenju kritične infrastrukture (energetika, transport, voda). Sustavi koji se koriste samo za interno administrativne svrhe (plaće, ljubaznošću) nisu obuhvaćeni."
       }
     },
     {
       "@type": "Question",
-      "name": "Kako trebam dokumentirati sigurnosnu provjeru podugovarača koji koristi Autodesk Construction Cloud ili Bluebeam?",
+      "name": "Koliko često trebam revidiatti pristup podugovarača prema NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trebate izvršiti procjenu rizika njihove IT infrastrukture (sustavi za sigurnosne kopije, enkripcija, zaštita od malvera), potpisati ugovor s obvezama, i godišnje reinspektovati. Dokumentirajte sve korake u Reglyze ili sličnom alatu kako biste imali dokaz compliance. Ako podugovarač nema adekvatnu sigurnost, morali biste im ograničiti pristup samo specifičnim datotekama ili projektima kroz granularne dozvole."
+        "text": "Preporuka je najmanje godišnja sigurnosna procjena podugovarača koji imaju pristup BIM sustavima ili podacima projekta. Dodatno, trebate provesti revizije nakon svakog većeg incidenta u industriji, nakon promjene lozinke ili ključa pristupa, i nakon što podugovarač zatraži proširenje pristupa za nove projekte. Sve revizije trebate dokumentirati za dokazivanje compliance-a prilikom nadzora SOA."
       }
     },
     {
       "@type": "Question",
-      "name": "Koji su kazni ako ne prijavim incident vezan uz kritičnu infrastrukturu SOA-u na vrijeme?",
+      "name": "Koje su kazne ako se tvrtka ne uskladi sa NIS2/ZoKS do 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prema ZKS (Zakonu o kiber sigurnosti, implementacija NIS2), neuključeni ili kasniji incidenti mogu rezultirati novčanom kaznom od 2,5 do 5 milijuna EUR ili 4-7% godišnjeg prihoda, ovisno o vrsti kršenja. Za važne entitete (kao što je vaša tvrtka), rok je 24 sata za prijavljivanje incidenta SOA-u. Brži odgovori pokazuju vašu spremnost i mogu ublažiti kazne."
+        "text": "Za važna poduzeća kao što je vaša tvrtka, kazne prema ZoKS mogu biti do 7 milijuna EUR ili do 1,4% godišnjeg prometa, ovisno što je veće. Dodatno, ako ste uključeni u projekt kritične infrastrukture i dođe do prekida zbog sigurnosnog incidenta, može biti kazni do 10 milijuna EUR ili 2% prometa. Rok za usklađenost je do 2026., pa vam preostaje vrijeme za plansku implementaciju, ali preporuka je početi sa procjenom i procesima do kraja 2025."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2/ZKS za velike građevne tvrtke i inženjering firme u Hrvatskoj — obveze do 2026.
+    NIS2 zahtjevi za velike građevinske i građevinsko-inženjerske tvrtke u Hrvatskoj
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZKS za velike građevne tvrtke i inženjering firme u Hrvatskoj — obveze do 2026.</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Vodič za the veliki gradski i civilni inžinjering tvrtke sa BIM platformama, sustavima upravljanja projektima i IoT tehnologijom na gradilištima. Saznajte kako dokumentirati sigurnost digitalnih sustava koji projektiraju i nadziru kritičnu infrastrukturu.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važna poduzeća</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za velike građevinske i građevinsko-inženjerske tvrtke u Hrvatskoj</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena upravi velikih građevinskih tvrtki i civil engineering poduzeća koja koriste BIM platforme, sustave upravljanja projektima i IoT uređaje na gradilištima. Saznajte specifične obveze prema Zakonu o kibernetičkoj sigurnosti (ZoKS) kao važna poduzeća u smislu Priloga II.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Velika građevna i građevinska poduzeća sa BIM platformama ili sustavima upravljanja projektima koja projekraju ili nadziru kritičnu infrastrukturu (energetiku, vodovod, promet, telekomunikacije) spadaju u važne entitete. Primjenjuje se na tvrtke sa preko 50 zaposlenih ili godišnjim prihodom većim od 10 milijuna EUR koje koriste digitalne sustave za kritičnu infrastrukturu.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">U ovu kategoriju spadaju velika građevinska i građevinsko-inženjerska poduzeća sa sjedištem u Republici Hrvatskoj koja ili: upravljaju BIM platformama i digitalnom infrastrukturom za kritičnu infrastrukturu (energetiku, transport, vodu); raspolažu sa 250 ili više zaposlenih i godišnjim prihodom iznad 50 milijuna EUR; ili pružaju usluge sigurnosti informacija kao dio svoga poslovanja. Klasifikacija kao važna poduzeća obvezuje vas na pojačane mjere sigurnosti prema NIS2/ZoKS.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaštita BIM platformi i podataka o kritičnoj infrastrukturi</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve BIM platforme, CAD datoteke i projektne baze s informacijama o kritičnoj infrastrukturi moraju imati enkripciju podataka u mirovanju i pri prijenosu, višefaktorsku autentifikaciju i detaljne revizijske zapise. Pristup arhitektonskim i inženjerskim planovima koji se koriste za energetske, vodne ili transportne projekte mora biti ograničen na overene korisnike sa dokumentiranim pravima pristupa.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita BIM platformi i sustava upravljanja projektima</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve BIM platforme, cloud servise za upravljanje projektima i digitalne arhive projektne dokumentacije koji sadrže dizajne kritične infrastrukture moraju biti zaštićeni minimalnom sigurnosnom razinom prema NIS2: šifriranje podataka u prijenosu i mirovanju, autentifikacija više čimbenika, kontrola pristupa temeljena na ulogama te redovne sigurnosne revizije. Uključite revizije najmanje godišnje i nakon svakog incidenta ili pokušaja neovlaštenog pristupa.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnosna provjera dobavljača i podugovarača sa pristupom sustavima</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Prije nego što podugovarači ili projektanti treće strane mogu pristupiti BIM platformi ili sustavima upravljanja projektima, trebate provesti sigurnosnu procjenu njihove IT infrastrukture. Ugovor s podugovaračima mora sadržavati obveze za primjenu mjera kao što su enkripcija, praćenje pristupa i prijavljivanje incidenata unutar 24 sata.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost opskrbnog lanca i provjera podugovarača</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi podugovarači, konzultanti i partneri koji imaju pristup BIM sustavima, podatacima projekta ili IoT infrastrukturi moraju biti podvrgnuti sigurnosnoj procjeni prije dodjele pristupa. Uvrstite u ugovore sa podugovaračima obveze: održavanje minimalnih standarda sigurnosti informacija, pravo na sigurnosne revizije, obavijest o incidentima unutar 24 sata i obveza proslijeđivanja tih informacija dalje prema potrebi.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaštita IoT i pametnih građevinskih sustava od cyber rizika</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Senzori, kamerama, kontrolni sustavi, i uređaji na gradilištima ili u pametnim zgradama ne smiju biti na istoj mreži kao uredi i administrativni sistemi. Implementirajte mrežnu segmentaciju, redovne sigurnosne zakrpe, i nadzor neobičnih aktivnosti. Sve IoT uređaje trebate inventarizirati i dokumentirati.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje IoT uređajima i pametnim sustavima na gradilištima</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">IoT uređaji na gradilištima (senzori, video nadzor, industrijski sustavi kontrole) ne smiju biti postavljeni na standardnih mrežama bez segmentacije. Primijenjujte mrežnu izolaciju (VLAN ili fizička separacija) između IoT uređaja i korporativnih sustava, redovito ažurirajte firmware, mijenjajte zadane lozinke i pratite neobičnu aktivnost putem centralizirane dnevničke analize.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Plan odgovora na incidente i prijavljivanje regulatoru u roku</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Trebate uspostavljiti procedure za brzo otkrivanje napadima ili curenja podataka. Ako je napad ili curenje podataka vezano uz kritičnu infrastrukturu projekt, trebate prijaviti Službi za sigurnost mreža (SOA) u roku od 24 sata. Plan odgovora mora uključivati kontakte za hitne slučajeve i procedure za komunikaciju sa klijentima i vlastima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Incident reporting i od-javljivanje prema SOA</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaki sigurnosni incident koji utječe na sustavnost ili dostupnost BIM platformi, sustava upravljanja projektima ili IoT infrastrukture (uključujući pokušaje hakinga, malware infekcije ili neovlašteni pristup podacima) mora biti prijavljen Agenciji za zaštitu od kibernetičkih prijetnji (AZOP/SOA) u roku od 24 sata od otkrivanja, a detaljni izvještaj u roku od 72 sata. Incidenti koji utječu na redovitost rada kritične infrastrukture trebaju posebnu hitnost i obavijest nadležnim upravama.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Redovni testovi sigurnosti i penetracijska testiranja</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Najmanje godišnje, trebate provesti testove penetracije na BIM platformama, API-jima za suradnju i sustavima upravljanja projektima. Rezultate testiranja trebate dokumentirati i brže otkloniti sve pronađene slabosti. Rad trebate povjeriti nezavisnoj tvrtki s iskustvom u infrastrukturnim projektima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita podataka o zgradarskoj kontroli i pametnim zgradama</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Podaci prikupljeni kroz sustave za kontrolu gradnje (BIM, CAD, razne simulacije) i pametne zgrade (energetska potrošnja, kontrola pristupa, sustavi grijanja/hlađenja) čine osobne i osjetljive poslovne podatke koji zahtijevaju zaštitu identičnu kao zdravstveni ili finansijski podaci. Primijenite: klasifikaciju podataka prema osjetljivosti, ograničenu dodjelu pristupa, šifriranje, redovite kopije i plan oporavka od katastrofe.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BIM platforme kao što su Autodesk Construction Cloud, Bluebeam ili Trimble Connect koriste se sa podacima o kritičnoj infrastrukturi, ali pristup nije ograničen — neki podugovarači i projektanti mogu vidjeti sve datoteke umjesto samo relevantnih za njihove poslove.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BIM cloud platforme dijeljene sa podugovaračima i poddobavljačima bez kontrole pristupa ili walkouta — svaki korisnik često ima isti pristup kao projektni voditelj, što omogućava brisanje ili izmjenu kritičnih podataka.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Podugovarači koji rade na sustavima upravljanja projektima nemaju potpisane sigurnosne procjene ili ugovore koji obavezuju ih na primjenu mjera zaštite — samo su navedeni u spisku suradnika.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Bez sigurnosne provjere IT sustava podugovarača — subkontraktori se angažiraju bez procjene njihove sigurnosne infrastrukture, što stvara rizik od bočnog kretanja napadača prema vašem sistemu.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>IoT uređaji na gradilištima (dronovi, senzori vlage, kamere, kontrolni sistemi) nalaze se na istoj mreži kao uredi — nema mrežne segmentacije niti zaštite od bočnog kretanja napadača.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>IoT uređaji na gradilištima (senzori temperatura, video nadzor, sustavi kontrole rada) postavljeni na istu mrežu kao korporativni sustavi bez mrežne segmentacije — napada IoT uređaja može dati pristup bazi podataka projekta.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema formalnog plana odgovora na incidente — tvrtka nema dokumentiranu proceduru za prijavljivanje neobičnih aktivnosti, brzo isključivanje sustava ili obavijest nadležnih vršitelja dužnosti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Bez redovitog pratenja i osvježavanja firmware-a na IoT uređajima — poznatim ranjivostima se često ne zahvaćaju mjesecima jer se uređaji smatraju 'pasivnim' dijelovima gradilišta.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li enkripciju za sve podatke u BIM platformi, ili samo za one koji se tiču kritične infrastrukture?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji točno sustavi u našoj tvrtki spadaju pod NIS2/ZoKS obvezu kao važno poduzeće?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Enkripcija je obavezna za sve podatke koji se koriste u projektima kritične infrastrukture (energija, vode, promet, telekomunikacije) — to su najčešće većina podataka u vašim BIM platformama. Enkripcija mora biti primjena i pri prijenosu (TLS 1.2 ili viša) i pri mirovanju (AES-256 ili ekvivalenta). Ako niste sigurni koji su projekti uključeni, preporučujem da enkriptirate sve kao sigurnost.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sustavi koji su obuhvaćeni su: BIM platforme (Revit, Navisworks, obrada projektne dokumentacije u cloud-u), sustavi upravljanja projektima (Microsoft Project, Asana, Primavera) koji sadrže podatke o kritičnoj infrastrukturi, svi IoT uređaji na gradilištima (senzori, video nadzor, industrijske kontrole), i sve baze podataka sa informacijama o dizajnu ili građenju kritične infrastrukture (energetika, transport, voda). Sustavi koji se koriste samo za interno administrativne svrhe (plaće, ljubaznošću) nisu obuhvaćeni.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kako trebam dokumentirati sigurnosnu provjeru podugovarača koji koristi Autodesk Construction Cloud ili Bluebeam?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko često trebam revidiatti pristup podugovarača prema NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Trebate izvršiti procjenu rizika njihove IT infrastrukture (sustavi za sigurnosne kopije, enkripcija, zaštita od malvera), potpisati ugovor s obvezama, i godišnje reinspektovati. Dokumentirajte sve korake u Reglyze ili sličnom alatu kako biste imali dokaz compliance. Ako podugovarač nema adekvatnu sigurnost, morali biste im ograničiti pristup samo specifičnim datotekama ili projektima kroz granularne dozvole.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Preporuka je najmanje godišnja sigurnosna procjena podugovarača koji imaju pristup BIM sustavima ili podacima projekta. Dodatno, trebate provesti revizije nakon svakog većeg incidenta u industriji, nakon promjene lozinke ili ključa pristupa, i nakon što podugovarač zatraži proširenje pristupa za nove projekte. Sve revizije trebate dokumentirati za dokazivanje compliance-a prilikom nadzora SOA.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su kazni ako ne prijavim incident vezan uz kritičnu infrastrukturu SOA-u na vrijeme?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako se tvrtka ne uskladi sa NIS2/ZoKS do 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prema ZKS (Zakonu o kiber sigurnosti, implementacija NIS2), neuključeni ili kasniji incidenti mogu rezultirati novčanom kaznom od 2,5 do 5 milijuna EUR ili 4-7% godišnjeg prihoda, ovisno o vrsti kršenja. Za važne entitete (kao što je vaša tvrtka), rok je 24 sata za prijavljivanje incidenta SOA-u. Brži odgovori pokazuju vašu spremnost i mogu ublažiti kazne.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za važna poduzeća kao što je vaša tvrtka, kazne prema ZoKS mogu biti do 7 milijuna EUR ili do 1,4% godišnjeg prometa, ovisno što je veće. Dodatno, ako ste uključeni u projekt kritične infrastrukture i dođe do prekida zbog sigurnosnog incidenta, može biti kazni do 10 milijuna EUR ili 2% prometa. Rok za usklađenost je do 2026., pa vam preostaje vrijeme za plansku implementaciju, ali preporuka je početi sa procjenom i procesima do kraja 2025.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 za zagovornike kibernetske sigurnosti u Hrvatskoj</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2/ZKS za stomatološke klinike u Hrvatskoj</a></li><li style="margin:0"><a href="education.html">NIS2 za hrvatske sveučilišta i visoške ustanove</a></li><li style="margin:0"><a href="energy.html">NIS2 za distribuatore električne energije, plina i toplinske mreže</a></li><li style="margin:0"><a href="fintech.html">NIS2/ZKS za fintech i plaćanja u Hrvatskoj</a></li><li style="margin:0"><a href="food.html">NIS2 zahtjevi za procesore hrane u Hrvatskoj 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">

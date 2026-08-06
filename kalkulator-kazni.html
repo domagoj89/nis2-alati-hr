@@ -175,19 +175,19 @@
     <div class="calc-control">
       <label>
         Godišnji promet tvrtke
-        <span id="revenue-val">50 mln HRK</span>
+        <span id="revenue-val">50 mln EUR</span>
       </label>
       <input type="range" class="calc-slider" id="revenue-slider"
              min="1" max="500" step="1" value="50">
       <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--gray-500);margin-top:.25rem;">
-        <span>1 mln HRK</span>
-        <span>500 mln HRK</span>
+        <span>1 mln EUR</span>
+        <span>500 mln EUR</span>
       </div>
     </div>
 
     <!-- EUR rate note -->
     <p style="font-size:.75rem;color:var(--gray-500);margin-bottom:1.5rem;">
-      Tečaj EUR/HRK: 7,53 (orijentacijski tečaj). Kazne NIS2 namjeću se u EUR.
+      Kazne NIS2 izražene su u EUR.
     </p>
 
     <!-- Result -->
@@ -316,7 +316,7 @@
 
 <script>
 (function () {
-  var EUR_HRK = 7.53;
+  var EUR_HRK = 1;
 
   var entityInputs = document.querySelectorAll('input[name="entity"]');
   var revenueSlider = document.getElementById("revenue-slider");
@@ -354,7 +354,7 @@
     var revMlnHRK = parseInt(revenueSlider.value, 10);
     var revEUR = (revMlnHRK * 1000000) / EUR_HRK;
 
-    revenueVal.textContent = revMlnHRK + " mln HRK";
+    revenueVal.textContent = revMlnHRK + " mln EUR";
 
     // Highlight selected label
     Object.keys(labels).forEach(function (k) {

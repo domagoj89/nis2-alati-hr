@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za distribuatore električne energije, plina i toplinske mreže — Hrvatski 2026</title>
-  <meta name="description" content="NIS2 obveze za operatore kritične infrastrukture u Hrvatskoj. Sigurnost OT/ICS sustava, izvještavanje o incidentima i sigurnost dobavnog lanca do 2026.">
+  <title>NIS2 za proizvođače električne energije i operatore mreže u Hrvatskoj 2026</title>
+  <meta name="description" content="Vodiči za NIS2 (ZoKS) za elektroprivredu, distributera plina i toplinarstva u Hrvatskoj. Obveze, rokovi i penali do 10 milijuna EUR.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/energy.html">
-  <meta property="og:title" content="NIS2 za distribuatore električne energije, plina i toplinske mreže — Hrvatski 2026">
-  <meta property="og:description" content="NIS2 obveze za operatore kritične infrastrukture u Hrvatskoj. Sigurnost OT/ICS sustava, izvještavanje o incidentima i sigurnost dobavnog lanca do 2026.">
+  <meta property="og:title" content="NIS2 za proizvođače električne energije i operatore mreže u Hrvatskoj 2026">
+  <meta property="og:description" content="Vodiči za NIS2 (ZoKS) za elektroprivredu, distributera plina i toplinarstva u Hrvatskoj. Obveze, rokovi i penali do 10 milijuna EUR.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/energy.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za distribuatore električne energije, plina i toplinske mreže — Hrvatski 2026">
-  <meta name="twitter:description" content="NIS2 obveze za operatore kritične infrastrukture u Hrvatskoj. Sigurnost OT/ICS sustava, izvještavanje o incidentima i sigurnost dobavnog lanca do 2026.">
+  <meta name="twitter:title" content="NIS2 za proizvođače električne energije i operatore mreže u Hrvatskoj 2026">
+  <meta name="twitter:description" content="Vodiči za NIS2 (ZoKS) za elektroprivredu, distributera plina i toplinarstva u Hrvatskoj. Obveze, rokovi i penali do 10 milijuna EUR.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 zahtjevi za elektrodistribuciju, operatore mreža, distribuatore plina i toplinarce u Hrvatskoj",
+      "name": "NIS2 zahtjevi za elektroprivredu, distribuaciju plina i toplinarstvo u Hrvatskoj",
       "item": "https://nis2-hr.eu/sektory/energy.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Koji su minimalni zahtjevi za sigurnost SCADA sustava prema NIS2 u Hrvatskoj?",
+      "name": "Trebam li odvojiti sve SCADA sustave od IT mreže ili mogu koristiti VLAN-ove?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimalno se zahtjeva segmentacija SCADA mreže od korporativnog IT-a, šifriranje svih komunikacija, kontrola pristupa s jakim autentifikacijom, nadzor anomalija u realnom vremenu i redovite sigurnosne testove penetracijskog tipa. Svi uređaji trebaju biti inventorizirani, sa verzijama softvera i zakrpama praćenim i ažuriranim prema rasporedu."
+        "text": "Minimalno, trebate višeslojnu zaštitu: fizičku segmentaciju gdje je to moguće, DMZ s vatrozidom, VLAN izolaciju i monitoring prometa. VLANovi sami nisu dovoljni jer se VLAN hopija može izvesti. NIS2/ZoKS zahtijeva logički i fizički razdvojenost kritičnih sustava, što znači da trebate dedicirane mreže za OT s kontroliranim pristupima i bez direktne rute do interneta."
       }
     },
     {
       "@type": "Question",
-      "name": "Koliko vremena imam za izvještavanje o sigurnosnom incidentu s prekograničnim utjecajem?",
+      "name": "Koja je razlika između izvještavanja u roku od 24 sata i 72 sata?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prema NIS2 regulaciji, incidenti s potencijalnim prekograničnim utjecajem trebaju biti prijavljeni Sigurnosno-analitičkom centru (SAC) u roku od 72 sata od otkrivanja. Za incidente koji direktno utječu na stabilnost mreže ili proizvodnju, SAC može zahtijevati puno brža izvještavanja u satu ili manjoj mjeri vremena."
+        "text": "Sve incidente trebate prijaviti nacionalnom CERT-u (SOA) unutar 24 sata od otkrivanja. Ako incident ima potencijal da se proširi preko granica ili utječe na druge države (npr. prekid opskrbe energije u regiji), roditeljska obavijest se mora dostaviti u roku od 72 sata. Rokovi se računaju od trenutka kad ste sigurni da je sigurnosni incident zaista u tijeku."
       }
     },
     {
       "@type": "Question",
-      "name": "Koje su kazne za neispunjavanje NIS2 zahtjeva u Hrvatskoj?",
+      "name": "Koji su penali ako ne udovoljim NIS2/ZoKS zahtjevima?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Novčane kazne za bitne subjekte mogu dosegnuti do 10 milijuna eura ili 2% godišnjeg prometa (ovisno što je veće) za ozbiljne povrede. Za manje povrede primjenjuju se nižje kazne, ali redoviti nadzor i auditi od strane regulatora znate da su obvezni do 2026. godine."
+        "text": "Za subjekte od ključnog značaja kao što su elektroprivredu, penali mogu iznositi do 10 milijuna EUR ili 2% godišnjeg prometa (bilo koji veći iznos). Dodatni penali mogu uključiti suspenziju dozvola za opskrbu energijom. Hrvatski nadzor (SOA) redovito provjerava sukladnost i može pokrenuti inspekcije nakon prijava incidenta ili po planu."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2 zahtjevi za elektrodistribuciju, operatore mreža, distribuatore plina i toplinarce u Hrvatskoj
+    NIS2 zahtjevi za elektroprivredu, distribuaciju plina i toplinarstvo u Hrvatskoj
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog I — bitni subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za elektrodistribuciju, operatore mreža, distribuatore plina i toplinarce u Hrvatskoj</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica namijenjena je operatorima kritične energetske infrastrukture u Hrvatskoj koji moraju zadovoljiti obveze NIS2 regulacije. Saznajte kakve sigurnosne mjere trebate primjenjivati na OT/ICS sustavima i kako izbjegnuti tipične greške u compliance-u.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog I — subjekt od ključnog značaja</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za elektroprivredu, distribuaciju plina i toplinarstvo u Hrvatskoj</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ovaj vodiči je namijenjen operatorima elektrodistribucijskih sustava, proizvođačima električne energije, distributerima plina i operatorima distriktnoga grijanja koji su klasificirani kao subjekti od ključnog značaja. Saznajte konkretne tehnologijske, organizacijske i sigurnosne obveze koje morate implementirati do kraja 2026. godine prema Zakonu o kibernetičkoj sigurnosti (ZoKS).</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Kao bitni subjekt NIS2 regulacije kvalificiraju se proizvođači električne energije, operatori prenosnih i distribucijskih mreža, distributeri prirodnog plina, operatori sistema za daljinsko grijanje i dobavljači goriva čiji prekid rada ima značajan utjecaj na stabilnost energetskog sustava ili sigurnost ljudske populacije u Hrvatskoj. U pravilu se radi o srednjim i većim subjektima koji upravljaju kritičnom infrastrukturom.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Subjekti od ključnog značaja su električni operatori prijenosne mreže, operatori distribucijskih mreža, proizvodači električne energije (uključujući elektrane i obnovljive izvore), distributeri prirodnog plina i operatori sustava daljinskog grijanja u Republici Hrvatskoj. Obveze se primjenjuju na sve takve subjekte bez obzira na veličinu, jer je njihovo poslovanje kritično za nacionalnu sigurnost i opskrbu energijom.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost OT/ICS i SCADA sustava</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Mora se osigurati tehnička i organizacijska zaštita sustava za upravljanje proizvodnjom i distribucijom energije, uključujući SCADA, PLC i industrijske kontrolne sustave. Sistemi trebaju biti fizički i logički odvojeni od korporativnih IT mreža, s jasnom segmentacijom i mogućnosti nadzora u realnom vremenu. Preporučuje se primjena kontrola pristupa, enkripcije komunikacija i redovitih sigurnosnih provjera.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita SCADA i industrijskih kontrolnih sustava</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi SCADA, DCS i PLC sustavi koji upravljaju proizvodnjom, prijenosom i distribucijom električne energije ili plina moraju biti fizički i logički odvojeni od korporativne IT mreže. Zabranjeno je daljinsko upravljanje preko nešifriranih protokola kao što su Telnet ili FTP. Implementirajte DMZ zonu između sustava upravljanja procesom i poslovne mreže, primijenite segmentaciju s višeslojnom zaštitom i Log sve pristupe OT sustavima.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima s potencijalnim prekograničnim utjecajem</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operatori su obvezni izvijestiti Sigurnosno-analitički centar (SAC) i nadležne nacionalne vlasti o sigurnosnim incidentima koji mogu utjecati na stabilnost energetskog sustava ili imati prekogranični utjecaj. Izvještaj mora biti podnesen u propisanom roku s detaljima o vrsti incidenta, zahvaćenim sustavima i primijenjenim mjerama za oporavak.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost opskrbnog lanca — hardware, firmware i ažuriranja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Uspostavite formalni proces provjere svih dobavljača kritične opreme (transformatori, prekidači, kontrolni uređaji, SCADA platforme) kako bi se osiguralo da su proizvedeni sigurno i bez zlonamjernog koda. Zahtijevajte od dobavljača certifikate o sigurnosti opskrbnog lanca (npr. NIST SBOM) i ugovore koji jasno definiraju odobrenja za daljinski pristup dobronamjerama. Redovito auditujte firmware i ažuriranja prije instalacije u proizvodnim sustavima.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost dobavnog lanca za hardver i firmware</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Potrebno je uspostaviti proces evaluacije rizika za sve kritične dobavljače mrežne opreme, SCADA komponenti i industrijskih sustava. Trebaju se provjeravati sigurnosni standardi dobavljača, njihova dostupnost sigurnosnih zakrpa, povremeni sigurnosni audit i jasni ugovori sa zahtjevima za brzo obavijestiti o odkrivenim ranjivostima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Fizička sigurnost transformatorskih stanica s kibernetičkim nadzorom</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve transformatorske stanice, razvodno postrojenje i rashladne centre trebaju imati fizičku kontrolu pristupa (RFID kartice, biometrija, mehanička vrata) kombiniranu s 24/7 kamerskim nadzorom s lokalnom spremom podataka. Integrujte alarme za fizički pristup s SIEM sustavom kako bi se detektirali neovlašteni ulasci ili neobični obrasci aktivnosti. Dokumentirajte sve fizičke ulaze u zapisnike revizije s vremenskim žigom.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Fizička sigurnost transformatorskih stanica i energetskih objekata kombinirana s cyber nadzor om</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Transformatorske stanice i kritični energetski objekti trebaju biti zaštićeni fizičkim kontrolama pristupa, video nadzor om i detektorima neovlaštenih pokušaja pristupa. Istovremeno se mora primijeniti cyber nadzor fizičkog sloja — logiranje pristupa, praćenje anomalija i integracija signala s IT sustavima za detekciju napada.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima s potencijalom prekograničnog utjecaja</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incidenti koji zaustave ili značajno degradiraju proizvodnju, prijenos ili distribuciju energije ili plina moraju biti prijavljen nacionalnom CERT-u (SOA) u roku od 24 sata od otkrivanja. Ako incident ima potencijal da preuči u druge zemlje ili regije, mora biti prosljeđen u roku od 72 sata. Uspostavite proceduru incidenta s definirano tko je odgovoran za detektiranje, ispitivanje, sadržavanje i obavijest.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje pristupima i sigurnosna edukacija zaposlenika</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi zaposlenici s pristupom OT sustavima moraju proći redovitu sigurnosnu obuku. Potrebno je uspostaviti sustav upravljanja privilegijama, s detaljnom kontrolom pristupa temeljem principa najmanje potrebne ovlasti. Trebaju se redovito provjeravati i dokumentirati sve promjene pristupa osobitom pažnjom na udaljenipristup i zaduživanje vanjskih izvoditelja.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Inventur i upravljanje OT imovinom</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Održavajte ažuran registar svih SCADA, PLC, senzora, releja, komunikacijskih čvorova, bežičnih uređaja i drugih operativnih tehnologija na vašoj mreži. Za svaki uređaj dokumentirajte: proizvođač, model, verziju firmware-a, datum instalacije, vlasnika, lokaciju i kritičnost. Koristite alate za automatsku otkrivanja OT uređaja i na mjesečnoj bazi provjerite inventur s terenskom istinom.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA i industrijski kontrolni sistemi postavljeni na jednostavne IT mreže bez segmentacije, omogućujući pristup iz uredskog IT-a bez dodatnih kontrola.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA sustavi postavljeni na istu mrežu kao uredski IT sustayi — česti su slučajevi gdje inženjeri kontrole mogu pristupiti sustavljima putem neprimjerenih veza bez enkripcije.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Udaljena podrška dobavljača omogućena preko nešifriranih protokola kao što su Telnet ili FTP bez logiranja pristupa ili vremenskog ograničenja.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Daljinski pristup dobavljača za održavanje nije evidentiran, nije vremenski ograničen i ne koristi stroge mehanizme autentifikacije — što omogućava trajnu ranjivost.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostaje evidencija svih OT uređaja, softvera i verzija (asset inventory), što onemogućuje procjenu rizika i brzo identificiranje ranjivostih.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema detalijne CMDB/inventura OT resursa — mnoga poduzeća ne znaju točan broj i vrste svih kontrolnih uređaja u pogonu.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vanjski konzultanti i dobavljači imaju trajno aktivne pristupe bez periodičke evaluacije potrebitosti ili aktivnog nadzora njihovih radnji u sustavima.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Fizička sigurnost trafostanica i razvodno postrojenja ne uključuje aktivni kibernetički nadzor — električni napadi mogu biti fizički izvedeni prije nego što se detektiraju mjere zaštite.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su minimalni zahtjevi za sigurnost SCADA sustava prema NIS2 u Hrvatskoj?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li odvojiti sve SCADA sustave od IT mreže ili mogu koristiti VLAN-ove?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimalno se zahtjeva segmentacija SCADA mreže od korporativnog IT-a, šifriranje svih komunikacija, kontrola pristupa s jakim autentifikacijom, nadzor anomalija u realnom vremenu i redovite sigurnosne testove penetracijskog tipa. Svi uređaji trebaju biti inventorizirani, sa verzijama softvera i zakrpama praćenim i ažuriranim prema rasporedu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimalno, trebate višeslojnu zaštitu: fizičku segmentaciju gdje je to moguće, DMZ s vatrozidom, VLAN izolaciju i monitoring prometa. VLANovi sami nisu dovoljni jer se VLAN hopija može izvesti. NIS2/ZoKS zahtijeva logički i fizički razdvojenost kritičnih sustava, što znači da trebate dedicirane mreže za OT s kontroliranim pristupima i bez direktne rute do interneta.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko vremena imam za izvještavanje o sigurnosnom incidentu s prekograničnim utjecajem?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između izvještavanja u roku od 24 sata i 72 sata?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prema NIS2 regulaciji, incidenti s potencijalnim prekograničnim utjecajem trebaju biti prijavljeni Sigurnosno-analitičkom centru (SAC) u roku od 72 sata od otkrivanja. Za incidente koji direktno utječu na stabilnost mreže ili proizvodnju, SAC može zahtijevati puno brža izvještavanja u satu ili manjoj mjeri vremena.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sve incidente trebate prijaviti nacionalnom CERT-u (SOA) unutar 24 sata od otkrivanja. Ako incident ima potencijal da se proširi preko granica ili utječe na druge države (npr. prekid opskrbe energije u regiji), roditeljska obavijest se mora dostaviti u roku od 72 sata. Rokovi se računaju od trenutka kad ste sigurni da je sigurnosni incident zaista u tijeku.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne za neispunjavanje NIS2 zahtjeva u Hrvatskoj?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su penali ako ne udovoljim NIS2/ZoKS zahtjevima?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Novčane kazne za bitne subjekte mogu dosegnuti do 10 milijuna eura ili 2% godišnjeg prometa (ovisno što je veće) za ozbiljne povrede. Za manje povrede primjenjuju se nižje kazne, ali redoviti nadzor i auditi od strane regulatora znate da su obvezni do 2026. godine.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za subjekte od ključnog značaja kao što su elektroprivredu, penali mogu iznositi do 10 milijuna EUR ili 2% godišnjeg prometa (bilo koji veći iznos). Dodatni penali mogu uključiti suspenziju dozvola za opskrbu energijom. Hrvatski nadzor (SOA) redovito provjerava sukladnost i može pokrenuti inspekcije nakon prijava incidenta ili po planu.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">NIS2/ZKS za fintech i plaćanja u Hrvatskoj</a></li><li style="margin:0"><a href="food.html">NIS2 zahtjevi za procesore hrane u Hrvatskoj 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 za hrvatske bolnice i klinike</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 zahtjevi za HR software dobavljače u Hrvatskoj 2026</a></li><li style="margin:0"><a href="index.html">Sektori obuhvaćeni NIS2 u Hrvatskoj 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2/ZKS za osiguravajuća društva u Hrvatskoj</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">

@@ -8,13 +8,13 @@
 
   // ── Affiliate + tool links ──────────────────────────────────────────────────
   const LINKS = {
-    reglyze:      { name: "Reglyze",      url: "https://reglyze.com",         review: "narzedzia/reglyze.html" },
-    secfix:       { name: "Secfix",       url: "https://secfix.com",          review: "narzedzia/secfix.html" },
-    isms_online:  { name: "ISMS.online",  url: "https://isms.online",         review: "narzedzia/isms-online.html" },
+    reglyze:      { name: "Reglyze",      url: "https://reglyze.com",         review: "alati/reglyze.html" },
+    secfix:       { name: "Secfix",       url: "https://secfix.com",          review: "alati/secfix.html" },
+    isms_online:  { name: "ISMS.online",  url: "https://isms.online",         review: "alati/isms-online.html" },
     knowbe4:      { name: "KnowBe4",      url: "https://knowbe4.com",         review: "obuka-nis2.html" },
     hiscox:       { name: "Hiscox Cyber", url: "https://hiscox.com",          review: "cyber-osiguranje.html" },
-    onepassword:  { name: "1Password",    url: "https://1password.com",       review: "narzedzia/1password.html" },
-    nordlayer:    { name: "NordLayer",    url: "https://nordlayer.com",       review: "narzedzia/nordlayer.html" },
+    onepassword:  { name: "1Password",    url: "https://1password.com",       review: "alati/1password.html" },
+    nordlayer:    { name: "NordLayer",    url: "https://nordlayer.com",       review: "alati/nordlayer.html" },
     cobalt:       { name: "Cobalt.io",    url: "https://cobalt.io",           review: "penetracijsko-testiranje.html" },
     bsi:          { name: "BSI ISO 27001",url: "https://bsigroup.com/hr-HR/", review: "certifikacija-iso-27001.html" },
   };
@@ -79,9 +79,9 @@
       hint: "Prilagodit ćemo alate Vašim financijskim mogućnostima.",
       options: [
         { value: "free", icon: "🆓", label: "Tražim besplatno rješenje",        sub: "Besplatni plan ili jednokratni trošak implementacije" },
-        { value: "low",  icon: "💵", label: "Do 1 000 HRK godišnje (~€130)",    sub: "Osnovni SaaS alat" },
-        { value: "mid",  icon: "💳", label: "1 000–6 000 HRK godišnje",         sub: "Potpuna platforma za usklađenost" },
-        { value: "high", icon: "🏦", label: "Iznad 6 000 HRK godišnje",         sub: "Enterprise rješenje" },
+        { value: "low",  icon: "💵", label: "Do 1 000 EUR godišnje (~€130)",    sub: "Osnovni SaaS alat" },
+        { value: "mid",  icon: "💳", label: "1 000–6 000 EUR godišnje",         sub: "Potpuna platforma za usklađenost" },
+        { value: "high", icon: "🏦", label: "Iznad 6 000 EUR godišnje",         sub: "Enterprise rješenje" },
       ]
     },
     {
@@ -568,7 +568,7 @@
 
         <div style="margin-top:1.25rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
           <button class="btn btn--outline btn--sm" id="quiz-restart">← Počni ispočetka</button>
-          <a href="porownanie.html" class="btn btn--primary btn--sm">Usporedi NIS2 alate →</a>
+          <a href="usporedba.html" class="btn btn--primary btn--sm">Usporedi NIS2 alate →</a>
         </div>
 
         ${!emailCaptured ? `

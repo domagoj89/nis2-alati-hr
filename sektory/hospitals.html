@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za hrvatske bolnice i klinike — zahtjevi i rok 2026.</title>
-  <meta name="description" content="NIS2 compliance za bolnice u Hrvatskoj: izvještavanje incidenata, segmentacija mreže, obuka osoblja. Rok do 2026. godine.">
+  <title>NIS2 za hrvatske bolnice i klinike — zahtjevi 2026.</title>
+  <meta name="description" content="NIS2 obveze za zdravstvene ustanove u Hrvatskoj. Izvještavanje o incidentima, segmentacija mreža, upravljanje dobavljačima. Rok usklađenosti 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/hospitals.html">
-  <meta property="og:title" content="NIS2 za hrvatske bolnice i klinike — zahtjevi i rok 2026.">
-  <meta property="og:description" content="NIS2 compliance za bolnice u Hrvatskoj: izvještavanje incidenata, segmentacija mreže, obuka osoblja. Rok do 2026. godine.">
+  <meta property="og:title" content="NIS2 za hrvatske bolnice i klinike — zahtjevi 2026.">
+  <meta property="og:description" content="NIS2 obveze za zdravstvene ustanove u Hrvatskoj. Izvještavanje o incidentima, segmentacija mreža, upravljanje dobavljačima. Rok usklađenosti 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/hospitals.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za hrvatske bolnice i klinike — zahtjevi i rok 2026.">
-  <meta name="twitter:description" content="NIS2 compliance za bolnice u Hrvatskoj: izvještavanje incidenata, segmentacija mreže, obuka osoblja. Rok do 2026. godine.">
+  <meta name="twitter:title" content="NIS2 za hrvatske bolnice i klinike — zahtjevi 2026.">
+  <meta name="twitter:description" content="NIS2 obveze za zdravstvene ustanove u Hrvatskoj. Izvještavanje o incidentima, segmentacija mreža, upravljanje dobavljačima. Rok usklađenosti 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za hrvatske bolnice i specijalizirane klinike — zahtjevi u 2026.",
+      "name": "NIS2 za hrvatske bolnice i klinike — ključne obveze i rok za usklađenost 2026.",
       "item": "https://nis2-hr.eu/sektory/hospitals.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Što se smatra 'incidentom' koji trebam prijaviti hrvatskom CSIRT-u u roku od 24 sata?",
+      "name": "Koja je razlika između rana upozorenja (24 sata) i potpunog izvještaja (72 sata) pri izvještavanju incidenta nacionalnom CSIRT-u?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Incident je bilo koja sigurnosna pretnja ili napad koja utječe na povjerljivost, integritet ili dostupnost medicinskih podataka ili sustava — primjerice neovlašteni pristup pacijentskim zbivanjima, otkaz kritičnog uređaja zbog malvera, gubitak podataka ili ukradene vjerodajnice kliničkog osoblja. Rizici za pacijentsku sigurnost (npr. kompromitiran monitor za vitalne znakove) trebaju biti izveštavani bez odgode, čak i prije punog 24-satnog roka."
+        "text": "Rana upozorenja (24 h) je brza obavijest da je incident otkrivena i da se radnje poduzimaju — dovoljne su osnovne informacije. Potpuni izvještaj (72 h) mora sadržavati detaljne podatke: kako je incident napadač dobio pristup, koji sustavi su zahvaćeni, koji podatci su iscrpljeni, kako ste incident zaustavili i kakvi će biti utjecaji na pacijente. Ako nema potpunog izvještaja u roku, kazna je do 10 milijuna eura za ključne subjekte."
       }
     },
     {
       "@type": "Question",
-      "name": "Trebam li ažurirati Windows na staroj CT/MRI opremi ako proizvođač ne podržava nove verzije?",
+      "name": "Trebam li odvajati medicinski uređaj od glavne bolničke mreže ili je dovoljna enkriptacija i firewall pravila?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da, ali sa strateškim pristupom: prvo radite s proizvođačem da testira kompatibilnost ažuriranja; ako je nemoguće, izolirajte uređaj na zasebnom mrežnom segmentu bez izravne veze na internet, s formalnom dozvolom za izuzeće i dodatnim monitoring-om za detekciju napada. Dokumentirajte rizik i plan smanjenja jer će vas inspektor Sigurnosno-obavještajne agencije pitati zašto je neispravljeno."
+        "text": "NIS2 i ZoKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s \"deny by default\"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti."
       }
     },
     {
       "@type": "Question",
-      "name": "Koji su kazneni elementi ako ne uspostavim NIS2 sukladnost do 2026. godine?",
+      "name": "Koje su kazne ako se zdravstvena ustanova ne uskladi do kraja 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zakoni o kibernetskoj sigurnosti (ZKS) predviđa novčane kazne za esencijalne subjekte do 500.000 kuna za neadekvatne mjere sigurnosti, plus dodatne kazne za neuspješno ili kasno izvještavanje incidenata. Pored toga, regulatorne inspekcije mogu rezultirati upozorenjima javnosti i zabranom pružanja određenih zdravstvenih usluga ako je sigurnost pacijentata u pitanju."
+        "text": "Za zdravstvene ustanove klasificirane kao ključni subjekti (Prilog I), kazne dosežu do 10 milijuna eura ili 2% bruto godišnjeg prometa, ovisno o ozbiljnosti. Za važne subjekte (ako se bolnica klasificira u njezinu kategoriju) kazne su do 7 milijuna eura ili 1,4% prometa. Kazne se dodjeljuju ako usklađenost nije postignuta do kraja 2026 ili ako se incidenti ne prijave u dogovorenim rokovima. Dodatno, SOA može izdati obavezujuće mjere sanacije i audit zahtjeve."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2 za hrvatske bolnice i specijalizirane klinike — zahtjevi u 2026.
+    NIS2 za hrvatske bolnice i klinike — ključne obveze i rok za usklađenost 2026.
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog I — Esencijalni subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za hrvatske bolnice i specijalizirane klinike — zahtjevi u 2026.</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je pisana za upravitelje IT sigurnosti, medicinskog inženjerstva i voditelje bolničkih mreža sa 50+ zaposlenih. Saznajte točne obveze, tipične propuste i kako uspostaviti NIS2 sukladnost u zdravstvenom sustavu.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog I — ključni subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za hrvatske bolnice i klinike — ključne obveze i rok za usklađenost 2026.</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namenjena medicinskim direktorima, IT rukovoditeljima i stručnjacima za sigurnost podataka u bolnicama, mrežama bolnica, privatnim klinikama i centrima specijalizirane skrbi s 50 ili više zaposlenih. Saznajte koje konkretne mjere sigurnosti trebate uvesti, kako izvještavati o sigurnosnim incidentima hrvatskim vlastima te kako organizirati sustav upravljanja kibernetičkom sigurnosti u skladu s Zakonom o kibernetičkoj sigurnosti (ZoKS).</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Bolnice, bolničke mreže, privatne klinike i centri specijalizirane zdravstvene zaštite u Republici Hrvatskoj s 50 ili više zaposlenih ili koje služe regionalnoj populaciji su klasificirani kao esencijalni subjekti prema NIS2 Prilogu I. Ova klasifikacija obavezuje vas na primjenu svih mjera Zakona o kibernetskoj sigurnosti (ZKS) koje primjenjuje Sigurnosno-obavještajnu agenciju kao nadležnu autoritet.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">U Hrvatsku se primjenjuje NIS2 kroz Zakon o kibernetičkoj sigurnosti (ZoKS). Zdravstvene ustanove — bolnice, mreže bolnica, privatne klinike i centri specijalizirane skrbi — koje imaju 50 ili više zaposlenih ili pružaju zdravstvene usluge na razini regije ili države, klasificirane su kao ključni subjekti (Prilog I) i moraju u potpunosti usklađiti svoj sustav upravljanja kibernetičkom sigurnosti do kraja 2026. godine.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje incidenata unutar 24h i 72h</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bolnice moraju prijaviti sve incidente vezane uz medicinske uređaje, klinički informacijski sustave i vitalne podatke Hrvatskom CSIRT-u u roku od 24 sata za rano upozorenje, a detaljnu analizu unutar 72 sata. Incidenti koji utječu na pacijentsku sigurnost ili dostupnost kritičnih sustava (npr. monitorinzi, ventilatori, PACS) trebaju biti izveštavani odmah nakon detekcije.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima u roku 24 sata (rana upozorenja) i 72 sata (potpun izvještaj)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve sigurnosne incidente koji mogu utjecati na pružanje zdravstvene skrbi ili dostupnost kritičnih zdravstvenih sustava trebate prijaviti hrvatskom nacionalnom CSIRT-u (部ja SOA) u roku 24 sata od otkrivanja. Potpuni izvještaj s detaljima o utjecaju, vektoru napada i podacima koje je napadač mogao pristupiti trebate dostaviti u roku 72 sata. Nedostajuće izvještaje, ili izvještaje izvan roka, penalizira se sa do 10 milijuna eura ili 2% godišnjeg prihoda za ključne subjekte.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentacija medicinske opreme od administrativne IT mreže</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Klinički uređaji (CT, MRI, ventilatori, srčani monitori) i SCADA/OT sustavi moraju biti odvojeni u zasebne mrežne segmente s aktivnom kontrolom pristupa (firewall, VLAN) kako bi se spriječilo neovlašteno preusmjeravanje podataka ili zloupotrebu. Medicinski uređaji ne smiju imati izravnu vezu na office Wi-Fi ili javnu Internet mrežu bez posebnog kontrolnog sloja.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentacija i odvajanje klinijskih mreža od administrativne IT infrastrukture</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Medicinska oprema — imaging sustavi (CT, MRI), monitoring pacijenata, SCADA sustavi za energiju i климатизацију — moraju biti fizički odvojeni od korporativne mreže putem segmentacije na mrežnoj razini (VLAN, firewall pravila, DMZ zone). Ova mjera zaustavlja bočne pokrete napadača i smanjuje rizik od gušenja klinijskih sustava ako je administrativna mreža kompromitirana. Dokumentirajte arhitekturu mreže i provjerite je najmanje dva puta godišnje.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje lancem opskrbe za medicinski softver i uređaje</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bolnice trebaju uspostaviti formalan proces provjere sigurnosti svih dobavljača medicinske opreme i softverskih rješenja, uključujući analizu koda, certifikate sigurnosti i redovite sigurnosne ažuriranja. Sporazumi s dobavljačima moraju sadržavati odredbe o incidentnom odgovoru, dostupnosti ažuriranja i suradnji pri forenzičnoj analizi ako je potrebna.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje opasnostima u lancu opskrbe — povjerenja u medicinske softver i uređaje</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi vanjski dobavljači medicinske opreme, softverskih rješenja i usluga nadzora trebaju biti uključeni u program upravljanja sigurnosnim rizicima. Zahtijevajte od dobavljača: certifikate sigurnosti, zapisnike o testiranju penetracije, podatke o vremenskim okvirima otpravljanja sigurnosnih grešaka, te razinu dostupnosti. Ažurirajte popis kritičnih dobavljača i provjeravajte sigurnosne kriterije najmanje jednom godišnje. Uključite u ugovore klauzule o kibernetičkoj sigurnosti i odgovornosti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontinuitet poslovanja i oporavak od katastrofe za životno kritične sustave</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bolnice trebaju imati dokumentirane planove oporavka za sve sustave koji direktno utječu na sigurnost pacijentata, s testiranjem najmanje dva puta godišnje. To uključuje backup elektranu, redundantne baze podataka, replicirane medicinske informacijske sustave i alternative za slučaj pada glavnih telekomunikacijskih veza.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Poslovni kontinuitet i oporavak od katastrofe za sustave kritične za život</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Za sve sustave koji utječu na život pacijenata — elektronički medicinski kartoni, PACS (sustav za pohranu medicinskih slika), laboratorijski sustavi — trebate uspostaviti plan oporavka s ciljem dostupnosti od najmanje 99,5% i vremenom oporavka podataka ne dulim od 4 sata. Testirajte plan oporavka najmanje dva puta godišnje s dokumentiranom simulacijom scenarija nestanka struje, mrežnih kvarova ili napada ransomware-a. Čuvajte rezervne kopije izvan bolnice (fizički odvojena lokacija ili sigurni cloud s enkripcijom).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Redovna cybersecurity obuka kliničkog i administrativnog osoblja</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi zaposlenici bolnice trebaju obaviti minimalno jednu godišnju obuku o kibernetskoj sigurnosti, s fokusom na prepoznavanje phishing napada, sigurne lozinke i meldiranje osumnjivanih aktivnosti. Klinički vrhunski korisnici i IT administratori trebaju specijalnu obuku na osnovu njihove uloge i pristupa osjetljivim medicinskim sustavima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Redovna obuka i svjesnost zaposlenih o kibernetičkoj sigurnosti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Liječari, medicinske sestre, administrativci i IT osjetljivi kao na medicinci trebaju obuku o prepoznavanju phishing e-pošte, sigurnim lozinkama, izvještavanju o sumnjivoj aktivnosti i postupanju s osjetljivim podacima bolesnika. Obuka od najmanje 2 sata godišnje je obavezna. Dokumentirajte sudjelovanje svakog zaposlenika i pratite učinkovitost kroz test phishing kampanja ili simulacije scenarija. Nedostatak obuke važan je čimbenik rizika pri auditu.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neispravljeni Windows sustavi na medicinskim uređajima (CT, ultrazvuk, analizatori) zbog briga o certificiranju uređaja — trebate surađivati s proizvođačima na testiranju sigurnosnih ažuriranja prije primjene.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neupotrjebljeni sustavi Windows na imaging i monitoring opremi koji nisu primali sigurnosne zakrpe mjesecima ili godinama — odmah provjerite sve medicinske uređaje i uspostavite proces redovnog unoštavanja zakrpa uz pomoć dobavljača ili vanjskog specijalista.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema fizičke ili logičke separacije između kliničke mreže (monitori, ventilatori, infuzijske pumpe) i poslovne Wi-Fi mreže — postavite VLAN-e i firewallove da blokira neželjeni traffic između segmenata.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Odsustvo fizičke ili logičke separacije između klinijskih mreža i korporativnog Wi-Fi-ja — medicinski uređaji su dostupni iz ureda i vice versa, što omogućava bočne pokrete napadačima.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pristup trećih strana (tehničari dobavljača, IT konzultanti) nije formalno upravljan ni auditan — uspostavite sustav zahtjeva za pristup (PAM) koji bilježi sve sesije, trajanja pristupa i aktivnosti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vanjski pristup trećih strana (tehničari dobavljača, konzultanti, IT outsourcing tvrtke) bez formalne dokumentacije, autentifikacije s više faktora ili redovnog nadzora — auditi često otkrivaju da se dozvole za pristup nikad ne reviziju ili stare dozvole se nikad ne ukinu.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema dokumentiranog plana reagiranja na incidente ili testiranja u slučaju sloma kritičnog sustava — napravite incident response handbook s jasnim ulogama, brojevima eskalacije i redovitim simulacijama (npr. scenarij pada PACS-a).
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Odsutnost dokumentiranog plana odgovora na incident — zaposlenici ne znaju komu prijaviti sumnjivenost, kako izolirajte sustave ili kako pristupite pohrani podataka za istragu.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Što se smatra 'incidentom' koji trebam prijaviti hrvatskom CSIRT-u u roku od 24 sata?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između rana upozorenja (24 sata) i potpunog izvještaja (72 sata) pri izvještavanju incidenta nacionalnom CSIRT-u?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Incident je bilo koja sigurnosna pretnja ili napad koja utječe na povjerljivost, integritet ili dostupnost medicinskih podataka ili sustava — primjerice neovlašteni pristup pacijentskim zbivanjima, otkaz kritičnog uređaja zbog malvera, gubitak podataka ili ukradene vjerodajnice kliničkog osoblja. Rizici za pacijentsku sigurnost (npr. kompromitiran monitor za vitalne znakove) trebaju biti izveštavani bez odgode, čak i prije punog 24-satnog roka.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Rana upozorenja (24 h) je brza obavijest da je incident otkrivena i da se radnje poduzimaju — dovoljne su osnovne informacije. Potpuni izvještaj (72 h) mora sadržavati detaljne podatke: kako je incident napadač dobio pristup, koji sustavi su zahvaćeni, koji podatci su iscrpljeni, kako ste incident zaustavili i kakvi će biti utjecaji na pacijente. Ako nema potpunog izvještaja u roku, kazna je do 10 milijuna eura za ključne subjekte.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li ažurirati Windows na staroj CT/MRI opremi ako proizvođač ne podržava nove verzije?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li odvajati medicinski uređaj od glavne bolničke mreže ili je dovoljna enkriptacija i firewall pravila?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, ali sa strateškim pristupom: prvo radite s proizvođačem da testira kompatibilnost ažuriranja; ako je nemoguće, izolirajte uređaj na zasebnom mrežnom segmentu bez izravne veze na internet, s formalnom dozvolom za izuzeće i dodatnim monitoring-om za detekciju napada. Dokumentirajte rizik i plan smanjenja jer će vas inspektor Sigurnosno-obavještajne agencije pitati zašto je neispravljeno.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 i ZoKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s "deny by default"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su kazneni elementi ako ne uspostavim NIS2 sukladnost do 2026. godine?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako se zdravstvena ustanova ne uskladi do kraja 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakoni o kibernetskoj sigurnosti (ZKS) predviđa novčane kazne za esencijalne subjekte do 500.000 kuna za neadekvatne mjere sigurnosti, plus dodatne kazne za neuspješno ili kasno izvještavanje incidenata. Pored toga, regulatorne inspekcije mogu rezultirati upozorenjima javnosti i zabranom pružanja određenih zdravstvenih usluga ako je sigurnost pacijentata u pitanju.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za zdravstvene ustanove klasificirane kao ključni subjekti (Prilog I), kazne dosežu do 10 milijuna eura ili 2% bruto godišnjeg prometa, ovisno o ozbiljnosti. Za važne subjekte (ako se bolnica klasificira u njezinu kategoriju) kazne su do 7 milijuna eura ili 1,4% prometa. Kazne se dodjeljuju ako usklađenost nije postignuta do kraja 2026 ili ako se incidenti ne prijave u dogovorenim rokovima. Dodatno, SOA može izdati obavezujuće mjere sanacije i audit zahtjeve.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="hr-payroll.html">NIS2 zahtjevi za HR software dobavljače u Hrvatskoj 2026</a></li><li style="margin:0"><a href="index.html">Sektori obuhvaćeni NIS2 u Hrvatskoj 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2/ZKS za osiguravajuća društva u Hrvatskoj</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 za IT outsourcing tvrtke u Hrvatskoj</a></li><li style="margin:0"><a href="law-firms.html">NIS2 za odvjetničke kancelarije u Hrvatskoj</a></li><li style="margin:0"><a href="logistics.html">NIS2 za logističke operatore u Hrvatskoj</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">

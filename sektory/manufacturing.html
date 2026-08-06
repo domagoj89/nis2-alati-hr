@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 za proizvodne tvrtke u Hrvatskoj — sustavi PLC i Industry 4.0</title>
-  <meta name="description" content="NIS2 zahtjevi za industrijske proizvodače s povezanim proizvodnim linijama. Segmentacija OT/IT mreža, upravljanje opasnostima u opskrbnom lancu i izvještavanje incidenata do 2026.">
+  <title>NIS2 za industrijske proizvođače u Hrvatskoj — 2026.</title>
+  <meta name="description" content="Zahtjevi NIS2 za industrijske proizvođače s PLC sustavima i Industry 4.0. Obveze sigurnosti OT/IT, upravljanje lancima opskrbe i izvještavanje incidenata do 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/manufacturing.html">
-  <meta property="og:title" content="NIS2 za proizvodne tvrtke u Hrvatskoj — sustavi PLC i Industry 4.0">
-  <meta property="og:description" content="NIS2 zahtjevi za industrijske proizvodače s povezanim proizvodnim linijama. Segmentacija OT/IT mreža, upravljanje opasnostima u opskrbnom lancu i izvještavanje incidenata do 2026.">
+  <meta property="og:title" content="NIS2 za industrijske proizvođače u Hrvatskoj — 2026.">
+  <meta property="og:description" content="Zahtjevi NIS2 za industrijske proizvođače s PLC sustavima i Industry 4.0. Obveze sigurnosti OT/IT, upravljanje lancima opskrbe i izvještavanje incidenata do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/manufacturing.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 za proizvodne tvrtke u Hrvatskoj — sustavi PLC i Industry 4.0">
-  <meta name="twitter:description" content="NIS2 zahtjevi za industrijske proizvodače s povezanim proizvodnim linijama. Segmentacija OT/IT mreža, upravljanje opasnostima u opskrbnom lancu i izvještavanje incidenata do 2026.">
+  <meta name="twitter:title" content="NIS2 za industrijske proizvođače u Hrvatskoj — 2026.">
+  <meta name="twitter:description" content="Zahtjevi NIS2 za industrijske proizvođače s PLC sustavima i Industry 4.0. Obveze sigurnosti OT/IT, upravljanje lancima opskrbe i izvještavanje incidenata do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 za industrijske proizvođače u Hrvatskoj — zahtjevi za Industry 4.0 infrastrukturu do 2026.",
+      "name": "NIS2 za industrijske proizvođače u Hrvatskoj — obveze za važne subjekte 2026.",
       "item": "https://nis2-hr.eu/sektory/manufacturing.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Moramo li segmentirati naše proizvodne linije od korporativne mreže ako koristimo ERP sistem koji se oslanja na stvarnovremensku podatke s PLC-a?",
+      "name": "Koja je razlika između IT i OT zahtjeva na mojoj proizvodnoj liniji prema NIS2-u?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da, segmentacija je obavezna prema NIS2. Međutim, moguće je koristiti kontrolirane tokove podataka preko demilitarizirane zone (DMZ) ili industrijskih firewall-a koji omogućavaju samo specificirane komunikacijske protokole. Važno je da je svaka veza dokumentirana i nadzirana."
+        "text": "IT zahtjevi se fokusiraju na korporativne mreže, e-poštu i podatke (standardi šifriranja, backup); OT zahtjevi su specifični za PLC, SCADA, HMI i industrijske senzore i fokusiraju se na fizičku sigurnost, segmentaciju mreža, monitoring anomalija i validaciju zakrpi koja ne šteti funkcionalnosti proizvodnje. Industrijski proizvođači moraju implementirati oba skupa kontrola odvojeno, s posebnom pažnjom na OT jer je dostupnost i integritet proizvodnje kritičan."
       }
     },
     {
       "@type": "Question",
-      "name": "Koliko često moramo provjeravati naše dobavljače na sigurnosne standarde?",
+      "name": "Kako mogu uspostaviti upravljanje lancima opskrbe za industrijske komponente ako imam stotine dobavljača?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NIS2 ne specificira točnu frekvenciju, ali preporučuje se najmanje godišnja procjena kritičnih dobavljača (firmware, komponente) i polugodišnja za druge. Procjena trebala bi biti proporcionalna riziku koji dobavljač predstavlja za proizvodnu infrastrukturu."
+        "text": "Kategorizirajte dobavljače prema kritičnosti: razred A su direktni dobavljači PLC/firmware-a, razred B su dobavljači senzora i aktuatora, razred C su pomoćni dobavljači. Za razred A provedite godišnje sigurnosne audite s proverama autentičnosti komponenti i klauzulama o obavijestima o sigurnosnim propustima. Za razrede B i C uspostavite upitnik o sigurnosti i redovite provere. Korislite Reglyze za mapiranje i praćenje status svih kategorija."
       }
     },
     {
       "@type": "Question",
-      "name": "Koja je kazna ako ne ispunimo NIS2 zahtjeve do 2026. godine?",
+      "name": "Koje su sankcije ako ne prijavim incident koji je zaustavio moju proizvodnju?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prema hrvatskom ZKS-u, novčane kazne za neispunjenje mogu dosegnuti do 10 milijuna EUR ili 2% globalnog godišnjeg prihoda, ovisno što je veće. Za važne entitete kazne su generalno veće nego za druge subjekte. Rizik također uključuje suspenziju dozvole za rad ili isključenje iz javnih nabava."
+        "text": "Zakon o kibernetičkoj sigurnosti predviđa kazne do 7 milijuna EUR ili 1,4 % godišnjeg prometa za važne subjekte koji ne prijave incidents u roku od 24 sata nacionalnom CERT-u (dio SOA-e). Dodatno, Republika Hrvatska može izdati naredbu za obustavljanje poslovanja do oporavka, što znači dodatne gubitke proizvodnje i branda. Izbjegavajte ove sankcije izvještavanjem u roku i kontinuiranim monitoring-om putem Secfix-a za detektiranje incidenata u realnom vremenu."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2 za industrijske proizvođače u Hrvatskoj — zahtjevi za Industry 4.0 infrastrukturu do 2026.
+    NIS2 za industrijske proizvođače u Hrvatskoj — obveze za važne subjekte 2026.
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važan entitet</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za industrijske proizvođače u Hrvatskoj — zahtjevi za Industry 4.0 infrastrukturu do 2026.</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena rukovoditeljima sigurnosti i operativnim timovima tvrtki s povezanim proizvodnim linijama. Saznajte koje su obveze za važne entitete prema NIS2/ZKS i kako ispuniti zahtjeve do 2026. godine.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — važan subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za industrijske proizvođače u Hrvatskoj — obveze za važne subjekte 2026.</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena vodstvima i stručnjacima za kibernetičku sigurnost industrijskih proizvodnih poduzeća s povezanim proizvodnim linijama. Saznajte konkretne tehničke i organizacijske zahtjeve koji se primjenjuju na PLC sustave, IoT uređaje i Industry 4.0 infrastrukturu prema hrvatskom Zakonu o kibernetičkoj sigurnosti.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">NIS2 obaveze se primjenjuju na industrijske proizvođače s proizvodnim linijama povezanim s korporativnom mrežom, PLC sustavima ili Industry 4.0 infrastrukturom koji su klasificirani kao važni entiteti. To uključuje tvrtke s kritičnom proizvodnom infrastrukturom čije bi prekide moglo prouzročiti značajne ekonomske ili sigurnosne posljedice za Hrvatsku.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Industrijska proizvodna poduzeća sa spojenim proizvodnim linijama, PLC sustavima ili Industry 4.0 infrastrukturom spadaju u važne subjekte prema NIS2 ako imaju kritičnu ulogu u proizvodnom sektoru ili ekonomski značaj. Obuhvaćeni su proizvođači kemikalija, metalurga, pharmaceutskih proizvoda, hrane i pića, te industrije rudarenja s fizičkim proizvodnim procesima gdje je kibernetska sigurnost ključna za kontinuitet poslovanja.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">OT/ICS sigurnost za kontrolne sustave proizvodnih linija</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Moraju implementirati sustave nadzora i kontrole (SCADA, PLC) s primijenjenim sigurnosnim mjerama. To uključuje zaštitu od neovlaštenog pristupa, enkripciju komunikacija između kontrolnih sustava i detekciju anomalija u proizvodnim procesima. Svi industrijski kontroleri moraju biti inventarizirani i redovito provjeravani na ranjivosti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost OT/ICS proizvodnjih linija i PLC sustava</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Industrijski proizvođači moraju implementirati sigurnosne kontrole specifične za operacijske tehnologije (OT), uključujući PLC, SCADA i industrijske kontrolere. Zahtjevi obuhvaćaju čitanje i ažuriranje firmvera, kontrolu pristupa produkcijskim linijama, monitoriranje anomalija u OT mrežama i fizičku zaštitu kritičnih komponenti. Sigurnosne mjere moraju biti kompatibilne s Industry 4.0 okruženjem s minimalnim operacijskim smetnjama.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentacija OT i IT mreža</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Proizvodne linije moraju biti fizički ili logički odvojene od korporativne IT mreže s implementiranim firewall-ima i sustavima za kontrolu pristupa. Nadzor mreže mora detektirati neovlaštene pokušaje pristupa između segmenata. Svi tokovi podataka između OT i IT dijelova moraju biti jasno dokumentirani i kontrolirani.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentacija i monitoring IT/OT mreža</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Proizvodne linije moraju biti logički i fizički odvojene od korporativne IT mreže putem firewalla, VLAN-ova i industrijskih čitača pristupa. Monitoring должен obuhvatiti detektiranje neobičnog prometa između OT i IT segmenata, detekciju neovlaštenih uređaja na produkcijskim linijama i analizu OT logova najmanje 90 dana. Potrebna je centralna kontrola pristupa i multi-faktorska autentifikacija za sve daljinske pristupe OT sustavima.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje opasnostima u opskrbnom lancu</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tvrtke moraju provjeravati sigurnosne prakse svojih dobavljača industrijskih komponenti, firmware-a i PLC uređaja. Ugovori s dobavljačima moraju sadržavati odredbe o sigurnosti, pravovremenim ažuriranjima i izvještavanju o ranjivostima. Svi dobavljeni softver i firmware moraju biti provjeravani na autentičnost i integritet prije instalacije.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje sigurnosti lanaca opskrbe za industrijske komponente</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Proizvođači moraju uspostaviti politiku procjene rizika za sve dobavljače PLC uređaja, industrijskih čitača, firmware paketa i IoT senzora koji se koriste na proizvodnim linijama. Obavezno je dokumentirano redovito audiranje dobavljača, ugovorne klauzule o sigurnosti, provjera autentičnosti komponenti prije instalacije i praćenje sigurnosnih savjetnika dobavljača. Lanac opskrbe mora biti mapiran s identifikacijom kritičnih proizvođača i rezervnih kanala.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje incidenata s gospodarskim utjecajem</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Veliki sigurnosni incidenti koji uzrokuju prekid proizvodnje ili značajne ekonomske gubitke moraju biti izvješteni Službi od stranog uskraćivanja (SOA) u propisanom roku. Tvrtke moraju imati postupke za brzu detekciju, analizу i dokumentaciju incidenata te komunicirati s nadzorom prema utvrđenim vremenskim okvirima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje incidenata koji utječu na produkciju</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Industrijski proizvođači morali izvijestiti nacionalni CERT (dio SOA-e) u roku od 24 sata o kibernetičkim incidentima koji zaustavlje ili značajno uspore proizvodnu liniju duže od 4 sata, ili uzrokuju ekonomsku štetu veću od 100.000 EUR. Izvještaj mora sadržavati datum/vrijeme incidenta, tip napada (ransomware, unauthorized access itd.), utjecaj na proizvodnju i stupanj oporavka. Dodatna izvještavanja se daju u roku od 72 sata s analizom uzroka.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje zakrpama za OT sustave</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Moraju uspostaviti formalizirane procese procjene i primjene sigurnosnih ažuriranja za sve PLC, SCADA i industrijskie IoT uređaje. Sustavi moraju biti praćeni za dostupne zakrpe, a rizici neprimjene zakrpi moraju biti dokumentirani i odobravani. Potrebno je planiranje testiranja zakrpa bez prekida proizvodnje.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Upravljanje zakrpama i verzijama za OT sustave</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Proizvođači moraju uspostaviti proces za procjenu, testiranje i primjenu sigurnosnih zakrpi na PLC sustavima, HMI-jima i industrijskih kontrolerima u testu okruženju prije primjene na produkciju. Politika mora definirati vremenske cikluse primjene zakrpi (kritične u roku 7 dana, standardne u roku 30 dana), metode za validaciju da zakrpe ne utječu na funkcionalnost linije i evidenciju svih primijenjenih verzija. Nesmije biti mogućnosti primjene zakrpi bez autentifikacije.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>PLC i industrijski kontroleri su direktno povezani s korporativnom mrežom bez međusloja zaštite, što omogućava bočni pristup iz IT segmenta
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>PLC sustavi i industrijski kontroleri su direktno ili indirektno povezani na korporativnu IT mrežu bez zaštitnog firewalla ili DMZ zone, što omogućava potencijalne lateralne napade iz IT segmenta.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nije uspostavljen formalni proces upravljanja zakrpama za OT sustave, što znači da se ažuriranja primjenjuju ad-hoc ili se uopće ne primjenjuju
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema dokumentirane politike upravljanja zakrpama specifične za OT uređaje; industrijski proizvođači i dobavljači prate samo IT zakrpe, ne i firmware ažuriranja za PLC i senzore.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Daljinski pristup održavanju koristi nestandardne ili nešifrirane protokole, omogućavajući presretanje u odnosu između održavatelja i PLC-a
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Daljinski pristup za održavanje od strane dobavljača ili inženjera koristi nedšifrirane protokole (telnet, HTTP) ili one-time kredencijale, ili je omogućen putem generičkog VPN pristupa bez MFA.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nije postojeći inventar industrijskog IoT opreme, što otežava upravljanje rizicima i procjenu sigurnosne posture
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema centralizirane inventure IoT/OT uređaja; proizvođači ne znaju sve spojene senzore, aktuatore i industrijske čitače na svojim linijama, što otežava procjenu rizika i monitoring.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Moramo li segmentirati naše proizvodne linije od korporativne mreže ako koristimo ERP sistem koji se oslanja na stvarnovremensku podatke s PLC-a?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između IT i OT zahtjeva na mojoj proizvodnoj liniji prema NIS2-u?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da, segmentacija je obavezna prema NIS2. Međutim, moguće je koristiti kontrolirane tokove podataka preko demilitarizirane zone (DMZ) ili industrijskih firewall-a koji omogućavaju samo specificirane komunikacijske protokole. Važno je da je svaka veza dokumentirana i nadzirana.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">IT zahtjevi se fokusiraju na korporativne mreže, e-poštu i podatke (standardi šifriranja, backup); OT zahtjevi su specifični za PLC, SCADA, HMI i industrijske senzore i fokusiraju se na fizičku sigurnost, segmentaciju mreža, monitoring anomalija i validaciju zakrpi koja ne šteti funkcionalnosti proizvodnje. Industrijski proizvođači moraju implementirati oba skupa kontrola odvojeno, s posebnom pažnjom na OT jer je dostupnost i integritet proizvodnje kritičan.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koliko često moramo provjeravati naše dobavljače na sigurnosne standarde?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kako mogu uspostaviti upravljanje lancima opskrbe za industrijske komponente ako imam stotine dobavljača?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 ne specificira točnu frekvenciju, ali preporučuje se najmanje godišnja procjena kritičnih dobavljača (firmware, komponente) i polugodišnja za druge. Procjena trebala bi biti proporcionalna riziku koji dobavljač predstavlja za proizvodnu infrastrukturu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kategorizirajte dobavljače prema kritičnosti: razred A su direktni dobavljači PLC/firmware-a, razred B su dobavljači senzora i aktuatora, razred C su pomoćni dobavljači. Za razred A provedite godišnje sigurnosne audite s proverama autentičnosti komponenti i klauzulama o obavijestima o sigurnosnim propustima. Za razrede B i C uspostavite upitnik o sigurnosti i redovite provere. Korislite Reglyze za mapiranje i praćenje status svih kategorija.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je kazna ako ne ispunimo NIS2 zahtjeve do 2026. godine?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su sankcije ako ne prijavim incident koji je zaustavio moju proizvodnju?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prema hrvatskom ZKS-u, novčane kazne za neispunjenje mogu dosegnuti do 10 milijuna EUR ili 2% globalnog godišnjeg prihoda, ovisno što je veće. Za važne entitete kazne su generalno veće nego za druge subjekte. Rizik također uključuje suspenziju dozvole za rad ili isključenje iz javnih nabava.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zakon o kibernetičkoj sigurnosti predviđa kazne do 7 milijuna EUR ili 1,4 % godišnjeg prometa za važne subjekte koji ne prijave incidents u roku od 24 sata nacionalnom CERT-u (dio SOA-e). Dodatno, Republika Hrvatska može izdati naredbu za obustavljanje poslovanja do oporavka, što znači dodatne gubitke proizvodnje i branda. Izbjegavajte ove sankcije izvještavanjem u roku i kontinuiranim monitoring-om putem Secfix-a za detektiranje incidenata u realnom vremenu.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="medical-devices.html">NIS2 za proizvođače medicinskih uređaja u Hrvatskoj</a></li><li style="margin:0"><a href="pharmacies.html">NIS2 za lančanike ljekarna u Hrvatskoj</a></li><li style="margin:0"><a href="public-administration.html">NIS2/ZKS za javne institucije</a></li><li style="margin:0"><a href="real-estate.html">NIS2 za nekretnine u Hrvatskoj</a></li><li style="margin:0"><a href="retail.html">NIS2/ZKS za velike maloprodajne lance u Hrvatskoj</a></li><li style="margin:0"><a href="sme-general.html">NIS2 zahtjevi za srednje velike tvrtke u reguliranim sektorima - Hrvatska 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
