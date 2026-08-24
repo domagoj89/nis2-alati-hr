@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 zahtjevi za HR software dobavljače u Hrvatskoj 2026</title>
-  <meta name="description" content="NIS2 obaveze za davatelje usluga HR softvera i računovodstva koja upravljaju podacima zaposlenika više organizacija u Hrvatskoj. Rok poštovanja: 2026.">
+  <title>NIS2 zahtjevi za HR software i payroll davatelje usluga — Hrvatska 2026</title>
+  <meta name="description" content="Vodič za HR software i payroll davatelje usluga o NIS2 obvezama. Sigurnost podataka zaposlenika, izolacija klijenta i incident reporting zahtjevi do 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/hr-payroll.html">
-  <meta property="og:title" content="NIS2 zahtjevi za HR software dobavljače u Hrvatskoj 2026">
-  <meta property="og:description" content="NIS2 obaveze za davatelje usluga HR softvera i računovodstva koja upravljaju podacima zaposlenika više organizacija u Hrvatskoj. Rok poštovanja: 2026.">
+  <meta property="og:title" content="NIS2 zahtjevi za HR software i payroll davatelje usluga — Hrvatska 2026">
+  <meta property="og:description" content="Vodič za HR software i payroll davatelje usluga o NIS2 obvezama. Sigurnost podataka zaposlenika, izolacija klijenta i incident reporting zahtjevi do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/hr-payroll.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 zahtjevi za HR software dobavljače u Hrvatskoj 2026">
-  <meta name="twitter:description" content="NIS2 obaveze za davatelje usluga HR softvera i računovodstva koja upravljaju podacima zaposlenika više organizacija u Hrvatskoj. Rok poštovanja: 2026.">
+  <meta name="twitter:title" content="NIS2 zahtjevi za HR software i payroll davatelje usluga — Hrvatska 2026">
+  <meta name="twitter:description" content="Vodič za HR software i payroll davatelje usluga o NIS2 obvezama. Sigurnost podataka zaposlenika, izolacija klijenta i incident reporting zahtjevi do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 zahtjevi za HR software dobavljače i davatelje usluga računovodstva u Hrvatskoj",
+      "name": "NIS2 zahtjevi za HR software i payroll davatelje usluga u Hrvatskoj — Obveze važnih entiteta 2026",
       "item": "https://nis2-hr.eu/sektory/hr-payroll.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Što se dogodilo ako moj HR softver služi samo nekoliko klijentskih organizacija — jesam li i dalje klasificiran kao važna entiteta prema NIS2?",
+      "name": "Što se smatra 'incidentom' koji zahtijeva 24-satni izvještaj SOA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ako upravljate HR podacima za 10 ili više različitih organizacija, klasificirate se kao važna entiteta prema Prilogu II NIS2. Ako imate manje od 10 klijentskih organizacija, možda ste obuhvaćeni kao obični davatelj digitalne usluge s nižim zahtjevima, ali preporučuje se provjera sa SOA kako bi se potvrdio točan status."
+        "text": "Incident je bilo koja neovlaštena dostava, brisanje ili promjena personalnih podataka zaposlenika koja utječe na najmanje 1000 osoba ili tri klijenta istovremeno. Primjeri: krađa podataka iz backupa, neovlašteni admin pristup s obrisanim audit logom ili izlazak podataka kroz API. Ako je samo jedan klijent pogođen s 500 zaposlenika, izvještavate tog klijenta, ali ne SOA-u."
       }
     },
     {
       "@type": "Question",
-      "name": "Trebam li izvijestiti svaki klijenta odvojeno ako dođe do sigurnosnog incidenta, ili je dovoljna samo obavijest SOA?",
+      "name": "Kako trebam zaštititi administrativni pristup payroll sustavu ako su administratori fizički u kancelariji?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trebate učiniti oboje. Morate izvijestiti SOA u roku od 24 sata od otkrivanja incidenta koji može utjecati na podatke, te također obavijestiti svaki klijenta bez nepotrebnog odgode prema GDPR Članku 33 ako je incident doveo do kršenja osobnih podataka."
+        "text": "Hardverski MFA (FIDO2, YubiKey) mora biti obvezan za svaki administrativni login, čak i iz kancelarije. Dodatno, implementirajte just-in-time povišavanje — administratori se logiraju s običnim korisničkim računom, a privilegije se dodjeljuju samo na vrijeme izvršavanja zadatka. Svi pokušaji pristupa evidentiraju se u tamper-proof audit log s najmanje 90 dana retencije."
       }
     },
     {
       "@type": "Question",
-      "name": "Koje su kazne ako ne usklađim se s NIS2 zahtjevima do roka od 2026?",
+      "name": "Koja je kazna ako do 31. prosinca 2026. ne zadovoljim NIS2 zahtjeve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kazne za nepoštovanje NIS2 mogu dosegnuti 20 milijuna eura ili 4% globalnog godišnjeg prometa, ovisno što je veće. Osim toga, SOA može izdati programe poboljšanja i suspenziju dozvole za pružanje usluga ako se ozbiljne sigurnosne ranjivosti ne otklone."
+        "text": "Za važne entitete poput payroll davatelja, maksimalne kazne su do 7 milijuna eura ili 1,4% svjetskog godišnjeg prometa. Dodatno, SOA može izdati hitne naredbe za remediaciju s rokom od 30 dana, a nesukladnost može rezultirati zabrana pružanja usluga hrvatskim klijentima. Preporučujemo da započnete implementaciju odmah jer većina mjera zahtijeva 6-12 mjeseci za potpunu provedbu."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2 zahtjevi za HR software dobavljače i davatelje usluga računovodstva u Hrvatskoj
+    NIS2 zahtjevi za HR software i payroll davatelje usluga u Hrvatskoj — Obveze važnih entiteta 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važna entiteta</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za HR software dobavljače i davatelje usluga računovodstva u Hrvatskoj</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena davateljima HR softvera, računovodstvenih usluga i platformama za upravljanje primicima koji upravljaju osjetljivim podatcima zaposlenika za više klijentskih organizacija. Saznajte konkretne obaveze sigurnosti, izvještavanja o incidentima i izolacije podataka prema NIS2 regulaciji.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Važan entitet</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za HR software i payroll davatelje usluga u Hrvatskoj — Obveze važnih entiteta 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ovaj vodič je namijenjen davalcima HR i payroll software usluga koji upravljaju podacima zaposlenika za više organizacija. Saznajte konkretne tehnijske i organizacijske mjere koje ste dužni implementirati prema Zakonu o kibernetičkoj sigurnosti.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Kompanijama koje pružaju HR software, usluge računovodstva ili upravljanje primicima za više od 10 klijentskih organizacija u Hrvatskoj primjenjuju se zahtjevi NIS2. Trebate biti digitalni davatelj usluga ili operator kritične infrastrukture koji obrađuje osobne podatke zaposlenika kao dio svojih primarnih funkcija.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">HR software i payroll uslužni davatelji koji pružaju usluge računalnog oblaka ili pružanja podataka za više hrvatskih pravnih osoba moraju se smatrati važnima entitetima i podliježu NIS2 zahtjevima. Ova klasifikacija obuhvaća sve davatelje koji upravljaju osobnim podacima najmanje 50 zaposlenika za više od tri klijenta. Sukladno Zakonu o kibernetičkoj sigurnosti, odgovorni ste za provedbu mjera sigurnosti u cijelom ciklusu životnosti podataka zaposlenika.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaštita podataka o primicima i osobnih podataka zaposlenika</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kao davatelj HR softvera ili usluga računovodstva, dužni ste primjenjivati tehnijske i organizacijske mjere za zaštitu osjetljivih podataka o zaposlenicima, uključujući podatke o primicima, poreze i osobne identifikacijske brojeve. Ove mjere moraju zadovoljiti kako NIS2 tako i GDPR zahtjeve, s posebnim fokusom na šifriranje podataka tijekom prijenosa i u mirovanju.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost podataka zaposlenika — NIS2 i GDPR dupla obveza</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kao davatelj payroll i HR usluga, dužni ste osigurati da su osobni podaci zaposlenika zaštićeni tehničkim mjerama koje zadovoljavaju standarde TISAX Razine 2 ili ISO/IEC 27001. Podatke morate šifrirati tijekom prijenosa (TLS 1.2+) i u stanju mirovanja. Za klijente u posebno osjetljivim sektorima (javna uprava, financije) potrebna je dodatna razina zaštite i redovito testiranje penetracijskom analizom.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima kao davatelj digitalne usluge</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako doživite sigurnosni incident koji može utjecati na podatke više od jednog klijenta, dužni ste izvijestiti Samostalnu agenciju za odgovornost (SOA) u roku od 24 sata od otkrivanja. Incidenti koji izlažu osobne podatke zaposlenika zahtijevaju i obavijest klijentima prema GDPR pravilu.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izolacija podataka klijenta u multi-tenant okruženju</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">U multi-tenant SaaS platformama morate osigurati logičku i fizičku izolaciju baza podataka pojedinoga klijenta. To znači da podaci jednoga klijenta ne smiju biti dostupni drugom, čak ni administratorima sustava. Implementirajte row-level security, zasebne šeme baze ili odvojena kontejnere po klijentu. Redovito testirajte izolaciju kroz penetracijske testove i code review-e.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost lanaca opskrbe i izolacija podataka klijenta</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">U višenamjenskim SaaS platformama trebate osigurati da su podaci svakog klijenta strogo izolirani na razini baze podataka ili čak infrastrukture. Trebate procjenjivati rizike od dobavljača trećih strana koji imaju pristup vašim sustavima ili podacima klijentima i dokumentirati sve mere zaštite.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Pristupne kontrole i MFA za administrativni pristup</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi administratorski učini nad payroll i HR podacima moraju biti zaštićeni hardverskim MFA (npr. FIDO2 ključ). Lokalne privilegije ne smiju biti trajno dodijeljena — implement zero-trust pristup s just-in-time povišavanjem. Svi pristup mora biti evidentiran u audit log koji se ne može unazad pobrisati, s najmanje 90 dana retencije za klijente u EU.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola pristupa i evidentiranje za administratore sustava</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pristup administratorskim funkcijama u vašim HR sustavima mora biti zaštićen jačim čimbenicima autentifikacije, uključujući hardverske MFA ključeve ili biometrijske mjere. Sve akcije administratora, posebno one koje uključuju pristup ili izvoz podataka zaposlenika, trebaju biti detaljno zabilježene i redovito nadzierane.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Incident reporting — 24/72-satni rok za više klijenta</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako je incident u vašem payroll sustavu utjecao na više od 1000 zaposlenika ili više od tri klijenta istovremeno, dužni ste obavijestiti SOA/nacionalni CERT u roku od 24 sata od otkrivanja. Dodatno, unutar 72 sata obavijestite sve pogođene klijente s detaljima incidenta. Očekuje se da imate plan incident responsea s jasno definiranima ekipom i komunikacijskim kanalima.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Proces brisanja podataka klijenta pri raskinuću ugovora</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Trebate imati formalni, dokumentirani proces koji osigurava da su svi podaci klijenta (uključujući osnovne podatke, povijest primanja i zapise) sigurno obrisani ili vraćeni u dogovorenim rokovima nakon završetka ugovora. To mora biti testirano redovito i validirano kroz revizije.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Brisanje podataka klijenta — formalani proces pri završetku ugovora</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kada klijent prekine ugovor, dužni ste obrisati ili vratiti sve podatke zaposlenika u dogovorenoj vremenskoj periodi (obično 30 dana). Proces brisanja mora biti dokumentiran s revizijskim tragom koji potvrđuje potpuno brisanje iz svih sustava (uključujući backupe). Neizvršenje ovog zahtjeva predstavlja povredu GDPR članka 17 i čini vas odgovornima za ispravljanje do godine 2026.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedovoljna izolacija podataka klijentima u multi-tenant SaaS platformama, što dovodi do rizika da podaci jednog klijenta mogu biti dostupni drugom klijentu putem SQL injekcije ili drugih ranjivosti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedovoljna logička izolacija podataka u multi-tenant bazama — klijenti dijele istu tablicu sa WHERE klauzulom umjesto fizički odvojenih shema ili kontejnera.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Pristup administratorskim funkcijama zaštićen samo lozinkama bez hardverskog MFA, što čini račune osjetljive na phishing i credential stuffing napade.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administrativni pristup nije zaštićen hardverskim MFA — korišteni su samo softverski 2FA kodovi ili jednofaktorska autentifikacija s lozinkama.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema formalnog procesa za sigurno brisanje podataka klijenta nakon završetka ugovora, što ostavlja stare podatke zaposlenika na serverima mjesecima ili godinama.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema formalnog procesa brisanja podataka pri završetku ugovora — podaci ostaju u backup sustavima bez dokaza brisanja.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostaju redoviti testovi penetrativnog testiranja i provjere sigurnosti specifični za scenarije s više klijentima i izolaciju podataka.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Audit logging ne pokriva sve administrativne radnje ili se logovi mogu obrisati, što čini nemoguće dokazati compliance pri reviziji.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Što se dogodilo ako moj HR softver služi samo nekoliko klijentskih organizacija — jesam li i dalje klasificiran kao važna entiteta prema NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Što se smatra 'incidentom' koji zahtijeva 24-satni izvještaj SOA?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ako upravljate HR podacima za 10 ili više različitih organizacija, klasificirate se kao važna entiteta prema Prilogu II NIS2. Ako imate manje od 10 klijentskih organizacija, možda ste obuhvaćeni kao obični davatelj digitalne usluge s nižim zahtjevima, ali preporučuje se provjera sa SOA kako bi se potvrdio točan status.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Incident je bilo koja neovlaštena dostava, brisanje ili promjena personalnih podataka zaposlenika koja utječe na najmanje 1000 osoba ili tri klijenta istovremeno. Primjeri: krađa podataka iz backupa, neovlašteni admin pristup s obrisanim audit logom ili izlazak podataka kroz API. Ako je samo jedan klijent pogođen s 500 zaposlenika, izvještavate tog klijenta, ali ne SOA-u.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li izvijestiti svaki klijenta odvojeno ako dođe do sigurnosnog incidenta, ili je dovoljna samo obavijest SOA?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Kako trebam zaštititi administrativni pristup payroll sustavu ako su administratori fizički u kancelariji?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Trebate učiniti oboje. Morate izvijestiti SOA u roku od 24 sata od otkrivanja incidenta koji može utjecati na podatke, te također obavijestiti svaki klijenta bez nepotrebnog odgode prema GDPR Članku 33 ako je incident doveo do kršenja osobnih podataka.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Hardverski MFA (FIDO2, YubiKey) mora biti obvezan za svaki administrativni login, čak i iz kancelarije. Dodatno, implementirajte just-in-time povišavanje — administratori se logiraju s običnim korisničkim računom, a privilegije se dodjeljuju samo na vrijeme izvršavanja zadatka. Svi pokušaji pristupa evidentiraju se u tamper-proof audit log s najmanje 90 dana retencije.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako ne usklađim se s NIS2 zahtjevima do roka od 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je kazna ako do 31. prosinca 2026. ne zadovoljim NIS2 zahtjeve?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kazne za nepoštovanje NIS2 mogu dosegnuti 20 milijuna eura ili 4% globalnog godišnjeg prometa, ovisno što je veće. Osim toga, SOA može izdati programe poboljšanja i suspenziju dozvole za pružanje usluga ako se ozbiljne sigurnosne ranjivosti ne otklone.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za važne entitete poput payroll davatelja, maksimalne kazne su do 7 milijuna eura ili 1,4% svjetskog godišnjeg prometa. Dodatno, SOA može izdati hitne naredbe za remediaciju s rokom od 30 dana, a nesukladnost može rezultirati zabrana pružanja usluga hrvatskim klijentima. Preporučujemo da započnete implementaciju odmah jer većina mjera zahtijeva 6-12 mjeseci za potpunu provedbu.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Sektori obuhvaćeni NIS2 u Hrvatskoj 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2/ZKS za osiguravajuća društva u Hrvatskoj</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 za IT outsourcing tvrtke u Hrvatskoj</a></li><li style="margin:0"><a href="law-firms.html">NIS2 za odvjetničke kancelarije u Hrvatskoj</a></li><li style="margin:0"><a href="logistics.html">NIS2 za logističke operatore u Hrvatskoj</a></li><li style="margin:0"><a href="managed-services.html">NIS2 za MSP i MSSP davatelje u Hrvatskoj</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">

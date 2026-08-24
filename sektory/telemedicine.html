@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2/ZKS za telehealth platforme u Hrvatskoj — Usklađenost 2026.</title>
-  <meta name="description" content="Kompletan vodič NIS2 obveza za telemedicinu i digitalne zdravstvene aplikacije u Hrvatskoj. Rokovi usklađenosti, zahtjevi sigurnosti podataka pacijenata i obveze izvještavanja.">
+  <title>NIS2 za telehealth platforme u Hrvatskoj — zahtjevi 2026.</title>
+  <meta name="description" content="Vodiči za usklađenost NIS2 za operatore telehealth usluga, platforme za daljinsko praćenje i digitalne zdravstvene aplikacije u Hrvatskoj s rokom do 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/telemedicine.html">
-  <meta property="og:title" content="NIS2/ZKS za telehealth platforme u Hrvatskoj — Usklađenost 2026.">
-  <meta property="og:description" content="Kompletan vodič NIS2 obveza za telemedicinu i digitalne zdravstvene aplikacije u Hrvatskoj. Rokovi usklađenosti, zahtjevi sigurnosti podataka pacijenata i obveze izvještavanja.">
+  <meta property="og:title" content="NIS2 za telehealth platforme u Hrvatskoj — zahtjevi 2026.">
+  <meta property="og:description" content="Vodiči za usklađenost NIS2 za operatore telehealth usluga, platforme za daljinsko praćenje i digitalne zdravstvene aplikacije u Hrvatskoj s rokom do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/telemedicine.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2/ZKS za telehealth platforme u Hrvatskoj — Usklađenost 2026.">
-  <meta name="twitter:description" content="Kompletan vodič NIS2 obveza za telemedicinu i digitalne zdravstvene aplikacije u Hrvatskoj. Rokovi usklađenosti, zahtjevi sigurnosti podataka pacijenata i obveze izvještavanja.">
+  <meta name="twitter:title" content="NIS2 za telehealth platforme u Hrvatskoj — zahtjevi 2026.">
+  <meta name="twitter:description" content="Vodiči za usklađenost NIS2 za operatore telehealth usluga, platforme za daljinsko praćenje i digitalne zdravstvene aplikacije u Hrvatskoj s rokom do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2/ZKS za telehealth platforme, usluge praćenja pacijenata i operatore zdravstvenih aplikacija u Hrvatskoj",
+      "name": "NIS2 za telehealth platforme u Hrvatskoj — zahtjevi važne entitete 2026.",
       "item": "https://nis2-hr.eu/sektory/telemedicine.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Trebam li implementirati end-to-end enkripciju ako su naši pacijenti samo u privatnim bolnicama koje imaju vlastite sigurne mreže?",
+      "name": "Koje vrste incidenta telehealth platforme trebam prijaviti SOA u roku od 24 sata?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da. ZKS članak 19 zahtijeva end-to-end enkripciju za sve zdravstvene podatke tijekom prijenosa, neovisno o tome jesu li bolnice na privatnih mrežama. Privatne mreže ne osiguravaju dostatan standard — samo enkripcija na razini aplikacije. Video, poruke i zapisi trebaju biti nečitljivi čak i ako haker presiječe promet u bolničkoj mreži."
+        "text": "Trebate prijaviti sve incidente koji utječu na dostupnost platforme (cijeli ili parcijalni prekidi), neovlašteni pristup zdravstvenim podacima pacijenata, gubitak integriteta podataka, ili napade koji onemogućavaju vršenje telemedicinskih konzultacija. Primjeri uključuju: DDoS napade na platformu, brute force napade na pacijentske račune, curenja podataka pacijenata, ili kvar servera koji sprječava pristup povijest pacijenta tijekom konzultacije."
       }
     },
     {
       "@type": "Question",
-      "name": "Što se smatra 'incidentom' koji trebam prijaviti SOA-i u roku od 72 sata?",
+      "name": "Koja je razlika između NIS2 zahtjeva i GDPR zahtjeva za zdravstvene podatke na mojoj telehealth platformi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Incident je svaki nenamjeran sigurnosni događaj koji utječe na dostupnost (prekid videa duži od 30 minuta), povjerljivost (neovlašten pristup zdravstvenim podacima), ili integritet (promjena zapisa bez autorizacije). Primjeri: DDoS napad na platformu, SQL injection koji otkriva korisničke kredencijale, ili slučajni pristup pacijenta medicinski zapisima druge osobe. Incident koji utječe samo na jednog pacijenta i trajao minutu obično se ne prijavljuje, ali incident koji utječe na više od 10 pacijenata ili trajao sat vremena mora biti prijavljen."
+        "text": "GDPR je fokusiran na zaštitu privatnosti i prava pacijenata (pristanak, pravo na zaborav, pristup), dok se NIS2 fokusira na kibernetičku sigurnost infrastrukture i sprječavanje sigurnosnih incidenta. Za telehealth platforme trebate implementirati oba: GDPR zahtjeve za procesiranje (politike, privacy by design) i NIS2 zahtjeve za sigurnost (enkripcija, penetration testing, incident reporting). Oba zakona se moraju integrirati u istu strategiju jer zdravstveni podaci zahtijevaju i privatnost i sigurnost."
       }
     },
     {
       "@type": "Question",
-      "name": "Koja su najčešća kažnjenja ako operator telehealth-a ne uskladi se s NIS2-om do kraja 2025. godine?",
+      "name": "Koje su kazne ako telehealth platforma nije usklađena s NIS2 do 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Članice mogu izreći kazne do 10 milijuna eura ili 2% godišnjeg globalnog prometa (broj koji je viši) za teške povrede kao što su nepostojanje penetracijskih testova ili odsustvo plana izvještavanja o incidentima. Manji prekršaji (zastarjeli dogovori sa podprocesima) mogu izazvati kazne do 5 milijuna eura ili 1% prometa. SOA će početi s upozorenjem u 2025., a inspekcije će početi tijekom 2026. godine."
+        "text": "Kao važna entiteta, telehalth operatori mogu biti podvrgnuti novčanim kazna do 7 milijuna eura ili 1,4% ukupnog godišnjeg prihoda (ovisno što je veće) za kršenja NIS2 zahtjeva. Dodatno, ako incidenti nisu prijavljivani u dogovorenim vremenskim rokovima (24/72 sata), te ako nisu implementirane obavezne sigurnosne mjere kao penetration testing ili end-to-end enkripcija, kazne mogu biti viške. Redovito je surađivanje sa SOA i demonstracija napretka u usklađenosti ključne je za smanjenje rizika od penalizacije."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2/ZKS za telehealth platforme, usluge praćenja pacijenata i operatore zdravstvenih aplikacija u Hrvatskoj
+    NIS2 za telehealth platforme u Hrvatskoj — zahtjevi važne entitete 2026.
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — Važan entitet</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZKS za telehealth platforme, usluge praćenja pacijenata i operatore zdravstvenih aplikacija u Hrvatskoj</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ovaj vodič je namijenjen operatorima telemedicine, pružateljima usluga daljinskog nadzora bolesnika i razvojnim timovima zdravstvenih aplikacija koji trebaju razumjeti obveze važnih entiteta prema Zakonu o kibernetskoj sigurnosti (ZKS). Saznajte kako osigurati sigurnost podataka pacijenata, uskladiti se s GDPR-om i NIS2-om te izbjeći kazne do 10 milijuna eura.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važna entiteta</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 za telehealth platforme u Hrvatskoj — zahtjevi važne entitete 2026.</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena operatorima telehealth platformi, pružateljima usluga daljinskog praćenja pacijenata i razvojnim timovima zdravstvenih aplikacija u Hrvatskoj koji moraju udovoljiti obvezama kao važne entitete prema Zakonu o kibernetičkoj sigurnosti. Saznajte specifične tehničke, organizacijske i proceduralne zahtjeve koji se primjenjuju na zdravstvene digitalne usluge.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Telehealth platforme, pružatelji usluga daljinskog praćenja vitala pacijenata i operatori zdravstvenih digitalnih aplikacija kvalificiraju se kao važni entiteti ako imaju kontinuirane operacije kritične za zdravstvenu zaštitu u Hrvatskoj te ako obslužavaju značajnu klijentelu (bolnice, zdravstvene domove ili veći broj pojedinačnih pacijenata). Organizacije s više od 250 zaposlenih ili godišnjim prometom većim od 50 milijuna eura smatraju se važnim entitetima, kao i sve organizacije koje pružaju digitalne zdravstvene usluge povezane sa zdravstvenim informacijskim sustavima.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Ova uredba obavezuje operatore telehealth platformi, pružatelje usluga daljinskog praćenja pacijenata i operatore zdravstvenih mobilnih i web aplikacija koji pružaju usluge na teritoriju Hrvatske i procesiraju osjetljive zdravstvene podatke pacijenata. Kvalificiranu se entitete s izuzetkom mikropoduzeća, male poduzećima i nezavisnih pružatelja usluga koji ne dosižu prih treshold.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost prijenosa podataka pacijenata — end-to-end enkripcija</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve videokonsultacije, poruke, medicinski zapisi i signali vitalnih znakova moraju biti zaštićeni end-to-end enkripciijom tijekom prijenosa i pohrane. Telehealth platforme trebaju implementirati TLS 1.3+ za sve mrežne komunikacije te osigurati da niti operatori platforme nemaju pristup dešifriranima sadržaju između pacijenta i liječnika. Ova obveza direktno proizlazi iz GDPR članka 32 i ZKS članka 19 te je kritična za sprječavanje neovlaštenog pristupa osjetljivim zdravstvenim informacijama.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita podataka pri prijenosu tijekom video konzultacija i poruka</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve video platforme za telemedicinu i sustavi poruka moraju biti opremljeni end-to-end enkripcijom za zaštitu podataka pacijenata tijekom prijenosa. Telehealth operatori su dužni provesti kriptografske procjene i koristiti samo provjerjene protokole (TLS 1.2 ili novije) za sve kanale komunikacije. Ova zaštita mora se primjenjivati na sve vrste podataka, uključujući audio, video, tekstualne poruke i medicinske zapise.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Usklađenost GDPR-a i NIS2-a — integrirana strategija obrade podataka</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Digitalne zdravstvene usluge trebaju uskladiti zahtjeve NIS2-a za kibernetsku sigurnost s GDPR-ovim obvezama za zaštitu podataka. To uključuje pisane dogovore o obradi podataka sa svim podprocesima (cloud davatelje, integratori EHR sustava, pružatelje analitike), redovne procjene utjecaja na zaštitu podataka (DPIA) te jasne procedure za izvještavanje o incidentima koji mogu utjecati na privatnost. Svaka treća strana koja ima pristup zdravstvenim podacima mora biti uključena u formalnu evidenciju i podložna sigurnosnim auditima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Usklađenost GDPR i NIS2 za procesiranje zdravstvenih podataka</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth platforme moraju integrirati zahtjeve NIS2 u svoje GDPR politike obrade podataka, posebno za osjetljive zdravstvene podatke. To uključuje dokumentaciju mehanizama sigurnosti, procjena rizika specifične za zdravstvu, te implementaciju principa minimalizacije podataka. Sve izvješće o obavezi pri zaštiti podataka mora biti usklađeno s kibernetičkom sigurnosti kako bi se izbjegle duplikatne ili kontradiktorne mjere.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost dobavnog lanca — integracija s bolničkim EHR sustavima</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kad se telehealth aplikacija integrira s bolničkim elektroničkim zdravstvenim kartama (EHR), telehealth operator mora provjeriti sigurnost svakog API-ja, biblioteke za integraciju i postupka sinhronizacije podataka. To uključuje zahtjeve da pružatelji bolničkih sustava pružaju sigurnosne certifikate, redovne penetracijske testove i dokaze o sukladnosti s NIS2-om. Telehealth operatori su odgovorni za incidente koji nastanu kroz neprovjerene ili zastarjele integracije s bolničkim sustavima.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost lanca opskrbe za integraciju sa bolničkim EHR sustavima</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operatori moraju provesti vrednovanje sigurnosti svih sub-procesora, integracija EHR sustava i API veza s bolničkim sustavima. Svi partneri i dobavljači softvera trebaju biti obuhvaćeni formalnim sporazumima o obrada podataka koji detaljno definiraju sigurnosne standarde i obaveze. Redovito se trebaju provoditi sigurnosne procjene lanca opskrbe najmanje godišnje ili nakon svake značajne promjene u integraciji.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izvještavanje o incidentima — obaveza prijave u 72 sata</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaki sigurnosni incident koji utječe na dostupnost telehealth platforme, povjerljivost podataka pacijenata ili integritet zdravstvenih podataka mora biti prijavljen Agenciji za zaštitu konkurencije (SOA) u roku od 72 sata od otkrića. Incidenti koji dovode do prekida video konsultacija, gubitka poruka ili neslučajnog pristupa medicinskim zapisima trebaju biti dokumentirani s detaljima o broju utjecanih pacijenata, trajanju prekida i poduzatim mjerama. Operatori trebaju održavati dnevnik svih sigurnosnih događaja najmanje dvije godine.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Incident reporting za prekide platforme koji utječu na kontinuitet zdravstvene zaštite</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operatori telehealth platformi dužni su prijaviti sredstvenom dužnostniku (SOA) sve incidente koji utječu na dostupnost usluge ili sigurnost podataka pacijenata u roku od 24 sata od otkrića. Za incidente koji mogu imati ozbiljne posljedice na zdravlje pacijenata, potrebna je dodatna detaljnija prijava u roku od 72 sata. Ključni su incidenti: cijeli prekidi platforme, neovlašteni pristup podacima, ili napadi koji onemogućavaju telemedicinske konzultacije.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Testiranje sigurnosti — obvezni penetracijski testovi i procjena ranjivosti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telehealth platforme moraju provesti minimalno godišnje sukladne penetracijske testove koje provode akreditirani vanjski sigurnosni stručnjaci. Zdravstvene aplikacije trebaju redovito procjenjivati ranjivosti (najmanje kvartalno) i imati formalnu proceduru za upravljanje pronađenim greškama do zakrpljivanja. Svi sigurnosni testovi trebaju biti dokumentirani i dostupni za pregled od strane SOA-e tijekom inspekcija.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Penetration testing i redovite sigurnosne procjene zdravstvenih aplikacija</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve digitalne zdravstvene aplikacije i mobilne aplikacije trebaju biti podvrgnute formalnom penetration testingu barem godišnje, a prije svakog većeg ažuriranja ili proširenja funkcionalnosti. Testiranje mora biti provedeno od strane treće strane ili internog tima s dokumentiranom stručnošću. Rezultati testiranja trebaju biti dostupni davatelja i trebaju uključivati remedijacijske mjere za identificirane ranjivosti.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Videokonsultacijske platforme nisu konfigurirane sa end-to-end enkripciijom — slike i signali se prenose kao običan tekst ili koriste slabe šifrirne standarde bez certifikata (npr. vlastiti 'sigurnosni' protokoli umjesto TLS 1.3).
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Video konzultacijske platforme nisu opremljene end-to-end enkripcijom ili koriste zastarjele kriptografske standarde koji ne zadovoljavaju NIS2 zahtjeve za zaštitu podataka u prijenosu.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravstvene aplikacije ne pokrivaju formalno penetracijske testove — razvojni timovi oslanjaju se samo na internu analizu koda bez vanjskih sigurnosnih stručnjaka ili redovite procjene ranjivosti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravstvene mobilne i web aplikacije nisu pokrivene formalnim penetration testiranjem ili redovitim sigurnosnim procjenama, što ostavlja ranjivosti neotkrivene.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostaju pisani dogovori o obradi podataka sa svim podprocesima — cloud davatelji, pružatelji SMS notifikacija i analitičari podataka nemaju formalne dogovore koji navode obveze vezane uz kibernetsku sigurnost i dostupnost.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema formalno dokumentiranih sporazuma o obradi podataka s sub-procesora ili integracijama EHR sustava, što kršava zahtjeve lanca opskrbe.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Bez jasnoga plana izvještavanja o incidentima — timovi često nisu sigurni trebaju li prijaviti incident SOA-i ako je breša pronađena ali nije potvrđeno da su podaci pacijenata otkriti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Incidenti koji utječu na dostupnost platforme ili sigurnost podataka pacijenata nisu prijavljivani SOA u dogovorenim vremenskim rokovima (24/72 sata).
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li implementirati end-to-end enkripciju ako su naši pacijenti samo u privatnim bolnicama koje imaju vlastite sigurne mreže?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje vrste incidenta telehealth platforme trebam prijaviti SOA u roku od 24 sata?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Da. ZKS članak 19 zahtijeva end-to-end enkripciju za sve zdravstvene podatke tijekom prijenosa, neovisno o tome jesu li bolnice na privatnih mrežama. Privatne mreže ne osiguravaju dostatan standard — samo enkripcija na razini aplikacije. Video, poruke i zapisi trebaju biti nečitljivi čak i ako haker presiječe promet u bolničkoj mreži.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Trebate prijaviti sve incidente koji utječu na dostupnost platforme (cijeli ili parcijalni prekidi), neovlašteni pristup zdravstvenim podacima pacijenata, gubitak integriteta podataka, ili napade koji onemogućavaju vršenje telemedicinskih konzultacija. Primjeri uključuju: DDoS napade na platformu, brute force napade na pacijentske račune, curenja podataka pacijenata, ili kvar servera koji sprječava pristup povijest pacijenta tijekom konzultacije.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Što se smatra 'incidentom' koji trebam prijaviti SOA-i u roku od 72 sata?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između NIS2 zahtjeva i GDPR zahtjeva za zdravstvene podatke na mojoj telehealth platformi?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Incident je svaki nenamjeran sigurnosni događaj koji utječe na dostupnost (prekid videa duži od 30 minuta), povjerljivost (neovlašten pristup zdravstvenim podacima), ili integritet (promjena zapisa bez autorizacije). Primjeri: DDoS napad na platformu, SQL injection koji otkriva korisničke kredencijale, ili slučajni pristup pacijenta medicinski zapisima druge osobe. Incident koji utječe samo na jednog pacijenta i trajao minutu obično se ne prijavljuje, ali incident koji utječe na više od 10 pacijenata ili trajao sat vremena mora biti prijavljen.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">GDPR je fokusiran na zaštitu privatnosti i prava pacijenata (pristanak, pravo na zaborav, pristup), dok se NIS2 fokusira na kibernetičku sigurnost infrastrukture i sprječavanje sigurnosnih incidenta. Za telehealth platforme trebate implementirati oba: GDPR zahtjeve za procesiranje (politike, privacy by design) i NIS2 zahtjeve za sigurnost (enkripcija, penetration testing, incident reporting). Oba zakona se moraju integrirati u istu strategiju jer zdravstveni podaci zahtijevaju i privatnost i sigurnost.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja su najčešća kažnjenja ako operator telehealth-a ne uskladi se s NIS2-om do kraja 2025. godine?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako telehealth platforma nije usklađena s NIS2 do 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Članice mogu izreći kazne do 10 milijuna eura ili 2% godišnjeg globalnog prometa (broj koji je viši) za teške povrede kao što su nepostojanje penetracijskih testova ili odsustvo plana izvještavanja o incidentima. Manji prekršaji (zastarjeli dogovori sa podprocesima) mogu izazvati kazne do 5 milijuna eura ili 1% prometa. SOA će početi s upozorenjem u 2025., a inspekcije će početi tijekom 2026. godine.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kao važna entiteta, telehalth operatori mogu biti podvrgnuti novčanim kazna do 7 milijuna eura ili 1,4% ukupnog godišnjeg prihoda (ovisno što je veće) za kršenja NIS2 zahtjeva. Dodatno, ako incidenti nisu prijavljivani u dogovorenim vremenskim rokovima (24/72 sata), te ako nisu implementirane obavezne sigurnosne mjere kao penetration testing ili end-to-end enkripcija, kazne mogu biti viške. Redovito je surađivanje sa SOA i demonstracija napretka u usklađenosti ključne je za smanjenje rizika od penalizacije.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="transport.html">NIS2 za zračne luke, željeznice i brodogradnje u Hrvatskoj 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 za komunalne zbirajnike otpada i opasne otpadne supstance</a></li><li style="margin:0"><a href="water.html">NIS2 za opskrbnike pitnom vodom u Hrvatskoj</a></li><li style="margin:0"><a href="accountants.html">NIS2 za računovodstvene tvrtke u Hrvatskoj</a></li><li style="margin:0"><a href="banks.html">NIS2 za hrvatske banke i institucije - Zahtjevi do 2026.</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 za pružatelje oblačnih usluga u Hrvatskoj</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">

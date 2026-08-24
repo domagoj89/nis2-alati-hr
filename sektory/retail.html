@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC7XEBLPLY"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2/ZKS za velike maloprodajne lance u Hrvatskoj — zahtjevi 2026.</title>
-  <meta name="description" content="Vodiči ZKS za velike maloprodajne lance i e-commerce operatore. Zaštita POS sustava, podataka kupaca i sigurnost lanaca opskrbe do 2026. godine.">
+  <title>NIS2 za maloprodajne lance i e-commerce operatore u Hrvatskoj 2026</title>
+  <meta name="description" content="NIS2 zahtjevi za važne subjekte u maloprodaji i e-commerce. Obveze zaštite podataka, POS sustava i izvješćivanja o incidentima do 2026.">
   <link rel="canonical" href="https://nis2-hr.eu/sektory/retail.html">
-  <meta property="og:title" content="NIS2/ZKS za velike maloprodajne lance u Hrvatskoj — zahtjevi 2026.">
-  <meta property="og:description" content="Vodiči ZKS za velike maloprodajne lance i e-commerce operatore. Zaštita POS sustava, podataka kupaca i sigurnost lanaca opskrbe do 2026. godine.">
+  <meta property="og:title" content="NIS2 za maloprodajne lance i e-commerce operatore u Hrvatskoj 2026">
+  <meta property="og:description" content="NIS2 zahtjevi za važne subjekte u maloprodaji i e-commerce. Obveze zaštite podataka, POS sustava i izvješćivanja o incidentima do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-hr.eu/sektory/retail.html">
   <meta property="og:locale" content="hr_HR">
   <meta property="og:site_name" content="NIS2-HR.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2/ZKS za velike maloprodajne lance u Hrvatskoj — zahtjevi 2026.">
-  <meta name="twitter:description" content="Vodiči ZKS za velike maloprodajne lance i e-commerce operatore. Zaštita POS sustava, podataka kupaca i sigurnost lanaca opskrbe do 2026. godine.">
+  <meta name="twitter:title" content="NIS2 za maloprodajne lance i e-commerce operatore u Hrvatskoj 2026">
+  <meta name="twitter:description" content="NIS2 zahtjevi za važne subjekte u maloprodaji i e-commerce. Obveze zaštite podataka, POS sustava i izvješćivanja o incidentima do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2/ZKS za velike maloprodajne lance i e-commerce operatore u Hrvatskoj — zahtjevi važnih entiteta",
+      "name": "NIS2 zahtjevi za velike maloprodajne lance i e-commerce operatore u Republici Hrvatskoj",
       "item": "https://nis2-hr.eu/sektory/retail.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Mogu li koristiti stare POS terminale ako su samo lokalno povezani na mrežu?",
+      "name": "Koja je razlika između NIS2 zahtjeva za maloprodajne lance i e-commerce u Hrvatskoj?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ne — čak i lokalno povezani POS terminali moraju biti sigurni. Ako nisu kompatibilni s PCI-DSS ili NIS2, trebate ih zamijeniti ili staviti u izoliranu mrežnu zonu s dodatnim nadzorem. SOA će tražiti dokaz da su oni zaštićeni ekvivalentnim mjerama. Preporuka je da zamijените u roku do kraja 2025. godine."
+        "text": "Oba tipa poslovanja klasificirana su kao važni subjekti i imaju iste osnovne obveze: zaštita podataka kupaca, obrađivanje plaćanja prema PCI-DSS, i izvješćivanje o incidentima u roku od 24 sata. Razlika je u infrastrukturi: maloprodajne lance moraju zaštititi fizičke POS terminale u stotinama lokacija, dok e-commerce operatori trebaju zaštititi distribuirane servere i baze podataka. Oba trebaju identične procese za upravljanje dobavljačima i nadzor pristupa."
       }
     },
     {
       "@type": "Question",
-      "name": "Što trebam zahtijevati od svog logističkog partnera za usklađenost?",
+      "name": "Koji su minimalni zahtjevi za zamjenu legacy POS terminala?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trebate potpisati dodatak za sigurnost ili ugovor o obradi podataka koji jasno nabraja što on smije (pristup samo zalihama, bez pristupa CRM-u ili adresi kupaca), kako mora čuvati te podatke, kako pristupa (VPN ili API ključ) i što učiniti ako dođe do incidenta. Trebate godišnji audit njihove IT sigurnosti i dokaz da su oni usklađeni sa svojom verzijom NIS2."
+        "text": "POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZoKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene."
       }
     },
     {
       "@type": "Question",
-      "name": "Koja je kazna ako ne ispunim zahtjeve NIS2 do 2026. godine?",
+      "name": "Koje su kazne ako ne usklađim operations s NIS2 do 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kazne se kreću od 10 do 50 milijuna eura ili 2–5% godišnje prodaje, što je veće — za velike maloprodajne lance to može biti značajna kazna. Dodatno, SOA može odrediti mjere da maloprodajna platforma bude privremeno zatvorena ako je sigurnosni incident ozbiljan. Preporuka je da počnete s procjenom rizika do kraja 2024. i izvršite kritične promjene do sredine 2025."
+        "text": "Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka registracija u NIS2 registri Hrvatska do kraja 2025."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Početna stranica</a><span>›</span>
     <a href="index.html">Sektori</a><span>›</span>
-    NIS2/ZKS za velike maloprodajne lance i e-commerce operatore u Hrvatskoj — zahtjevi važnih entiteta
+    NIS2 zahtjevi za velike maloprodajne lance i e-commerce operatore u Republici Hrvatskoj
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važan entitet</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2/ZKS za velike maloprodajne lance i e-commerce operatore u Hrvatskoj — zahtjevi važnih entiteta</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ovaj vodiči je namijenjen IT direktorima, voditeljem sigurnosti i upraviteljima usklađenosti velikih maloprodajnih lanaca koji obrađuju podatke kupaca i procesuiraju plaćanja. Saznajte što točno moraju zaštititi, kako sustavima dokazati usklađenost i kako izbjeći kazne do 2026. godine.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Prilog II — važan subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 zahtjevi za velike maloprodajne lance i e-commerce operatore u Republici Hrvatskoj</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ova stranica je namijenjena IT ravnateljima, sigurnosnim stručnjacima i vodstvu tvrtki koja posluju kao važne subjekte prema NIS2. Saznajte konkretne obveze zaštite plaćanja, podataka kupaca i infrastrukture, te kako izbjeći kazne do 7 milijuna eura.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Veliki maloprodajni lanci sa više od 250 zaposlenih ili godišnjom prometom većim od 50 milijuna eura te svi e-commerce operatori koji obrađuju osobne podatke kupaca i podatke o plaćanjima u Republici Hrvatskoj moraju se uskladiti s NIS2/ZKS. To uključuje klasične trgovine s POS sustavima, online prodavce s bazama lojalnosti i operatore koji koriste treće strane za logistiku i upravljanje zalihama.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Maloprodajne lance i e-commerce operatore koji u Republici Hrvatskoj obrađuju podatke više od 250.000 kupaca ili čiji godišnji promet prelazi određenu vrijednost kvalificiraju se kao važni subjekti. Obuhvaćeni su svi operatori s P2P terminalom, mobilnom aplikacijom za plaćanja ili vlastitom online platformom. Trgovine lanaca s više od 50 lokacija i e-commerce platforme s domaćim i stranim korisnicima automatski ulaze u ovu kategoriju.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaštita POS infrastrukture i sustava obrade plaćanja</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi POS terminali, platni gateway-i i sustavi obrade plaćanja moraju biti zaštićeni prema standardima PCI-DSS i NIS2. To znači šifriranje podataka kartice tijekom prijenosa, segmentaciju mreže između POS terminala i ostatka IT infrastrukture, redovita ažuriranja sigurnosnih zakrpa te redovitog testiranja penetracije. Legacy POS terminali koji nisu kompatibilni s novim sigurnosnim zahtjevima moraju biti zamijenjeni ili izolirani u vlastitu mrežnu zonu.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita infrastrukture obrađivanja plaćanja i POS sustava</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svi POS terminali, čitači kartica i sustavi plaćanja moraju biti fizički i digitalno zaštićeni prema NIS2 i PCI-DSS standardima. Uključuje kriptiranje komunikacije između terminala i servera, redovito ažuriranje firmvera i izolaciju sustava plaćanja od ostalnih mreža. Legacy POS terminali koji nisu kompatibilni s PCI-DSS zahtijevaju zamjenu ili nadgradnju s dodatnim sigurnosnim slojevima unutar 18 mjeseci od primjene zakona.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zaštita podataka kupaca i baza lojalnosti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Baze lojalnosti i CRM sustavi koji sadrže osobne podatke, adrese i povijest kupovine moraju imati jasne politike čuvanja podataka s ograničenim vremenskim periodima. Većina maloprodajaca zadržava podatke lojalnosti predugo — NIS2 zahtijeva redovito brišanje ili anonimizaciju neaktualnih zapisa. Postavite kontrole pristupa kako bi samo autorizirani zaposlenici pristupili osjetljivim podacima, provjerite tko ima pristup CRM-u i implementirajte nadzor promjena.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Obavijest o kršenju podataka i rukovanje incidentima</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaki incident koji utječe na podatke kupaca (krađa kredita, curenja osobnih podataka, neovlašteni pristup bazama) mora biti prijavljen Državnoj uredu za nadzor kibernetičke sigurnosti (SOA) u roku od 24 sata, a dodatna analiza do 72 sata. Kupcima moraju biti obaviješteni bez nepotrebnog odgode. Dokumentirajte sve incidente u ISMS-u i održavajte dnevnike za vanjski nadzor.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost dobavljača i pristup sustavima za upravljanje zalihama</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Logistički partneri, distributeri i dobavljači često imaju pristup vašim sustavima za upravljanje zalihama. Svaki vanjski pristup mora biti kontroliran kroz VPN ili specifične API ključeve s ograničenim dozvolama. Zahtijevajte od dobavljača da potvrde minimalne sigurnosne mjere; NIS2 vas čini odgovornima za njihove blagajne ako ih pokušaj napadati preko vašeg sustava. Redovito auditurajte tko od vanjskih stranaka ima pristup i čemu.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sigurnost lanaca opskrbe i pristup dobavljača</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sve tvrtke koje dostavljaju robu, upravljaju zalihovnom, logistikom ili IT uslugama moraju potpisati ugovore sa zahtjevima za NIS2 sukladnost. Pristup logističkim sustavima, bazama zaliha i e-commerce platformama mora biti ograničen samo na nužne permutacije s redovitim revizijama. Izvedite godišnje procjene rizika za sve dobavljače, posebno one s pristupom podatkovnim centrima ili sustavima plaćanja.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Prijava sigurnosnih incidenata koji utječu na rad maloprodaje</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kad dođe do pada POS sustava, kvara e-commerce platforme ili neovlaštenog pristupa bazama kupaca, obavezni ste prijaviti to Sigurnosnoj agenciji (SOA) u roku od 72 sata ako bi to moglo utjecati na dostupnost usluge ili integritet podataka. To uključuje ransomware napade na sustave obrade plaćanja, curenja podataka lojalnosti i ozbiljne napade na vašu e-commerce infrastrukturu. Trebate imati plan reagiranja s jasnim koracima: detektiranje, brisanje od malvera, komunikacija s kupacima i dokumentacija.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Zaštita baza podataka programa vjernosti i zadržavanja kupaca</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Baze podataka programa vjernosti često sadrže osjetljive podatke (broj kartice, kupno ponašanje, kontaktne podatke) koji se čuvaju dulje nego što je potrebno. Implementirajte automatiziranu brigu podataka nakon 3 godine neaktivnosti kupca. Šifrirajte baze podataka u mirovanju i tijekom prijenosa, kontrolirajte pristup samo autoriziranom osoblju s višestrukom autentifikacijom.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Uspostava sigurnosti informacijskih sustava i kontinuiteta poslovanja</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Trebate dokumente o sigurnosnoj politici, procedurama za upravljanje pristupom, planovima oporavka nakon katastrofe i redovitim testiranjem. NIS2 zahtijeva da na razini direkcije bude imenovan predstavnik za koordinaciju sigurnosti i da se godišnje provede procjena rizika. E-commerce operatori trebaju posebnu pažnju na redundanciju servera, backup sustave i plan vraćanja normalnog rada za slučaj da trgovina bude nedostupna nekoliko sati.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Monitoring i sprečavanje nedozvoljenih pristupa te anomalija</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Instalirajte SIEM (Security Information Event Management) sustave koji će u stvarnom vremenu pratiti pristupe POS sustavima, bazama podataka i kreditnom infrastrukturi. Konfigurujte upozorenja za masovne pristupe, neuspješne logine i neobičnu aktivnost. Održavajte dnevnike najmanje 90 dana i reviews najmanje tjednih sa žarištem na pristupe iz azija ili vanjske mreže.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Stari POS terminali koji nisu integriran u centralnu sigurnosnu infrastrukturu — trebate ih ili ažurirati ili staviti u vlastitu mrežnu zonu s dodatnim nadzorom.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Legacy POS terminali stariji od 5 godina koji nisu kompatibilni s PCI-DSS 3.2.1 ostaju korišteni bez dodatnih slojeva zaštite, što krši NIS2 zahtjeve za kriptiranje podataka plaćanja.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Baze lojalnosti s godinama podataka o kupcima bez politike čišćenja — smanjite period čuvanja podataka na najmanju potrebnu mjeru i redovito brišite neaktivne račune.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Baze podataka programa vjernosti zadrżavaju podatke kupaca nakon 3-5 godina neaktivnosti bez jasnog procesa brisanja, povećavajući rizik od curenja i kršeći principe minimalne obrade podataka.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neslaganja s dozvolama dobavljačima za pristup sustavima zalih — trebate minimizirati pristup samo onome što im je potrebno i redovito auditurajte.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dobavljači logistike i upravljanja zalihama imaju trajni pristup inventarnoj aplikaciji bez ograničenja pristupa ili redovitih sigurnosnih revizija, što stvara ranjivost lanaca opskrbe.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatak proceduralnog plana za brzinu reagiranja pri padama e-commerce ili curenju podataka — trebate napisane procedure s vremenima reagiranja i odgovornim osobama.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nema SIEM-a ili centralnog nadzora dnevnika za detektiranje sumnjive aktivnosti na POS sustavima, što čini mjere detekcije incidenta neuspješnima.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../alati/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Provjeri alat →</a>
+      <a href="../alati/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Mogu li koristiti stare POS terminale ako su samo lokalno povezani na mrežu?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je razlika između NIS2 zahtjeva za maloprodajne lance i e-commerce u Hrvatskoj?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne — čak i lokalno povezani POS terminali moraju biti sigurni. Ako nisu kompatibilni s PCI-DSS ili NIS2, trebate ih zamijeniti ili staviti u izoliranu mrežnu zonu s dodatnim nadzorem. SOA će tražiti dokaz da su oni zaštićeni ekvivalentnim mjerama. Preporuka je da zamijените u roku do kraja 2025. godine.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Oba tipa poslovanja klasificirana su kao važni subjekti i imaju iste osnovne obveze: zaštita podataka kupaca, obrađivanje plaćanja prema PCI-DSS, i izvješćivanje o incidentima u roku od 24 sata. Razlika je u infrastrukturi: maloprodajne lance moraju zaštititi fizičke POS terminale u stotinama lokacija, dok e-commerce operatori trebaju zaštititi distribuirane servere i baze podataka. Oba trebaju identične procese za upravljanje dobavljačima i nadzor pristupa.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Što trebam zahtijevati od svog logističkog partnera za usklađenost?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su minimalni zahtjevi za zamjenu legacy POS terminala?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Trebate potpisati dodatak za sigurnost ili ugovor o obradi podataka koji jasno nabraja što on smije (pristup samo zalihama, bez pristupa CRM-u ili adresi kupaca), kako mora čuvati te podatke, kako pristupa (VPN ili API ključ) i što učiniti ako dođe do incidenta. Trebate godišnji audit njihove IT sigurnosti i dokaz da su oni usklađeni sa svojom verzijom NIS2.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZoKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koja je kazna ako ne ispunim zahtjeve NIS2 do 2026. godine?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako ne usklađim operations s NIS2 do 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Kazne se kreću od 10 do 50 milijuna eura ili 2–5% godišnje prodaje, što je veće — za velike maloprodajne lance to može biti značajna kazna. Dodatno, SOA može odrediti mjere da maloprodajna platforma bude privremeno zatvorena ako je sigurnosni incident ozbiljan. Preporuka je da počnete s procjenom rizika do kraja 2024. i izvršite kritične promjene do sredine 2025.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka registracija u NIS2 registri Hrvatska do kraja 2025.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Povezani sektori" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Povezani sektori</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="sme-general.html">NIS2 zahtjevi za srednje velike tvrtke u reguliranim sektorima - Hrvatska 2026</a></li><li style="margin:0"><a href="software-saas.html">NIS2 za B2B SaaS kompanije u Hrvatskoj</a></li><li style="margin:0"><a href="telecoms.html">NIS2 za telekomunikacijske operatore u Hrvatskoj 2026</a></li><li style="margin:0"><a href="telemedicine.html">NIS2/ZKS za telehealth platforme u Hrvatskoj</a></li><li style="margin:0"><a href="transport.html">NIS2 za zračne luke, željeznice i brodogradnje u Hrvatskoj 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 za komunalne zbirajnike otpada i opasne otpadne supstance</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
