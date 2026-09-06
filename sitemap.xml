@@ -224,4 +224,9 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://nis2-hr.eu/o-nama.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
