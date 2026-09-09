@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nis2-hr.eu/alati/1password.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/acronis.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/bitdefender-gravityzone.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/bitwarden.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/complycloud.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/drata.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/isms-copilot.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/isms-online.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/microsoft-purview.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/nordlayer.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/reglyze.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/secfix.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/sprinto.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/sycope.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/alati/vanta.html</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
-  <url><loc>https://nis2-hr.eu/certifikacija-iso-27001.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/cyber-osiguranje.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/faq.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/1password</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/acronis</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/bitdefender-gravityzone</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/bitwarden</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/complycloud</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/drata</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/isms-copilot</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/isms-online</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/microsoft-purview</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/nordlayer</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/reglyze</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/secfix</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/sprinto</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/sycope</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/alati/vanta</loc><lastmod>2026-07-23</lastmod><priority>0.75</priority></url>
+  <url><loc>https://nis2-hr.eu/certifikacija-iso-27001</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/cyber-osiguranje</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/faq</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-hr.eu/</loc><lastmod>2026-07-23</lastmod><priority>1.00</priority></url>
-  <url><loc>https://nis2-hr.eu/kalkulator-kazni.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/kalkulator-troskova-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/kalkulator.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/metodologija.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/obuka-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/penetracijsko-testiranje.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/provedbena-uredba-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/registracija-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/report-nis2-2022-2555-hr.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/report-troskovi-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/sektori-nis2.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/sigurnost-lanca-opskrbe.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
-  <url><loc>https://nis2-hr.eu/usporedba.html</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/kalkulator-kazni</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/kalkulator-troskova-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/kalkulator</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/metodologija</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/obuka-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/penetracijsko-testiranje</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/provedbena-uredba-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/registracija-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/report-nis2-2022-2555-hr</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/report-troskovi-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/sektori-nis2</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/sigurnost-lanca-opskrbe</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
+  <url><loc>https://nis2-hr.eu/usporedba</loc><lastmod>2026-07-23</lastmod><priority>0.80</priority></url>
 
   <url>
     <loc>https://nis2-hr.eu/sektory/</loc>
@@ -40,103 +40,103 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/banks.html</loc>
+    <loc>https://nis2-hr.eu/sektory/banks</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/cloud-providers.html</loc>
+    <loc>https://nis2-hr.eu/sektory/cloud-providers</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/construction.html</loc>
+    <loc>https://nis2-hr.eu/sektory/construction</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/education.html</loc>
+    <loc>https://nis2-hr.eu/sektory/education</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/energy.html</loc>
+    <loc>https://nis2-hr.eu/sektory/energy</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/fintech.html</loc>
+    <loc>https://nis2-hr.eu/sektory/fintech</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/food.html</loc>
+    <loc>https://nis2-hr.eu/sektory/food</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/hospitals.html</loc>
+    <loc>https://nis2-hr.eu/sektory/hospitals</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/insurance.html</loc>
+    <loc>https://nis2-hr.eu/sektory/insurance</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/logistics.html</loc>
+    <loc>https://nis2-hr.eu/sektory/logistics</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/managed-services.html</loc>
+    <loc>https://nis2-hr.eu/sektory/managed-services</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/manufacturing.html</loc>
+    <loc>https://nis2-hr.eu/sektory/manufacturing</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/pharmacies.html</loc>
+    <loc>https://nis2-hr.eu/sektory/pharmacies</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/public-administration.html</loc>
+    <loc>https://nis2-hr.eu/sektory/public-administration</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/software-saas.html</loc>
+    <loc>https://nis2-hr.eu/sektory/software-saas</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/transport.html</loc>
+    <loc>https://nis2-hr.eu/sektory/transport</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/water.html</loc>
+    <loc>https://nis2-hr.eu/sektory/water</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -144,49 +144,49 @@
 
 
   <url>
-    <loc>https://nis2-hr.eu/sektory/accountants.html</loc>
+    <loc>https://nis2-hr.eu/sektory/accountants</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/hr-payroll.html</loc>
+    <loc>https://nis2-hr.eu/sektory/hr-payroll</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/law-firms.html</loc>
+    <loc>https://nis2-hr.eu/sektory/law-firms</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/medical-devices.html</loc>
+    <loc>https://nis2-hr.eu/sektory/medical-devices</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/real-estate.html</loc>
+    <loc>https://nis2-hr.eu/sektory/real-estate</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/retail.html</loc>
+    <loc>https://nis2-hr.eu/sektory/retail</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/sme-general.html</loc>
+    <loc>https://nis2-hr.eu/sektory/sme-general</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/telecoms.html</loc>
+    <loc>https://nis2-hr.eu/sektory/telecoms</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -194,38 +194,38 @@
 
 
   <url>
-    <loc>https://nis2-hr.eu/sektory/cybersecurity-firms.html</loc>
+    <loc>https://nis2-hr.eu/sektory/cybersecurity-firms</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/dental-clinics.html</loc>
+    <loc>https://nis2-hr.eu/sektory/dental-clinics</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/it-outsourcing.html</loc>
+    <loc>https://nis2-hr.eu/sektory/it-outsourcing</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/telemedicine.html</loc>
+    <loc>https://nis2-hr.eu/sektory/telemedicine</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nis2-hr.eu/sektory/waste-management.html</loc>
+    <loc>https://nis2-hr.eu/sektory/waste-management</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://nis2-hr.eu/o-nama.html</loc>
+    <loc>https://nis2-hr.eu/o-nama</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
