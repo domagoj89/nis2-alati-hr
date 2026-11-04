@@ -80,7 +80,7 @@
       "name": "Koji su minimalni zahtjevi za zamjenu legacy POS terminala?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZoKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene."
+        "text": "POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene."
       }
     },
     {
@@ -88,7 +88,7 @@
       "name": "Koje su kazne ako ne usklađim operations s NIS2 do 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka registracija u NIS2 registri Hrvatska do kraja 2025."
+        "text": "Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka uskladiti se s obvezama NIS2 što prije, jer ne postoji poseban rok za registraciju."
       }
     }
   ]
@@ -131,7 +131,7 @@
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Maloprodajne lance i e-commerce operatore koji u Republici Hrvatskoj obrađuju podatke više od 250.000 kupaca ili čiji godišnji promet prelazi određenu vrijednost kvalificiraju se kao važni subjekti. Obuhvaćeni su svi operatori s P2P terminalom, mobilnom aplikacijom za plaćanja ili vlastitom online platformom. Trgovine lanaca s više od 50 lokacija i e-commerce platforme s domaćim i stranim korisnicima automatski ulaze u ovu kategoriju.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obuhvaćeni su svi operatori s P2P terminalom, mobilnom aplikacijom za plaćanja ili vlastitom online platformom. Trgovine lanaca s više od 50 lokacija i e-commerce platforme s domaćim i stranim korisnicima automatski ulaze u ovu kategoriju.</p>
   </div>
 </div>
 
@@ -155,7 +155,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Obavijest o kršenju podataka i rukovanje incidentima</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaki incident koji utječe na podatke kupaca (krađa kredita, curenja osobnih podataka, neovlašteni pristup bazama) mora biti prijavljen Državnoj uredu za nadzor kibernetičke sigurnosti (SOA) u roku od 24 sata, a dodatna analiza do 72 sata. Kupcima moraju biti obaviješteni bez nepotrebnog odgode. Dokumentirajte sve incidente u ISMS-u i održavajte dnevnike za vanjski nadzor.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Svaki incident koji utječe na podatke kupaca (krađa kredita, curenja osobnih podataka, neovlašteni pristup bazama) mora biti prijavljen u roku od 24 sata, a dodatna analiza do 72 sata. Kupcima moraju biti obaviješteni bez nepotrebnog odgode. Dokumentirajte sve incidente u ISMS-u i održavajte dnevnike za vanjski nadzor.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -182,7 +182,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Monitoring i sprečavanje nedozvoljenih pristupa te anomalija</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Instalirajte SIEM (Security Information Event Management) sustave koji će u stvarnom vremenu pratiti pristupe POS sustavima, bazama podataka i kreditnom infrastrukturi. Konfigurujte upozorenja za masovne pristupe, neuspješne logine i neobičnu aktivnost. Održavajte dnevnike najmanje 90 dana i reviews najmanje tjednih sa žarištem na pristupe iz azija ili vanjske mreže.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Instalirajte SIEM (Security Information Event Management) sustave koji će u stvarnom vremenu pratiti pristupe POS sustavima, bazama podataka i kreditnom infrastrukturi. Konfigurujte upozorenja za masovne pristupe, neuspješne logine i neobičnu aktivnost. Održavajte dnevnike i reviews najmanje tjednih sa žarištem na pristupe iz azija ili vanjske mreže.</p>
       </div>
     </div>
   </div>
@@ -261,13 +261,13 @@
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koji su minimalni zahtjevi za zamjenu legacy POS terminala?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZoKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">POS terminali stariji od 5 godina trebaju biti zamijenjeni s modelima kompatibilnima s PCI-DSS 3.2.1 ili novijom verzijom. Ako zamjena nije moguća u roku od 18 mjeseci od primjene ZKS-a (do 2027), trebate implementirati dodatne sigurnosne mjere: kriptiranje komunikacije između terminala i servera, mrežna izolacija, te vanjski nadzor. Svaki legacy terminal trebate dokumentirati sa planom zamjene.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koje su kazne ako ne usklađim operations s NIS2 do 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka registracija u NIS2 registri Hrvatska do kraja 2025.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za važne subjekte kao što su maloprodajne lance i e-commerce operatori, kazne mogu biti do 7 milijuna eura ili 1,4% godišnjeg promet, ovisno što je veće. Dodatno, SOA može nametiti redovite revizije, ograničiti vašu mogućnost obrade podataka kupaca, ili prisiliti operativne izmjene. Prve provjere već počinju, pa je preporuka uskladiti se s obvezama NIS2 što prije, jer ne postoji poseban rok za registraciju.</p>
     </div>
   </div>
   </div>
