@@ -80,7 +80,7 @@
       "name": "Trebam li odvajati medicinski uređaj od glavne bolničke mreže ili je dovoljna enkriptacija i firewall pravila?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NIS2 i ZoKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s \"deny by default\"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti."
+        "text": "NIS2 i ZKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s \"deny by default\"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti."
       }
     },
     {
@@ -131,7 +131,7 @@
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">U Hrvatsku se primjenjuje NIS2 kroz Zakon o kibernetičkoj sigurnosti (ZKS). Zdravstvene ustanove — bolnice, mreže bolnica, privatne klinike i centri specijalizirane skrbi — koje imaju 50 ili više zaposlenih ili pružaju zdravstvene usluge na razini regije ili države, klasificirane su kao ključni subjekti (Prilog I) i moraju u potpunosti uskladiti svoj sustav upravljanja kibernetičkom sigurnosti već sada, jer zakon je na snazi od 2024. godine.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">U Hrvatsku se primjenjuje NIS2 kroz Zakon o kibernetičkoj sigurnosti (ZKS). Zdravstvene ustanove — bolnice, mreže bolnica, privatne klinike i centri specijalizirane skrbi — moraju u potpunosti uskladiti svoj sustav upravljanja kibernetičkom sigurnosti već sada, jer zakon je na snazi od 2024. godine.</p>
   </div>
 </div>
 
@@ -261,7 +261,7 @@
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Trebam li odvajati medicinski uređaj od glavne bolničke mreže ili je dovoljna enkriptacija i firewall pravila?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 i ZoKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s "deny by default"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 i ZKS ne zahtijevaju apsolutnu fizičku separaciju, ali zahtijevaju logičku segmentaciju s kontrolom pristupa. To znači: medicinski uređaji trebaju biti u odvojenoj VLAN-i, pristup iz administrativne mreže trebam biti blokiran ili strogo ograničen (firewall pravila s "deny by default"), te svi protoci trebaju biti enkriptirani. Praktično: ako je administrator u uradu, ne može direktno pristupiti imaging sustavu bez dodatnog koraka autentifikacije. Prema pripreporuci SOA, fizička separacija je najbolja praksa, ali ako je logička, tada trebate dodatni nadzor (IPS, SIEM) za detektovanje sumnjive aktivnosti.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
